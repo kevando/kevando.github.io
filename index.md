@@ -22,6 +22,9 @@ layout: default
 * Find a good Seth Godin podcast
 * maybe something from the lean startup
 
+### Design
+* [Hack Design] - newsletter
+* 
 
 I will continue to expand this into a comprehesive list of resources to help people for.
 
@@ -30,3 +33,4 @@ I will continue to expand this into a comprehesive list of resources to help peo
    [Lean Startup]: <http://theleanstartup.com>
    [Steve Jobs Returning to Apple]: <https://www.youtube.com/watch?v=keCwRdbwNQY>
    [How to give customer interview]: <https://www.youtube.com/watch?v=U9ZG19XTbd4>
+   [Hack Design]: <https://hackdesign.org/>
