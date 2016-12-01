@@ -2,7 +2,6 @@
 layout: default
 ---
 
-> Whenever you feel like criticizing any one, just remember that all the people in this world haven’t had the advantages that you’ve had.
 
 Communicating abstract concepts is much easier when both people share the same baseline of knowledge. The following is a collection of videos and literature that profoundly effected the way I think.
 
