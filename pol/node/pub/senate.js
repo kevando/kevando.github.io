@@ -1,5 +1,5 @@
 
-var w = 1280,
+var w = 1080,
     h = 800,
     rx = w / 2,
     ry = h / 2,
@@ -21,9 +21,9 @@ var line = d3.svg.line.radial()
     .angle(function(d) { return d.x / 180 * Math.PI; });
 
 // Chrome 15 bug: <http://code.google.com/p/chromium/issues/detail?id=98951>
-var div = d3.select("body").insert("div", "h2")
+var div = d3.select("body").insert("div")
     .style("top", "20px")
-    .style("left", "-160px")
+    .style("left", "-60px")
     .style("width", w + "px")
     .style("height", w + "px")
     .style("position", "absolute")
@@ -42,7 +42,7 @@ svg.append("svg:path")
 
 
 
-d3.json("/pub/senate.json", function(classes) {
+d3.json("http://kevando.github.io/pol/pub/senate_og.json", function(classes) {
 // d3.json("/pub/flares.json", function(classes) {
   var nodes = cluster.nodes(packages.root(classes)),
       links = packages.imports(nodes),
@@ -73,8 +73,6 @@ d3.json("/pub/senate.json", function(classes) {
           // console.log('target only follows souce!!')
           relationshipClass='source-follows-target'
         }
-
-
 
           return relationshipClass+" link source-" + d.source.key + " target-" + d.target.key;
 
