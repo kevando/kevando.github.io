@@ -1,0 +1,8 @@
+[
+  {"name":"sanders","imports":["hil"]},
+  {"name":"hil","imports":["trump","sanders","joe"]},
+  {"name":"trump","imports":[]},
+  {"name":"kevando","imports":["trump","hil","sanders","joe","aidan"]},
+  {"name":"aidan","imports":["trump","hil","sanders","kevando"]},
+  {"name":"joe","imports":["trump","hil","sanders"]}
+]

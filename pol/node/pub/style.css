@@ -1,0 +1,213 @@
+body {
+  font: 300 36px "Helvetica Neue";
+  /*height: 640px;*/
+  margin: 0px;
+  overflow: hidden;
+  position: relative;
+  /*width: 960px;*/
+}
+
+a:link, a:visited {
+  color: #777;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote:before {
+  content: "â€œ";
+  position: absolute;
+  left: -.4em;
+}
+
+blockquote:after {
+  content: "â€";
+  position: absolute;
+}
+
+body > ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h1, h2, h3 {
+  font-weight: inherit;
+  margin: 0;
+}
+
+h2, h3 {
+  /*text-align: right;
+  font-size: inherit;
+  position: absolute;
+  bottom: 0;
+  right: 0;*/
+}
+
+h2 {
+  font-size: 24px;
+  /*position: absolute;*/
+}
+
+h3 {
+  bottom: -20px;
+  font-size: 18px;
+}
+
+.invert {
+  background: #1f1f1f;
+  color: #dcdccc;
+}
+
+.invert h2, .invert h3 {
+  color: #7f9f7f;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #777;
+  font-style: oblique;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+
+.titleWrapper {
+  position: absolute;
+  border: solid 2px green;
+  width: 100%;
+  height:500px;
+  margin:0px;
+  top: 10px;
+  left: 30px;
+  z-index: 99;
+}
+.keyWrapper {
+  position: absolute;
+  border: solid 1px #ccc;
+  width: 200px;
+  height:400px;
+  margin:0px;
+  top: 10px;
+  right: 30px;
+}
+.keyWrapper .title {
+  background: #ccc;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+}
+.keyWrapper .legend.item {
+  margin: 5px 15px;
+  font-size: 17px;
+}
+.keyWrapper .item.friends {
+  color: purple
+}
+.keyWrapper .item.follows {
+  color: blue
+}
+.keyWrapper .item.followed {
+  color: orange
+}
+
+.setting.tension {
+  position:relative;
+  font-size:18px;
+  z-index: 9;
+}
+
+body > svg {
+  position: absolute;
+  top: -80px;
+  left: -160px;
+}
+
+
+path.arc {
+cursor: move;
+fill: #fff;
+}
+
+.node {
+font-size: 12px;
+color: #bbb;
+}
+
+.node:hover {
+fill: #000;
+font-size: 18px;
+font-weight: 600;
+}
+
+.link {
+fill: none;
+stroke: #1f77b4;
+stroke-opacity: .05;
+pointer-events: none;
+}
+
+.link.source, .link.target {
+stroke-opacity: 1!important;
+stroke-width: 2px;
+}
+
+.link.source-target-friends {
+  stroke-opacity: 1;
+  stroke-width: 2px;
+}
+
+.link.target {
+stroke: orange;
+}
+
+.node.target {
+fill: blue;
+font-size: 15px;
+}
+
+.link.source {
+stroke: blue;
+
+}
+
+.node.source {
+fill: orange;
+font-size: 15px;
+}
+
+.node.source.target {
+fill: purple;
+font-size: 15px;
+}
+
+.node.source-target-friends {
+fill: pur;
+}
+
+.link.source-target-friends {
+stroke: purple;
+stroke-opacity: .01;
+}
