@@ -44,8 +44,8 @@ svg.append("svg:path")
 
 
 
-d3.json("http://kevando.github.io/pol/node/pub/senate_og.json", function(classes) {
-// d3.json("/pub/flares.json", function(classes) {
+// d3.json("/pub/senate.json", function(classes) {
+d3.json("http://kevando.github.io/pol/node/pub/senate.json", function(classes) {
   var nodes = cluster.nodes(packages.root(classes)),
       links = packages.imports(nodes),
       splines = bundle(links);
@@ -59,7 +59,6 @@ d3.json("http://kevando.github.io/pol/node/pub/senate_og.json", function(classes
         var sourceFollowsTarget = false;
         var targetFollowsSource = false;
 
-        console.log('-- checking ---')
         sourceFollowsTarget = _.find(d.target.imports, function(f){return f == d.source.key;})
         targetFollowsSource = _.find(d.source.imports, function(f){return f == d.target.key;})
 
@@ -93,7 +92,7 @@ d3.json("http://kevando.github.io/pol/node/pub/senate_og.json", function(classes
       .attr("dy", ".31em")
       .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
       .attr("transform", function(d) { return d.x < 180 ? null : "rotate(180)"; })
-      .text(function(d) { return d.key; })
+      .text(function(d) { return d.displayName; })
       .on("mouseover", mouseover)
       .on("mouseout", mouseout);
 
