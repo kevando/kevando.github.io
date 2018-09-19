@@ -1,1 +1,5 @@
-Catch you on the flip side.
+
+### Running Local
+```
+jekyll serve
+```
