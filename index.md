@@ -1,12 +1,14 @@
 ---
-layout: default
+layout: home
+title:  "Kevando"
 ---
 
 
-# Kevin Habich
 
- - [Helpful Resources]({{ site.baseurl }}/resources)
- - [Which US Senators follow each other on Twitter (Data Vis)]({{ site.baseurl }}/pol)
- - [Contact]({{ site.baseurl }}/contact)
- - [Articles](https://medium.com/@kevando_)
- - [My Style](https://www.youtube.com/playlist?list=PLbbBoOi6L43hsQ_k15EPe-e7WwNjeA0ZC)
+# kev·an·do
+
+<!-- > Be kind, for everone is fighting a hard battle. -->
+
+`human`  Nickname for Kevin Habich. `username` on the [internet](/internet).
+
+<!-- knowledge loop, as seen on tv -->

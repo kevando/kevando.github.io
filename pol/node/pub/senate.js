@@ -44,7 +44,7 @@ svg.append("svg:path")
 
 
 
-d3.json("http://kevando.github.io/pol/node/pub/senate_og.json", function(classes) {
+d3.json("/pol/node/pub/senate_og.json", function(classes) {
 // d3.json("/pub/flares.json", function(classes) {
   var nodes = cluster.nodes(packages.root(classes)),
       links = packages.imports(nodes),
