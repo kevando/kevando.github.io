@@ -3,31 +3,25 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+      
+        <p>{% capture temptags %}
+            {% for tag in site.tags %}
+              {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+            {% endfor %}
+          {% endcapture %}
+          {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+          {% for temptag in sortedtemptags %}
+            {% assign tagitems = temptag | split: '#' %}
+            {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+            <!-- <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }} ({{ tagitems[0].size }})</nobr></code></a> -->
+            #{{ tagname }}&nbsp;&nbsp;
+          {% endfor %}</p>
+      
     </div>
 
   </div>
