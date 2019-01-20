@@ -1,9 +1,62 @@
 
-    h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 
 .page-heading {
     font-size: 40px;
+    letter-spacing: 0.03em;
 }
-    
+/* Definition */
+.home-page h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+    line-height: 1em;
+}
+.home-page h4 {
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    color: #383838;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+  
+.home-page p {
+font-family: "Georgia";
+font-weight: 100;
+font-size: 16px;
+max-width: 500px;
+line-height: 1.6em;
+}
+
+.home-page a {
+       border-bottom: 3px solid #FFCD00;
+    color: #000000;
+    padding-bottom: .1em;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05em;
+    letter-spacing: 0.02em;
+    transition: 0.3s;
+}
+.home-page a:hover {
+    /* border-bottom: 3px solid #FFCD00; */
+    padding-bottom: 0.05em;
+}
+/* Trying a new style  */
+h1.funky {
+    font-weight: 300;
+}
+ 
+h1.funky a {
+    color: #FFCD00;
+    text-decoration: none;
+    padding: 0px 5px 5px 5px;
+}
+
+h1.funky a:hover {
+    background-color: #000000;
+    /* text-decoration: none; */
+}
