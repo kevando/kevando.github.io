@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Helpful Startup Resources"
-date:   2015-06-10
-categories: 
-   - "blog"
+title: Startup Resources
+date: 2015-06-10
+categories: blog
 tags:
-   - "help"
-
+  - help
+  - resources
+  - startups
 ---
 
 

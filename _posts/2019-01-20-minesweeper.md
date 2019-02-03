@@ -1,14 +1,18 @@
 ---
 layout: post
-title:  "Minesweeper High Score"
+title:  Minesweeper
 date: 2019-01-20
-categories: blog
-tags: internet
 image: /assets/images/MINESWEEPER_SCORE_preview.png
+summary: My greatest high score.
+categories: blog
+tags:
+  - internet
+  - minesweeper
+  - video games
 ---
 
-November 9, 2002 I accomplished a great feat
-
 ![alt text][minesweeper]
-
 [minesweeper]: /assets/images/MINESWEEPER_SCORE.png "Minesweeper"
+
+<br />
+November 9, 2002 - Never forget

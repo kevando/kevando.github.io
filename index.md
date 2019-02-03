@@ -8,13 +8,14 @@ main_class: "home-page"
 
 # kev·an·do
 
-#### /100% human/
+#### /noun/
 <!-- > Be kind, for everone is fighting a hard battle. -->
 
 
 
- **1.** American. **2.** Web surfer.  **3.**  [Minesweeper](/blog) Champion. **4.** As seen on TV
+ **1.** American bonehead.  <br/>
+ **2.** [Writes about stuff](/blog)
 
 <!-- (See also: **[duuuuude](httpasdf)**) -->
 
-<!-- knowledge loop, as seen on tv -->  
+<!-- knowledge loop, as seen on tv -->
