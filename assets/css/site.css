@@ -133,24 +133,6 @@ p.post-meta {
 }
 
 
-/* Definition */
-.home-page {
-  padding-top: 30px;
-}
-.home-page h1 {
-  font-size: 30px;
-  letter-spacing: 0.02em;
-  margin: 0px;
-}
-.home-page h4 {
-  font-weight: 200;
-  letter-spacing: 0.1em;
-  margin-bottom: 0px;
-}
-.home-page p {
-  font-family: "Georgia";
-}
-
 /* --------------------------- */
 /*           Footer            */
 /* --------------------------- */
