@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Installing Redmine
+title:  Installing Redmine on Heroku
 date: 2012-12-20
 categories: blog
-summary: Introducing augment.cool
 tags:
-  - AR
-  - tumblr
+  - heroku
+  - redmine
+  - how to
 ---
 After deciding to use [Redmine](http://www.redmine.org/) for my project management, I needed a place to host it. Since I needed it to reside on my domain, many of the free options were not possible. I also spent three days with two various shared hosting solutions that had almost no support. Shared linux hosting works great for my php applications. Ruby on Rails, not so much.
 
@@ -26,15 +26,19 @@ I decided to use the shared Platform as a Service (PaaS) solution Heroku and her
 
 &nbsp;4) Configure your email. The email settings in Redmine are used to send alerts to the users. Email alerts are very important and since 200 emails per day is not that many, I use my Google Apps account. Here is what my configuration.yml file looks like:
 
-<pre>production:
-&nbsp;delivery_method: :smtp
-&nbsp;&nbsp;smtp_settings:
-&nbsp;&nbsp;&nbsp;address: "smtp.gmail.com"
-&nbsp;&nbsp;&nbsp;port: "587"
-&nbsp;&nbsp;&nbsp;authentication: :login
-&nbsp;&nbsp;&nbsp;domain: "roybiv.net"
-&nbsp;&nbsp;&nbsp;user_name: "redmine@roybiv.net"
-&nbsp;&nbsp;&nbsp;password: "notmypassword" </pre>
+``` yaml
+
+production:
+  delivery_method: :smtp
+  smtp_settings:
+  address: "smtp.gmail.com"
+  port: "587"
+  authentication: :login
+  domain: "roybiv.net"
+  user_name: "redmine@roybiv.net"
+  password: "notmypassword"
+
+```
 
 5) Follow these steps to create a [custom url for your Heroku application.](https://devcenter.heroku.com/articles/custom-domains) I use a subdomain, so I simply set a CNAME and it worked almost instantly.
 

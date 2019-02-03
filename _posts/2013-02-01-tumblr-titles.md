@@ -46,7 +46,9 @@ This shows you the html that creates your post titles.&nbsp;
 
 For me the HTML element is:
 
-<pre>&lt;h3&gt;&lt;a&gt;{title}&lt;/a&gt;&lt;/h3&gt;</pre>
+``` html
+<h3><a>{title}</a></h3>
+```
 
 3) Now you need to edit all your previous posts (or just your important ones) and add a title. Edit the old tumblr post, view it as html and you will see something like this:
 
@@ -65,4 +67,4 @@ Note: You'll need to make sure that you get the correct permalink of your post s
 
 ![image](https://66.media.tumblr.com/c11ce2a82a0cd941f5425d06d5bd06a0/tumblr_inline_mhj2x2LwRo1qz4rgp.png)This poorly represents the progress of what we just did. If this heyour tumblr, or if you have problems let me know in the comments!
 
-http://kevandonation.tumblr.com/post/42007217880/how-to-add-titles-for-all-tumblr-post-types
+[original](http://kevandonation.tumblr.com/post/42007217880/how-to-add-titles-for-all-tumblr-post-types)

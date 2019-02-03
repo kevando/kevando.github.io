@@ -2,41 +2,35 @@
 layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <!-- HEADER -->
   <header class="post-header">
-
-    <h2 itemprop="name headline">
-      <span class="bumble">{{ page.title | escape }}</span>
-    </h2>
-
-    <p class="post-meta">Published
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time> to <a href="/blog">blog</a>
+    <!-- DATE -->
+    <div class="post-date">
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
       </p>
+    </div>
+    <!-- TITLE -->
+    <h1 itemprop="name headline">
+      <span class="bumble">{{ page.title | escape }}</span>
+    </h1>
   </header>
-
-  {%- if page.video -%}
-    {%- include embed_video.html -%}
-  {%- endif -%}
 
 
   <div class="post-content e-content" itemprop="articleBody">
+
     {{ content }}
   </div>
 
-
-  <div class="post-footer">
+  <!-- <div class="post-footer">
       <span>
           {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
             <code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;
           {% endfor %}
         </span>
-  </div>
-
-
+  </div> -->
 
 </article>

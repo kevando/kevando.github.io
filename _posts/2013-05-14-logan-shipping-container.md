@@ -11,5 +11,6 @@ tags:
 
 ![image](/assets/images/logan-shipping-container.jpg)
 
+I helped my friend Logan fill a truck with wood for his converted shipping container.
 
-http://logantreed.tumblr.com/post/50416909244
+[Read Logan's Blog](http://logantreed.tumblr.com/post/50416909244)

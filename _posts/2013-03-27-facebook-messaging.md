@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  Facebook Messaging
-description: Get yourself organized
-date:   2013-03-27
+date: 2013-03-27
 categories: blog
 tags:
   - facebook
@@ -11,7 +10,7 @@ tags:
 
 At the end of the day, Facebook will survive because of its messaging service. They offer one key factor that no other messaging service provides. Not even email.
 
-The **Reply-All opt out.**
+#### The **Reply-All opt out.**
 
 **![image](https://66.media.tumblr.com/47ff650666e04ca294d11ced5bdae439/tumblr_inline_mkayc9TBKH1qz4rgp.png)**
 

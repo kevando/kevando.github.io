@@ -1,13 +1,19 @@
 ---
 layout: post
-title:  Chicago Go Pro
+title:  Go Pro Timelapse
 summary: A look at the bike path.
 date: 2012-08-20
 categories: blog
 video: https://player.vimeo.com/video/47845681
 tags:
   - gopro
-  - video
+  - videos
+  - timelapse
 ---
 
-I attached a go pro to my bike and took a photo every 10 seconds.
+I borrowed my roommates Go Pro and attached it to my bike. I set the timelaps for `1 photo every 10 seconds` and can't remember what my playback settings were.
+
+Song by [Architecture in Helsinki](1)
+
+
+[1]: https://www.facebook.com/architectureinhelsinki

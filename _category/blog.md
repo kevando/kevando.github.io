@@ -1,9 +1,7 @@
 ---
-title: Blog
+title: Kevando
 tag: blog
 permalink: "/blog"
 layout: category
-list_title: " "
+list_title: "Blog Posts"
 ---
-
-

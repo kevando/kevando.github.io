@@ -1,17 +1,14 @@
 ---
 layout: post
-title:  Sir Sly Gold
-description: Get yourself organized
-date:   2016-02-06
+title:  Sir Sly
+date:   2013-01-11
 categories: blog
-# image used for og:image
-image: https://cdn-images-1.medium.com/max/1600/1*xc1HFvohmz7Ti26LZiyFgg.png)
-summary: Steps for configuring up priority inbox in gmail.
+soundcloud: 74263449
+height: 350
 tags:
-  - tutorial
-  - guide
-  - help
-  - gmail
-
-
+  - music
+  - fresh
+  - sirsly
+  - soundcloud
 ---
+{% include soundcloud.html  soundcloud=page.soundcloud %}

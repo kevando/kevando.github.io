@@ -1,8 +1,6 @@
 <li>
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-
-
   <span class="post-meta">{{ post.date | date: date_format }}</span>
 
   <h3>
@@ -11,5 +9,5 @@
     </a>
   </h3>
 
-    <h6>{{ post.summary | escape }}</h6>
+    <!-- <h6>{{ post.summary | escape }}</h6> -->
 </li>

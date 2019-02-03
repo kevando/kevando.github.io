@@ -25,6 +25,11 @@ twitter:
   username: kevando
   card: summary
 
+# Tag Pages
+tag_pages:
+  - videos
+  - soundcloud
+
 # Build settings
 markdown: kramdown
 theme: minima

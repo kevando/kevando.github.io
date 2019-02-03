@@ -1,14 +1,27 @@
 ---
 layout: default
 ---
-<div class="post">
-<h1>Tag: {{ page.tag }}</h1>
-<ul>
-{% for post in site.tags[page.tag] %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-    {{ post.description }}
-  </li>
-{% endfor %}
-</ul>
-</div>
-<hr>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+
+    <!-- TITLE -->
+    <h1 itemprop="name headline">
+      <span class="bumble">{{ page.title | escape }}</span>
+    </h1>
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+
+    {{ content }}
+  </div>
+
+  <ul>
+    {% for post in site.tags[page.tag] %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+      {{ post.description }}
+    </li>
+    {% endfor %}
+  </ul>
+</article>

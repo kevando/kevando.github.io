@@ -1,17 +1,11 @@
 ---
 layout: post
-title:  Launched an AR Blog
-date: 2017-10-12
+title:  How to Install Git on a Shared GoDaddy Server
+date: 2013-01-04
 categories: blog
 summary: Introducing augment.cool
 tags:
-  - AR
-  - tumblr
+  - godaddy
 ---
 
-
-#### [augment-cool.tumblr.com](https://augment-cool.tumblr.com)
-
-<br />
-
-![alt text](/assets/images/augment-cool.png "augment.cool")
+Don't.
