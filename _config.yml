@@ -55,6 +55,8 @@ collections:
   category:
     output: true
 
+
+
 defaults:
   -
     scope:

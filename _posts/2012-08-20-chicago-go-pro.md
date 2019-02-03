@@ -4,12 +4,15 @@ title:  Go Pro Timelapse
 summary: A look at the bike path.
 date: 2012-08-20
 categories: blog
-video: https://player.vimeo.com/video/47845681
+vimeo: 47845681
 tags:
   - gopro
   - videos
   - timelapse
 ---
+
+{% include vimeo.html vimeo=page.vimeo %}
+
 
 I borrowed my roommates Go Pro and attached it to my bike. I set the timelaps for `1 photo every 10 seconds` and can't remember what my playback settings were.
 

@@ -14,4 +14,4 @@ tags:
 
 <br />
 
-![alt text](/assets/images/augment-cool.png "augment.cool")
+<img src="/assets/images/augment-cool.png" alt="drawing" width="500"/>
