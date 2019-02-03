@@ -1,9 +1,6 @@
 ---
-title: Blog
-tag: blog
+title: Blog Posts
+category: blog
 permalink: "/blog"
 layout: category
-list_title: " "
 ---
-
-

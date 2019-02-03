@@ -4,15 +4,31 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Kevando
+# title: Kevando
 description: A repository of highlights.
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kevando.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Fresh
+me:
+  linkedin: "https://www.linkedin.com/in/kevando?utm_source=kevando"
+  instagram: "https://www.instagram.com/kevando?utm_source=kevando"
+  twitter: "https://www.twitter.com/kevando_?utm_source=kevando"
+  vimeo: "https://www.vimeo.com/kevando?utm_source=kevando"
+  soundcloud: "https://www.soundcloud.com/kevando?utm_source=kevando"
+  disqus: "https://disqus.com/by/kevando"
+  vine: "asdf"
+  github: "sadf"
+
 # Meta tag settings
 twitter:
-  username: benbalter
+  username: kevando
   card: summary
+
+# Tag Pages
+tag_pages:
+  - videos
+  - soundcloud
 
 # Build settings
 markdown: kramdown
@@ -38,6 +54,8 @@ google_analytics: UA-16078011-4
 collections:
   category:
     output: true
+
+
 
 defaults:
   -
