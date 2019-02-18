@@ -12,3 +12,5 @@ config/auth.js
 
 wip/*
 _posts/_drafts/*
+
+*.css.map

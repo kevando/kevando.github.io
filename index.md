@@ -4,59 +4,32 @@ title:  "Kev·an·do"
 ---
 
 
-<style>
+<script>
 
-/* Definition */
-.home-page {
-  padding-top: 30px;
-}
- h1 {
-  font-size: 27px;
-  letter-spacing: 0.02em;
-  margin: 0px;
-}
-h4 {
-  font-weight: 200;
-  letter-spacing: 0.1em;
-  margin-bottom: 0px;
-}
-p {
-  font-family: "Georgia";
-}
+window.onzoom = function(e) {
+  var image = document.getElementById('i')
+  var screenCssPixelRatio = (window.outerWidth - 8) / window.innerWidth;
+  if (screenCssPixelRatio >= .46 && screenCssPixelRatio <= .54) {
+    image.style.opacity = 0
+  }
+};
+//
+// // detect resize
+(function() {
+	var oldresize = window.onresize;
+	window.onresize = function(e) {
+      var event = window.event || e;
+      if(typeof(oldresize) === 'function' && !oldresize.call(window, event)) {
+        return false;
+      }
+      if(typeof(window.onzoom) === 'function') {
+        return window.onzoom.call(window, event);
+      }
+  }
+})();
 
-a span{
-  background: white;
-  padding: 0px 1px 0px 1px;
-  color: black;
-}
-a:hover span {
-  background: #FFF000;
-  color: black;
-}
-
-a:visited span {
-  background: #FFF000;
-  color: black;
-}
-
-
-</style>
-
-
-<h1>
-<a href="/blog/2017/03/24/senators-twitter.html"><span>kev</span></a>·<a href="/blog/2013/09/05/krogerhq.html"><span>an</span></a>·<a href="/soundcloud"><span>do</span></a>
-</h1>
-
-#### /noun/
-<!-- > Be kind, for everone is fighting a hard battle. -->
+</script>
 
 
 
- <!-- **1.** American bonehead.  <br/>
- **2.** [Writes about stuff](/blog) -->
-
-<!-- (See also: **[duuuuude](httpasdf)**) -->
-
-<!-- knowledge loop, as seen on tv -->
-
-[kev]: /blog/2017/03/24/senators-twitter.html
+<img src="/assets/images/place.svg" id="i" style="margin-left:-500px;margin-top:-500px; max-width:1000%"/>
