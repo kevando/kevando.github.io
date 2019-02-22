@@ -3,33 +3,57 @@ layout: home
 title:  "Kev·an·do"
 ---
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="/assets/js/dz.js"></script>
+
 
 <script>
 
-window.onzoom = function(e) {
-  var image = document.getElementById('i')
-  var screenCssPixelRatio = (window.outerWidth - 8) / window.innerWidth;
-  if (screenCssPixelRatio >= .46 && screenCssPixelRatio <= .54) {
-    image.style.opacity = 0
-  }
-};
-//
-// // detect resize
-(function() {
-	var oldresize = window.onresize;
-	window.onresize = function(e) {
-      var event = window.event || e;
-      if(typeof(oldresize) === 'function' && !oldresize.call(window, event)) {
-        return false;
-      }
-      if(typeof(window.onzoom) === 'function') {
-        return window.onzoom.call(window, event);
-      }
-  }
-})();
+
+
+$(function() {
+
+
+})
+
+
+window.addEventListener('scroll', function (e) {
+  var zoom = detectZoom.zoom();
+  var device = detectZoom.device();
+  console.log(zoom, device);
+})
+
 
 </script>
 
+<style>
 
+html {
+  scroll-behavior: smooth;
+}
 
-<img src="/assets/images/place.svg" id="i" style="margin-left:-500px;margin-top:-500px; max-width:1000%"/>
+.taco {
+    background-image: url('./assets/images/place.jpg');
+    background-size: 100%;
+    /* border:  solid 5px blue; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8000px;
+    width: 8000px;
+    transform: scale(2)
+}
+
+#ball {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: red;
+  bo
+}
+
+</style>
+<!-- <span id='ball'></span> -->
+<div class="taco" id="bisco">
+
+</div>
