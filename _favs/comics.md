@@ -16,7 +16,7 @@ comics:
   -
 ---
 
-<article>
+<article class="fav">
   <section>
   <h2>Comics</h2>
   <ul>

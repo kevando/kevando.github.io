@@ -21,6 +21,7 @@
 @import
   'layout/header',
   'layout/main',
+  'layout/post',
   'layout/footer';
 
 // 5. Components
@@ -31,5 +32,6 @@
 // 6. Page-specific styles
 @import
   'pages/404',
+  'pages/blog',
   'pages/favs',
-  'pages/goat';
+  'pages/home';

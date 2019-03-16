@@ -1,45 +1,47 @@
 
 
-// main {
-//   background: $black;
-// }
+main {
+  header {
+  @include flex(center,center, column);
+  // height: $nav-height;
+  border-bottom: solid 5px $charcoal;
 
-// Blog List
-
-ul.blog {
-  margin: 0;
-  padding: 0;
-
-  li {
-    @include flex(flex-start,center,row);
-    list-style: none;
-    border-bottom: solid 1px #ffffff0a;
-
-    a {
-      @include flex(flex-start, center);
-      @include link-size; // TODO
-      @include sans-serif;
-
-      width: 100%;
-      color: white;
-      padding: 10px 0;
-      padding-left: $h-padding;
-
-      &:hover {
-        background: white;
-        color: $charcoal!important;
-        font-weight: 500;
-      }
-      &:visited {
-        color: $yellow;
-      }
-
-      .post-meta {
-        @include meta;
-        font-weight: 200;
-        margin-left: 10px;
-      }
-    }
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    font-family: "Londrina Shadow", cursive;
+    color: $black;
+    font-size: 50px;
+    min-width: 300px;
+    margin: 0;
+  }
 
 }
+
+article.post {
+  @include flex(center,center,column);
+  width: 100%;
+  margin-top: 50px;
+
+  section {
+    @include flex(flex-start,center,column);
+    background: white;
+    width: 700px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 4px 15px 1px #69696952;
+    img {
+      max-width: 100%;
+    }
+
+    li {
+      @include sans-serif;
+      list-style: none;
+      font-size: 20px;
+      line-height: 1.3em;
+    }
+  }
+}
+
 }

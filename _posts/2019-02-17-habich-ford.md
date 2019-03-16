@@ -1,9 +1,9 @@
 ---
-layout: post
 title:  Habich Ford
+layout: post
 date: 2019-02-17
 image: /assets/images/habich.jpg
-summary: My greatest high score.
+post_type: photo
 categories: blog
 tags:
   - family

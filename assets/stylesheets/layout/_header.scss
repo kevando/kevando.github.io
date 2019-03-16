@@ -1,6 +1,6 @@
 
 
-header {
+header.navigation {
   @include flex(space-between, inherit);
   height: $nav-height;
   border-bottom: solid 5px $charcoal;
