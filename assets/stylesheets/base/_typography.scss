@@ -1,7 +1,15 @@
+
+
+
 /**
- * Basic typography style for copy text
+ * Basic styles for links
  */
-body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+a {
+  // color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    // color: $text-color;
+    text-decoration: none;
+  }
 }

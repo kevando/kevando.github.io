@@ -7,6 +7,7 @@
  */
 /* Document
    ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Arvo|Work+Sans:200,300,400,500,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -417,78 +418,113 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: content-box; }
+
+:focus {
+  outline: none; }
+
+body {
+  background: #FFCD00; }
 
 /**
  * Basic styles for links
  */
 a {
-  color: #e50050;
   text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #222222;
-    text-decoration: underline; }
+    text-decoration: none; }
 
-/**
- * Basic typography style for copy text
- */
-body {
-  color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  flex-direction: row;
+  height: 60px;
+  border-bottom: solid 5px #232323; }
+  header .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    margin-left: 30px; }
+  header .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
 
-/**
- * Clear inner floats
- */
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table; }
+nav a {
+  font-family: "Arvo", serif;
+  margin: 0 20px;
+  color: #232323; }
 
-/**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-  max-width: 1180px;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */ }
+.logo {
+  width: 50px;
+  height: 33px; }
+  .logo img {
+    width: 75%; }
 
-/**
- * Hide text while making it readable for screen readers
- * 1. Needed in WebKit-based browsers because of an implementation bug;
- *    See: https://code.google.com/p/chromium/issues/detail?id=457146
- */
-.hide-text {
-  overflow: hidden;
-  padding: 0;
-  /* 1 */
-  text-indent: 101%;
-  white-space: nowrap; }
+main {
+  background: #0a0a0a; }
 
-/**
- * Hide element while making it readable for screen readers
- * Shamelessly borrowed from HTML5Boilerplate:
- * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
- */
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
+ul.blog {
+  margin: 0;
+  padding: 0; }
+  ul.blog li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    border-bottom: solid 1px #ffffff0a; }
+    ul.blog li a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      font-size: 15px;
+      font-family: "Work Sans", sans-serif;
+      color: #232323;
+      font-weight: 200;
+      width: 100%;
+      color: white;
+      padding: 10px 0;
+      padding-left: 30px; }
+      ul.blog li a:hover {
+        background: white;
+        color: #232323 !important;
+        font-weight: 500; }
+      ul.blog li a:visited {
+        color: #FFCD00; }
+      ul.blog li a .post-meta {
+        font-family: "Work Sans", sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        font-weight: 200;
+        font-weight: 200;
+        margin-left: 10px; }
+
+.goat.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: #FFCD00;
+  height: 100vh; }
+  .goat.flex a {
+    padding: 0;
+    opacity: 1.0;
+    width: 182px;
+    height: 116px;
+    border-bottom: solid 6px #FFCD00;
+    -webkit-transition: border-bottom 0.4s 0s ease;
+    -moz-transition: border-bottom 0.4s 0s ease;
+    -ms-transition: border-bottom 0.4s 0s ease;
+    -o-transition: border-bottom 0.4s 0s ease;
+    transition: border-bottom 0.4s 0s ease; }
+    .goat.flex a:hover {
+      border-bottom: solid 6px #fff; }
+  .goat.flex img {
+    width: 70%; }
 
 /*# sourceMappingURL=main.css.map */

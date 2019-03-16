@@ -18,18 +18,14 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: content-box;
 }
 
-/**
- * Basic styles for links
- */
-a {
-  color: $brand-color;
-  text-decoration: none;
+// Remove weird border from focus elements
+:focus {
+    outline: none;
+}
 
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
+body {
+  background: $yellow;
 }

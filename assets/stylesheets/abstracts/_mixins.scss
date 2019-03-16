@@ -2,6 +2,49 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@mixin flex($j: center, $a: center, $d: row) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+  flex-direction: $d;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+// ---------------------------
+//         Text
+// ---------------------------
+
+@mixin link-size {
+  font-size: 15px; //maxx(2px,10vw)
+}
+
+@mixin meta {
+  font-family: $work-font;
+  font-size: 12px;
+  color: $meta-gray;
+  font-weight: 200;
+}
+
+
+@mixin serif {
+  font-family: $arvo-font;
+}
+
+@mixin sans-serif {
+  font-family: $work-font;
+  color: $charcoal;
+  font-weight: 200;
+}
+
+
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
@@ -31,4 +74,3 @@
     @content;
   }
 }
-

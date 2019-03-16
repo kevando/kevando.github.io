@@ -1,0 +1,45 @@
+
+
+main {
+  background: $black;
+}
+
+// Blog List
+
+ul.blog {
+  margin: 0;
+  padding: 0;
+
+  li {
+    @include flex(flex-start,center,row);
+    list-style: none;
+    border-bottom: solid 1px #ffffff0a;
+
+    a {
+      @include flex(flex-start, center);
+      @include link-size; // TODO
+      @include sans-serif;
+
+      width: 100%;
+      color: white;
+      padding: 10px 0;
+      padding-left: $h-padding;
+
+      &:hover {
+        background: white;
+        color: $charcoal!important;
+        font-weight: 500;
+      }
+      &:visited {
+        color: $yellow;
+      }
+
+      .post-meta {
+        @include meta;
+        font-weight: 200;
+        margin-left: 10px;
+      }
+    }
+
+}
+}

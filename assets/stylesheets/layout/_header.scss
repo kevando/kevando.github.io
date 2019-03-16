@@ -1,3 +1,29 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+
+
+header {
+  @include flex(space-between, inherit);
+  height: 60px;
+  border-bottom: solid 5px $charcoal;
+
+  .left{
+    @include flex(space-between, flex-end);
+    margin-left: $site-padding;
+  }
+  .right {
+    @include flex(center, center);
+  }
+}
+
+nav a {
+  @include serif;
+  margin: 0 20px;
+  color: $charcoal
+}
+
+.logo {
+  width: 50px;
+  height: 33px;
+  img {
+    width: 75%;
+  }
+}
