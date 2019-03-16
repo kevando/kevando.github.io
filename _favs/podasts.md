@@ -2,8 +2,9 @@
 title: Podcasts
 layout: default
 class: podcasts
-categories:
-  - favs
+shows:
+  - Revisionist History
+  - i4h
+  - 99%
+  - serial
 ---
-
-podcasts baby

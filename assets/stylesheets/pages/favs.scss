@@ -52,5 +52,32 @@ body.favs {
     }
 
   }
+}
 
+article {
+  @include flex;
+  width: 100%;
+  margin-top: 50px;
+
+  section {
+    @include flex(center,center,column);
+    background: white;
+    width: 600px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 4px 15px 1px #69696952;
+
+    h2 {
+      font-family: "Londrina Shadow", cursive;
+      color: $black;
+      font-size: 50px;
+      min-width: 300px;
+    }
+    li {
+      @include sans-serif;
+      list-style: none;
+      font-size: 20px;
+      line-height: 1.3em;
+    }
+  }
 }

@@ -562,6 +562,36 @@ body.favs {
       background: #0a0a0a;
       color: white; }
 
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 50px; }
+  article section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    width: 600px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 4px 15px 1px #69696952; }
+    article section h2 {
+      font-family: "Londrina Shadow", cursive;
+      color: #0a0a0a;
+      font-size: 50px;
+      min-width: 300px; }
+    article section li {
+      font-family: "Work Sans", sans-serif;
+      color: #232323;
+      font-weight: 200;
+      list-style: none;
+      font-size: 20px;
+      line-height: 1.3em; }
+
 .goat.flex {
   display: flex;
   justify-content: center;

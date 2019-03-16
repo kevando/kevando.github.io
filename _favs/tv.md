@@ -2,8 +2,11 @@
 title: Podcasts
 layout: default
 class: tv
-categories:
-  - favs
+shows:
+  - simpsons
+  - seinfeld
+  - south park
+  - easy
+  - OA
+  -
 ---
-
-podcasts baby

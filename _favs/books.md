@@ -1,9 +1,10 @@
 ---
-title: Podcasts
+title: Books
 layout: default
 class: books
-categories:
-  - favs
+books:
+  - Sapiens
+  - A New earth
+  - start w why
+  - masters of doom
 ---
-
-podcasts baby
