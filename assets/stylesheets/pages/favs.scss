@@ -10,9 +10,47 @@ body.favs {
   }
 }
 
-h2 {
-  font-family: $shadow-font;
-  color: white;
-  size: 50px;
+.fav.categories {
+  @include flex(stretch,center);
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: calc(100vh - 60px); // $nav-height isnt working
+  a {
+    @include flex(center,center);
+    flex: 1;
+    font-family: "Londrina Shadow", cursive;
+    color: white;
+    font-size: 50px;
+    min-width: 300px;
+    flex-grow: 1;
+    overflow: auto;
+
+
+
+    &.movies {
+      background: $blue;
+    }
+    &.podcasts {
+      background: $purple;
+    }
+    &.albums {
+      background: $red;
+    }
+    &.comics {
+      background: $orange;
+    }
+    &.books {
+      background: $blue;
+    }
+    &.tv {
+      background: $yellow;
+    }
+    &:hover {
+      background: $black;
+      color: white;
+    }
+
+  }
 
 }

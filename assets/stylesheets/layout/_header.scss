@@ -2,7 +2,7 @@
 
 header {
   @include flex(space-between, inherit);
-  height: 60px;
+  height: $nav-height;
   border-bottom: solid 5px $charcoal;
 
   .left{

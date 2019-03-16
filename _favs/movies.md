@@ -1,6 +1,7 @@
 ---
-layout: movies
-title:  Movies
+title: Movies
+layout: default
+class: movies
 categories:
   - favs
   - movies

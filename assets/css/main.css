@@ -525,10 +525,42 @@ body.favs {
   body.favs header {
     border-bottom: solid 5px white; }
 
-h2 {
-  font-family: "Londrina Shadow", cursive;
-  color: white;
-  size: 50px; }
+.fav.categories {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: calc(100vh - 60px); }
+  .fav.categories a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+    font-family: "Londrina Shadow", cursive;
+    color: white;
+    font-size: 50px;
+    min-width: 300px;
+    flex-grow: 1;
+    overflow: auto; }
+    .fav.categories a.movies {
+      background: #0051B4; }
+    .fav.categories a.podcasts {
+      background: #7C0062; }
+    .fav.categories a.albums {
+      background: #FF003D; }
+    .fav.categories a.comics {
+      background: #FF7000; }
+    .fav.categories a.books {
+      background: #0051B4; }
+    .fav.categories a.tv {
+      background: #FFCD00; }
+    .fav.categories a:hover {
+      background: #0a0a0a;
+      color: white; }
 
 .goat.flex {
   display: flex;

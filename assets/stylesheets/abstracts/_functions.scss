@@ -1,3 +1,10 @@
+
+
+
+@function subtract($n1, $n2){
+  @return $n1 - $n2;
+}
+
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
@@ -28,11 +35,3 @@
 @function font($path, $base: $base-url) {
   @return asset($base, 'fonts/', $path);
 }
-
-// 
-// @function maxx($numbers...) {
-//
-//   $max-value: max($numbers...);
-//
-//   @return 20px;
-// }
