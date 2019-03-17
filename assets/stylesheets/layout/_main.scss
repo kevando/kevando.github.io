@@ -1,47 +1,33 @@
-
-
+//
+//
 main {
-  header {
-  @include flex(center,center, column);
-  // height: $nav-height;
-  border-bottom: solid 5px $charcoal;
-
-  h1 {
-    margin: 0;
-  }
-  h2 {
-    font-family: "Londrina Shadow", cursive;
-    color: $black;
-    font-size: 50px;
-    min-width: 300px;
-    margin: 0;
-  }
-
+  margin-left: $site-padding;
+  margin-right: $site-padding;
 }
-
-article.post {
-  @include flex(center,center,column);
-  width: 100%;
-  margin-top: 50px;
-
-  section {
-    @include flex(flex-start,center,column);
-    background: white;
-    width: 700px;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    box-shadow: 3px 4px 15px 1px #69696952;
-    img {
-      max-width: 100%;
-    }
-
-    li {
-      @include sans-serif;
-      list-style: none;
-      font-size: 20px;
-      line-height: 1.3em;
-    }
-  }
-}
-
-}
+//
+// article.post {
+//   @include flex(center,center,column);
+//   width: 100%;
+//   margin-top: 50px;
+//
+//   section {
+//     @include flex(flex-start,center,column);
+//     background: white;
+//     width: 700px;
+//     border: solid 1px #ccc;
+//     border-radius: 5px;
+//     box-shadow: 3px 4px 15px 1px #69696952;
+//     img {
+//       max-width: 100%;
+//     }
+//
+//     li {
+//       @include sans-serif;
+//       list-style: none;
+//       font-size: 20px;
+//       line-height: 1.3em;
+//     }
+//   }
+// }
+//
+// }

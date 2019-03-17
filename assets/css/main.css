@@ -426,13 +426,33 @@ html {
 body {
   background: #FFCD00; }
 
-/**
- * Basic styles for links
- */
+h2, h3, h4, h5, p, ul {
+  margin: 0;
+  padding: 0; }
+
+h4 {
+  font-weight: 300; }
+
 a {
-  text-decoration: none; }
-  a:hover, a:active, a:focus {
-    text-decoration: none; }
+  font-family: "Work Sans", sans-serif;
+  color: #232323;
+  font-weight: 200;
+  font-weight: 500;
+  text-decoration: none;
+  color: #232323; }
+  a:hover {
+    font-weight: 500; }
+
+li a:visited {
+  color: #ff1043; }
+
+.post-meta {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  color: #292929;
+  font-weight: 200;
+  font-weight: 200;
+  margin-left: 10px; }
 
 header.navigation {
   display: flex;
@@ -465,46 +485,9 @@ nav a {
   .logo img {
     width: 75%; }
 
-main header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-bottom: solid 5px #232323; }
-  main header h1 {
-    margin: 0; }
-  main header h2 {
-    font-family: "Londrina Shadow", cursive;
-    color: #0a0a0a;
-    font-size: 50px;
-    min-width: 300px;
-    margin: 0; }
-main article.post {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 50px; }
-  main article.post section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    background: white;
-    width: 700px;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    box-shadow: 3px 4px 15px 1px #69696952; }
-    main article.post section img {
-      max-width: 100%; }
-    main article.post section li {
-      font-family: "Work Sans", sans-serif;
-      color: #232323;
-      font-weight: 200;
-      list-style: none;
-      font-size: 20px;
-      line-height: 1.3em; }
+main {
+  margin-left: 30px;
+  margin-right: 30px; }
 
 .post-long header {
   padding: 20px 0 20px 0; }
@@ -546,6 +529,30 @@ main article.post {
       font-size: 19px;
       line-height: 28px; }
 
+footer.page {
+  background: #1B24FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  footer.page .footer-col-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100px; }
+
+.extend-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 300px;
+  position: fixed;
+  bottom: -300px;
+  width: 100%;
+  background: #1B24FF; }
+
 .goat.big {
   width: 100vw; }
 
@@ -564,40 +571,21 @@ main article.post {
     position: absolute;
     width: 2em; }
 
-ul.blog {
-  margin: 0;
-  padding: 0; }
-  ul.blog li {
+.blog ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  border-bottom: solid 1px #ffffff0a; }
+  .blog ul li a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    background: #0a0a0a;
-    list-style: none;
-    border-bottom: solid 1px #ffffff0a; }
-    ul.blog li a {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: row;
-      font-family: "Work Sans", sans-serif;
-      color: #232323;
-      font-weight: 200;
-      width: 100%;
-      color: white;
-      padding: 10px 0;
-      padding-left: 30px; }
-      ul.blog li a:hover {
-        font-weight: 500; }
-      ul.blog li a:visited {
-        color: #FFCD00; }
-      ul.blog li a .post-meta {
-        font-family: "Work Sans", sans-serif;
-        font-size: 12px;
-        color: #bbbbbb;
-        font-weight: 200;
-        font-weight: 200;
-        margin-left: 10px; }
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 30px; }
 
 @media screen and (max-width: 500px) {
   ul.blog a {
@@ -632,7 +620,7 @@ body.favs {
     flex-grow: 1;
     overflow: auto; }
     .fav.categories a.movies {
-      background: #0051B4; }
+      background: #1B24FF; }
     .fav.categories a.podcasts {
       background: #7C0062; }
     .fav.categories a.albums {
@@ -640,7 +628,7 @@ body.favs {
     .fav.categories a.comics {
       background: #FF7000; }
     .fav.categories a.books {
-      background: #0051B4; }
+      background: #1B24FF; }
     .fav.categories a.tv {
       background: #FFCD00; }
     .fav.categories a:hover {
@@ -653,7 +641,8 @@ article.fav {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  margin-top: 50px; }
+  margin-top: 50px;
+  min-height: calc(100vh - 214px); }
   article.fav section {
     display: flex;
     justify-content: center;

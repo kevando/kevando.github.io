@@ -58,6 +58,7 @@ article.fav {
   @include flex;
   width: 100%;
   margin-top: 50px;
+  min-height: calc(100vh - 214px);
 
   section {
     @include flex(center,center,column);

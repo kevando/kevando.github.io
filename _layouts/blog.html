@@ -2,10 +2,16 @@
 layout: default
 ---
 
-  {{ content }}
+<article class='blog'>
 
-  <ul class="blog">
+  <header>
+    {{ content }}
+  </header>
+
+  <ul class="posts">
     {%- for post in site.categories[page.category] -%}
       {%- include li_post.html -%}
     {%- endfor -%}
   </ul>
+
+</article>
