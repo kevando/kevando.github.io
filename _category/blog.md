@@ -1,6 +1,9 @@
 ---
 title: Life is thrilling in every direction, but you cant have it all
 category: blog
-permalink: "/blog"
-layout: category
+permalink: /blog
+layout: blog
+class: blog
 ---
+
+<h1>Welcome to Kevando's Blog</h1>

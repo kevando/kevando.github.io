@@ -1,13 +1,13 @@
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
 <li>
-  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-
-  <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-  <h3>
-    <a href="{{ post.url | relative_url }}">
-      <span>{{ post.title | escape }}</span>
-    </a>
-  </h3>
-
-    <!-- <h6>{{ post.summary | escape }}</h6> -->
+  <a href="{{ post.url | relative_url }}?new=yes">
+    <span>{{ post.title | escape }}</span>
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+  </a>
 </li>
+
+
+
+
+<!-- <h6>{{ post.summary | escape }}</h6> -->

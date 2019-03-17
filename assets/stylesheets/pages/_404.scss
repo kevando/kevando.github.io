@@ -1,0 +1,16 @@
+
+.wrapper {
+  @include flex(center,center);
+  height: 100vh;
+
+  h1 {
+    @include serif;
+    color: white;
+    z-index: 1;
+    font-size: 8em;
+  }
+  img.goat {
+    position: absolute;
+    width: 2em;
+  }
+}

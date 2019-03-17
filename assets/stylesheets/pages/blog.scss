@@ -1,0 +1,44 @@
+.blog {
+
+  header {
+
+  }
+  ul {
+
+
+  li {
+    @include flex(flex-start,center,row);
+
+    list-style: none;
+    border-bottom: solid 1px #ffffff0a;
+
+    a {
+      @include flex(flex-start, center);
+      // @include link-size; // TODO
+
+
+      width: 100%;
+      padding: 10px 0;
+      padding-left: $h-padding;
+
+
+
+
+    }
+
+}
+}
+
+}
+
+// Small screens
+@media screen and (max-width: 500px){
+
+ul.blog a {
+  font-size: calc(2vh + 1.5vw);
+  padding: 5px 0;
+  .post-meta {
+    display: none;
+  }
+  }
+}

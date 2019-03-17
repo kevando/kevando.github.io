@@ -1,0 +1,101 @@
+
+
+// ---------------------------
+//         Fonts
+// ---------------------------
+
+$arvo-font:   'Arvo', serif;
+$work-font:   'Work Sans', sans-serif;
+$shadow-font: 'Londrina Shadow', cursive;
+
+// ---------------------------
+//         Colors
+// ---------------------------
+
+$yellow: #FFCD00;
+$dark-blue: #3F51B4;
+$purple: #7C0062;
+$red: #FF003D;
+$blue: #1B24FF;
+$green: #00CBD7;
+$orange: #FF7000;
+
+
+// Darks
+$black: #0a0a0a;
+$charcoal: #232323;
+$meta-gray: #292929;;
+$border-color: #dddddd;
+
+
+// ---------------------------
+//         Padding
+// ---------------------------
+
+$site-padding: 30px;
+$h-padding: 30px;
+$nav-height: 60px;
+
+
+// ------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+
+$text-color: $charcoal;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
