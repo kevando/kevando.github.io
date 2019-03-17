@@ -1,9 +1,8 @@
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# ----------------------
+#    Site settings
+# ----------------------
+
 # title: Kevando
 description: A repository of highlights.
 # baseurl: "" # the subpath of your site, e.g. /blog
@@ -36,24 +35,24 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+# ----------------------
+#      SEO Shit
+# ----------------------
 
 google_analytics: UA-16078011-4
 
 
+# ----------------------
+#    Groups of Shit
+# ----------------------
+
 collections:
   category:
     output: true
+  favs:
+    output: true
+    permalink: /<3/:name
 
 
 

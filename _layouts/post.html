@@ -1,22 +1,27 @@
 ---
 layout: default
 ---
+
+
+<header class="post-header">
+  <!-- DATE -->
+  <div class="post-date">
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+    </p>
+  </div>
+  <!-- TITLE -->
+  <h1 itemprop="name headline">
+    <span class="bumble">{{ page.title | escape }}</span>
+  </h1>
+</header>
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <!-- DATE -->
-    <div class="post-date">
-      <p class="post-meta">
-        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
-          {{ page.date | date: date_format }}
-        </time>
-      </p>
-    </div>
-    <!-- TITLE -->
-    <h1 itemprop="name headline">
-      <span class="bumble">{{ page.title | escape }}</span>
-    </h1>
-  </header>
+  <section>
+
 
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -32,5 +37,5 @@ layout: default
           {% endfor %}
         </span>
   </div> -->
-
+</section>
 </article>

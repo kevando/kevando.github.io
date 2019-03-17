@@ -1,0 +1,23 @@
+
+
+footer.page {
+  background: $blue;
+  @include flex();
+  .footer-col-wrapper {
+    @include flex();
+    height: 100px;
+
+
+
+  }
+
+}
+
+.extend-color {
+  @include flex();
+  height: 300px;
+  position: fixed;
+  bottom: -300px;
+  width: 100%;
+  background: $blue;
+}

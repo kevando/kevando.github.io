@@ -1,0 +1,41 @@
+
+// yuck
+h2,h3,h4,h5,p,ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+h4 {
+  font-weight: 300;
+}
+
+a {
+  @include sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: $charcoal;
+  &:hover {
+    // background: white;
+    // color: $charcoal!important;
+    font-weight: 500;
+  }
+
+
+}
+
+
+li {
+  a {
+    &:visited {
+      color: #ff1043;
+    }
+  }
+}
+
+
+.post-meta {
+  @include meta;
+  font-weight: 200;
+  margin-left: 10px;
+}

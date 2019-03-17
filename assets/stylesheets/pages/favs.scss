@@ -1,0 +1,84 @@
+
+
+body.favs {
+  background: $dark-blue;
+
+
+  header {
+    // height: 60px;
+    border-bottom: solid 5px white;
+  }
+}
+
+.fav.categories {
+  @include flex(stretch,center);
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: calc(100vh - 60px); // $nav-height isnt working
+  a {
+    @include flex(center,center);
+    flex: 1;
+    font-family: "Londrina Shadow", cursive;
+    color: white;
+    font-size: 50px;
+    min-width: 300px;
+    flex-grow: 1;
+    overflow: auto;
+
+
+
+    &.movies {
+      background: $blue;
+    }
+    &.podcasts {
+      background: $purple;
+    }
+    &.albums {
+      background: $red;
+    }
+    &.comics {
+      background: $orange;
+    }
+    &.books {
+      background: $blue;
+    }
+    &.tv {
+      background: $yellow;
+    }
+    &:hover {
+      background: $black;
+      color: white;
+    }
+
+  }
+}
+
+article.fav {
+  @include flex;
+  width: 100%;
+  margin-top: 50px;
+  min-height: calc(100vh - 214px);
+
+  section {
+    @include flex(center,center,column);
+    background: white;
+    width: 600px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 4px 15px 1px #69696952;
+
+    h2 {
+      font-family: "Londrina Shadow", cursive;
+      color: $black;
+      font-size: 50px;
+      min-width: 300px;
+    }
+    li {
+      @include sans-serif;
+      list-style: none;
+      font-size: 20px;
+      line-height: 1.3em;
+    }
+  }
+}
