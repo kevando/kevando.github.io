@@ -2,7 +2,7 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <p class="post-meta">
+        <p>
           {% for tag in page.tags %}
           {% capture tag_name %}{{ tag }}{% endcapture %}
           {% if site.tag_pages contains tag_name %}
@@ -17,12 +17,6 @@
         </p>
         <!-- <h1 class='funky'><a class="u-email" href="/me">@</a></h1> -->
       </div>
-
-      <div class="footer-col footer-col-2">
-
-
-      </div>
-
 
     </div>
 

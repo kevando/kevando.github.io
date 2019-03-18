@@ -1,19 +1,16 @@
-
-
-.goat.flex {
+.goat.home {
   @include flex();
   background: $yellow;
   height: 100vh;
   a {
-    padding: 0;
-    opacity: 1.0;
+    // h,w are some what arbitrary
     width: 182px;
     height: 116px;
-    border-bottom: solid 6px $yellow;
-    @include transition(border-bottom .4s 0s ease);
-    &:hover {
-      border-bottom: solid 6px #fff;
-    }
+    border-bottom: solid 6px #fff;
+    // @include transition(border-bottom .4s 0s ease);
+    // &:hover {
+    //   border-bottom: solid 6px #fff;
+    // }
   }
   img {
     width: 70%;

@@ -451,8 +451,7 @@ li a:visited {
   font-size: 12px;
   color: #292929;
   font-weight: 200;
-  font-weight: 200;
-  margin-left: 10px; }
+  font-weight: 200; }
 
 header.navigation {
   display: flex;
@@ -466,13 +465,13 @@ header.navigation {
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: row;
-    margin-left: 30px; }
+    margin-left: 20px; }
   header.navigation .right {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-right: 30px; }
+    margin-right: 20px; }
 
 nav a {
   font-family: "Arvo", serif;
@@ -485,43 +484,45 @@ nav a {
   .logo img {
     width: 75%; }
 
-main {
-  margin-left: 30px;
-  margin-right: 30px; }
+main header {
+  margin-left: 20px;
+  margin-right: 20px; }
+@media screen and (max-width: 500px) {
+  main {
+    margin-left: 0;
+    margin-right: 0; } }
 
-.post-long header {
+.post header {
   padding: 20px 0 20px 0; }
-  .post-long header h1 {
-    font-size: 2.1em; }
-  .post-long header p.post-meta {
+  .post header h1 {
+    font-size: 2.1em;
+    margin-bottom: 5px; }
+  .post header p.post-meta {
     margin: 0 0 10px 0;
     font-size: 0.9em; }
-.post-long .preview-image {
-  text-align: center;
-  margin-top: 40px; }
-.post-long article {
+.post article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   margin-top: 50px; }
-  .post-long article section {
+  .post article section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 20px 20px;
     background: white;
-    width: 700px;
+    max-width: 700px;
     border: solid 1px #ccc;
     border-radius: 5px;
     box-shadow: 3px 4px 15px 1px #69696952; }
-    .post-long article section img {
+    .post article section img {
       max-width: 100%; }
-    .post-long article section h1, .post-long article section h2 {
+    .post article section h1, .post article section h2 {
       font-family: "Arvo", serif; }
-    .post-long article section p {
+    .post article section p {
       font-family: "Work Sans", sans-serif;
       color: #232323;
       font-weight: 200;
@@ -540,7 +541,9 @@ footer.page {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    height: 100px; }
+    height: 50px; }
+  footer.page p {
+    color: white; }
 
 .extend-color {
   display: flex;
@@ -571,27 +574,26 @@ footer.page {
     position: absolute;
     width: 2em; }
 
-.blog ul li {
+.blog li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   list-style: none;
   border-bottom: solid 1px #ffffff0a; }
-  .blog ul li a {
+  .blog li a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    padding: 10px 0;
-    padding-left: 30px; }
+    padding: 10px 0; }
 
 @media screen and (max-width: 500px) {
-  ul.blog a {
+  .blog li a {
     font-size: calc(2vh + 1.5vw);
-    padding: 5px 0; }
-    ul.blog a .post-meta {
+    padding: 7px 0; }
+    .blog li a .post-meta {
       display: none; } }
 body.favs {
   background: #3F51B4; }
@@ -666,27 +668,18 @@ article.fav {
       font-size: 20px;
       line-height: 1.3em; }
 
-.goat.flex {
+.goat.home {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   background: #FFCD00;
   height: 100vh; }
-  .goat.flex a {
-    padding: 0;
-    opacity: 1.0;
+  .goat.home a {
     width: 182px;
     height: 116px;
-    border-bottom: solid 6px #FFCD00;
-    -webkit-transition: border-bottom 0.4s 0s ease;
-    -moz-transition: border-bottom 0.4s 0s ease;
-    -ms-transition: border-bottom 0.4s 0s ease;
-    -o-transition: border-bottom 0.4s 0s ease;
-    transition: border-bottom 0.4s 0s ease; }
-    .goat.flex a:hover {
-      border-bottom: solid 6px #fff; }
-  .goat.flex img {
+    border-bottom: solid 6px #fff; }
+  .goat.home img {
     width: 70%; }
 
 /*# sourceMappingURL=main.css.map */
