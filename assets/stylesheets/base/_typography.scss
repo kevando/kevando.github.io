@@ -1,13 +1,26 @@
 
-// yuck
 h2,h3,h4,h5,p,ul {
   margin: 0;
   padding: 0;
 }
 
+h1 {
+  font-family: $work-font;
+  color: $charcoal;
+  font-weight: 600;
+}
 
 h4 {
   font-weight: 300;
+}
+
+p {
+  font-family: $text-font;
+  font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42105;
+    color: #000000bf;
 }
 
 a {
@@ -26,7 +39,12 @@ a {
 
 
 li {
+  margin: 10px 0 10px 16px;
+    list-style: none;
+    font-size: 18px;
   a {
+    border-bottom: solid 4px white;
+    line-height: 1.5em;
     &:visited {
       color: #ff1043;
     }
@@ -37,5 +55,4 @@ li {
 .post-meta {
   @include meta;
   font-weight: 200;
-  margin-left: 10px;
 }

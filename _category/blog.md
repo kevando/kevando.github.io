@@ -6,4 +6,3 @@ layout: blog
 class: blog
 ---
 
-<h1>Welcome to Kevando's Blog</h1>

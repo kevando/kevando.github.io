@@ -2,34 +2,35 @@
 layout: default
 ---
 
+<div class="post">
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <section itemprop="articleBody">
+      <header>
+        <!-- TITLE -->
+        <h1 itemprop="name headline">
+          <span class="bumble">{{ page.title | escape }}</span>
+        </h1>
 
-<header class="post-header">
-  <!-- DATE -->
-  <div class="post-date">
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-    </p>
-  </div>
-  <!-- TITLE -->
-  <h1 itemprop="name headline">
-    <span class="bumble">{{ page.title | escape }}</span>
-  </h1>
-</header>
+        <!-- DATE -->
+        <p class="post-meta">
+          <time
+            class="dt-published"
+            datetime="{{ page.date | date_to_xmlschema }}"
+            itemprop="datePublished"
+          >
+            {%- assign date_format = site.minima.date_format | default: "%B %-d,
+            %Y" -%}
+            {{ page.date | date: date_format }}
+          </time>
+        </p>
+      </header>
 
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <section>
+      {{ content }}
+    </section>
+  </article>
+</div>
 
-
-
-  <div class="post-content e-content" itemprop="articleBody">
-
-    {{ content }}
-  </div>
-
-  <!-- <div class="post-footer">
+<!-- <div class="post-footer">
       <span>
           {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
@@ -37,5 +38,3 @@ layout: default
           {% endfor %}
         </span>
   </div> -->
-</section>
-</article>
