@@ -3,32 +3,34 @@ layout: default
 ---
 
 <div class="post">
-<header>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <section itemprop="articleBody">
+      <header>
+        <!-- TITLE -->
+        <h1 itemprop="name headline">
+          <span class="bumble">{{ page.title | escape }}</span>
+        </h1>
 
-  <!-- TITLE -->
-  <h1 itemprop="name headline">
-    <span class="bumble">{{ page.title | escape }}</span>
-  </h1>
+        <!-- DATE -->
+        <p class="post-meta">
+          <time
+            class="dt-published"
+            datetime="{{ page.date | date_to_xmlschema }}"
+            itemprop="datePublished"
+          >
+            {%- assign date_format = site.minima.date_format | default: "%B %-d,
+            %Y" -%}
+            {{ page.date | date: date_format }}
+          </time>
+        </p>
+      </header>
 
-  <!-- DATE -->
-  <p class="post-meta">
-    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
-      {{ page.date | date: date_format }}
-    </time>
-  </p>
-</header>
-
-<article itemscope itemtype="http://schema.org/BlogPosting">
-  <section itemprop="articleBody">
-    {{ content }}
-  </section>
-</article>
-
-
+      {{ content }}
+    </section>
+  </article>
 </div>
 
-  <!-- <div class="post-footer">
+<!-- <div class="post-footer">
       <span>
           {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}

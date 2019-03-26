@@ -1,10 +1,7 @@
 //
 //
 main {
-  header {
-    margin-left: $site-padding;
-    margin-right: $site-padding;
-  }
+
 
   // Small screens
   @media screen and (max-width: 500px) {

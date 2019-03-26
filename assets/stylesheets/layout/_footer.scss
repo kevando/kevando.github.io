@@ -1,6 +1,7 @@
 
 
 footer.page {
+  display: none;
   background: $blue;
   @include flex();
   .footer-col-wrapper {
@@ -13,6 +14,7 @@ footer.page {
 }
 
 .extend-color {
+  display: none;
   @include flex();
   height: 300px;
   position: fixed;
