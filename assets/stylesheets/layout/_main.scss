@@ -1,39 +1,14 @@
-//
-//
 main {
+  min-height: 80vh;
 
+  // Category Pages
+  .category {
+    padding: $site-padding;
+  }
 
   // Small screens
   @media screen and (max-width: 500px) {
     margin-left: 0;
     margin-right: 0;
   }
-
 }
-//
-// article.post {
-//   @include flex(center,center,column);
-//   width: 100%;
-//   margin-top: 50px;
-//
-//   section {
-//     @include flex(flex-start,center,column);
-//     background: white;
-//     width: 700px;
-//     border: solid 1px #ccc;
-//     border-radius: 5px;
-//     box-shadow: 3px 4px 15px 1px #69696952;
-//     img {
-//       max-width: 100%;
-//     }
-//
-//     li {
-//       @include sans-serif;
-//       list-style: none;
-//       font-size: 20px;
-//       line-height: 1.3em;
-//     }
-//   }
-// }
-//
-// }

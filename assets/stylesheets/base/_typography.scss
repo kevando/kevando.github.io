@@ -1,5 +1,9 @@
-
-h2,h3,h4,h5,p,ul {
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -8,21 +12,42 @@ h1 {
   font-family: $work-font;
   color: $charcoal;
   font-weight: 600;
+  font-size: 2.5em;
+  margin: 0.67em 0 0 0;
+}
+
+h2 {
+  font-family: $arvo-font;
+  color: $charcoal;
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0.67em 0 0 0;
+}
+
+h3 {
+  font-family: $text-font;
+  color: $charcoal;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0.67em 0 0 0;
 }
 
 h4 {
-  font-weight: 300;
+  font-family: $shadow-font;
+  color: $charcoal;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0.67em 0 0 0;
 }
 
 p {
   font-family: $text-font;
   font-size: 19px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.42105;
-    color: #000000bf;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #000000bf;
 }
-
 
 // Links
 
@@ -31,22 +56,19 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: $charcoal;
-  border-bottom: solid 3px white;
   line-height: 1.5em;
+  border-bottom: solid $link-border-size transparent;
   &:hover {
-    font-weight: 500;
+    border-bottom: solid $link-border-size white;
   }
   &:visited {
     // TODO ---> Do something interesting with this
     // color: #ff1043;
-    // border-bottom: solid 4px red;
+    // border-bottom: solid 10.4em red;
   }
 }
 
-
-
-
 .post-meta {
-  @include meta;
+  font-family: $work-font;
   font-weight: 200;
 }

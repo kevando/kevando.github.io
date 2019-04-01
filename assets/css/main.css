@@ -426,24 +426,49 @@ html {
 body {
   background: #FFCD00; }
 
-h2, h3, h4, h5, p, ul {
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
   margin: 0;
   padding: 0; }
 
 h1 {
   font-family: "Work Sans", sans-serif;
   color: #232323;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0.67em 0 0 0; }
+
+h2 {
+  font-family: "Arvo", serif;
+  color: #232323;
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0.67em 0 0 0; }
+
+h3 {
+  font-family: "Inconsolata", "sans-serif";
+  color: #232323;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0.67em 0 0 0; }
 
 h4 {
-  font-weight: 300; }
+  font-family: "Londrina Shadow", cursive;
+  color: #232323;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0.67em 0 0 0; }
 
 p {
   font-family: "Inconsolata", "sans-serif";
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.42105;
+  line-height: 1.4em;
   color: #000000bf; }
 
 a {
@@ -453,16 +478,13 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: #232323;
-  border-bottom: solid 3px white;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  border-bottom: solid 0.3em transparent; }
   a:hover {
-    font-weight: 500; }
+    border-bottom: solid 0.3em white; }
 
 .post-meta {
   font-family: "Work Sans", sans-serif;
-  font-size: 12px;
-  color: #292929;
-  font-weight: 200;
   font-weight: 200; }
 
 header.navigation {
@@ -489,17 +511,24 @@ header.navigation {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-right: 20px; }
+    margin-right: 20px;
+    padding-top: 0.3em; }
+  header.navigation nav a {
+    font-family: "Arvo", serif;
+    margin: 0 20px;
+    color: #232323; }
+    header.navigation nav a.active {
+      border-bottom-color: white;
+      font-weight: 600; }
 
-nav a {
-  font-family: "Arvo", serif;
-  margin: 0 20px;
-  color: #232323; }
-
-@media screen and (max-width: 500px) {
-  main {
-    margin-left: 0;
-    margin-right: 0; } }
+main {
+  min-height: 80vh; }
+  main .category {
+    padding: 20px; }
+  @media screen and (max-width: 500px) {
+    main {
+      margin-left: 0;
+      margin-right: 0; } }
 
 .post article {
   display: flex;
@@ -526,6 +555,8 @@ nav a {
     .post article section header p.post-meta {
       margin: 0;
       font-size: 0.9em; }
+    .post article section footer {
+      border: solid 2px red; }
     .post article section img {
       max-width: 100%; }
     .post article section p {
@@ -536,7 +567,7 @@ footer.page {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border-top: solid 4px #232323; }
+  border-top: solid 0px #232323; }
   footer.page .footer-col-wrapper {
     display: flex;
     justify-content: center;
@@ -548,6 +579,22 @@ footer.page {
 
 .goat.big {
   width: 100vw; }
+
+.goat.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: #FFCD00;
+  height: 100vh; }
+  .goat.home a {
+    width: 178px;
+    height: 120px;
+    border-bottom: solid 6px #fff; }
+    .goat.home a:hover {
+      border-bottom: solid 6px red; }
+  .goat.home img {
+    width: 70%; }
 
 .wrapper {
   display: flex;
@@ -564,10 +611,40 @@ footer.page {
     position: absolute;
     width: 2em; }
 
-li {
-  margin: 10px 0 10px 16px;
-  list-style: none;
-  font-size: 18px; }
+.category {
+  background: yellow; }
+  .category article {
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px; }
+    .category article section {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 40px 20px 40px 20px;
+      background: white;
+      max-width: 700px;
+      border: solid 1px #ccc;
+      border-radius: 5px;
+      box-shadow: 3px 4px 15px 1px #69696952;
+      margin-bottom: 100px; }
+      .category article section header h1 {
+        font-size: 2.1em;
+        margin: 5px 0 30px 0; }
+      .category article section header p.post-meta {
+        margin: 0;
+        font-size: 0.9em; }
+      .category article section footer {
+        border: solid 2px red; }
+      .category article section img {
+        max-width: 100%; }
+      .category article section p {
+        margin-bottom: 40px; }
 
 body.favs {
   background: #3F51B4; }
@@ -641,19 +718,5 @@ article.fav {
       list-style: none;
       font-size: 20px;
       line-height: 1.3em; }
-
-.goat.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background: #FFCD00;
-  height: 100vh; }
-  .goat.home a {
-    width: 182px;
-    height: 116px;
-    border-bottom: solid 6px #fff; }
-  .goat.home img {
-    width: 70%; }
 
 /*# sourceMappingURL=main.css.map */

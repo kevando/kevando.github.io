@@ -1,6 +1,8 @@
 
-.post {
+.category {
+	background: yellow;
     article {
+		background: green;
       @include flex(center,center,column);
       width: 100%;
       margin-top: 50px;

@@ -21,7 +21,7 @@
   </div> -->
 
 
-
+<!-- • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Kevando</span></span> -->
 ```
 
 ### Jekyll Command Line

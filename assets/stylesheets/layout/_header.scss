@@ -19,11 +19,16 @@ header.navigation {
   .right {
     @include flex(center, center);
     margin-right: $site-padding;
+    padding-top: $link-border-size;
   }
-}
 
-nav a {
-  @include serif;
-  margin: 0 20px;
-  color: $charcoal;
+  nav a {
+    @include serif;
+    margin: 0 20px;
+    color: $charcoal;
+    &.active {
+      border-bottom-color: white;
+      font-weight: 600;
+    }
+  }
 }
