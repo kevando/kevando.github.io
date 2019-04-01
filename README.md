@@ -1,5 +1,29 @@
 # Kevando 
 
+### Jekyll Snippets
+
+```html
+
+# Blog page
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+<span class="post-meta">{{ post.date | date: date_format }}</span>
+<h6>{{ post.summary | escape }}</h6>
+
+
+# Post page
+<!-- <div class="post-footer">
+      <span>
+          {% for tag in page.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            <code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;
+          {% endfor %}
+        </span>
+  </div> -->
+
+
+
+```
+
 ### Jekyll Command Line
 
 ```
@@ -13,7 +37,7 @@ jekyll build
 open $(bundle show minima)
 
 # sass
-sass s
+sass stylesheets/main.scss:css/main.css --watch
 ```
 
 

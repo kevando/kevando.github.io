@@ -23,33 +23,27 @@ p {
     color: #000000bf;
 }
 
+
+// Links
+
 a {
   @include sans-serif;
   font-weight: 500;
   text-decoration: none;
   color: $charcoal;
+  border-bottom: solid 3px white;
+  line-height: 1.5em;
   &:hover {
-    // background: white;
-    // color: $charcoal!important;
     font-weight: 500;
   }
-
-
-}
-
-
-li {
-  margin: 10px 0 10px 16px;
-    list-style: none;
-    font-size: 18px;
-  a {
-    border-bottom: solid 4px white;
-    line-height: 1.5em;
-    &:visited {
-      color: #ff1043;
-    }
+  &:visited {
+    // TODO ---> Do something interesting with this
+    // color: #ff1043;
+    // border-bottom: solid 4px red;
   }
 }
+
+
 
 
 .post-meta {

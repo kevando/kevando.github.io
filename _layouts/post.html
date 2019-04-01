@@ -6,11 +6,6 @@ layout: default
   <article itemscope itemtype="http://schema.org/BlogPosting">
     <section itemprop="articleBody">
       <header>
-        <!-- TITLE -->
-        <h1 itemprop="name headline">
-          <span class="bumble">{{ page.title | escape }}</span>
-        </h1>
-
         <!-- DATE -->
         <p class="post-meta">
           <time
@@ -23,18 +18,13 @@ layout: default
             {{ page.date | date: date_format }}
           </time>
         </p>
+        <!-- TITLE -->
+        <h1 itemprop="name headline">
+          <span class="bumble">{{ page.title | escape }}</span>
+        </h1>
       </header>
 
       {{ content }}
     </section>
   </article>
 </div>
-
-<!-- <div class="post-footer">
-      <span>
-          {% for tag in page.tags %}
-            {% capture tag_name %}{{ tag }}{% endcapture %}
-            <code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;
-          {% endfor %}
-        </span>
-  </div> -->

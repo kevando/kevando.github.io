@@ -1,24 +1,12 @@
-
-
 footer.page {
-  display: none;
-  background: $blue;
   @include flex();
+  border-top: solid 4px $charcoal;
   .footer-col-wrapper {
     @include flex();
-    height: 50px;
+    height: 100px;
   }
   p {
-    color: white;
+    color: $charcoal;
+    // margin: 50px 0;
   }
-}
-
-.extend-color {
-  display: none;
-  @include flex();
-  height: 300px;
-  position: fixed;
-  bottom: -300px;
-  width: 100%;
-  background: $blue;
 }

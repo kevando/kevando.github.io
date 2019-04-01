@@ -1,13 +1,5 @@
-{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-
 <li>
-  <a href="{{ post.url | relative_url }}?new=yes">
+  <a href="{{ post.url | relative_url }}">
     <span>{{ post.title | escape }}</span>
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
   </a>
 </li>
-
-
-
-
-<!-- <h6>{{ post.summary | escape }}</h6> -->

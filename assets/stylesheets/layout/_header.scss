@@ -1,11 +1,18 @@
-
-
 header.navigation {
   @include flex(space-between, inherit);
   height: $nav-height;
   border-bottom: solid 5px $charcoal;
 
-  .left{
+  .logo {
+    border-bottom-width: 0px;
+    width: 50px;
+    height: 33px;
+    img {
+      width: 75%;
+    }
+  }
+
+  .left {
     @include flex(space-between, flex-end);
     margin-left: $site-padding;
   }
@@ -18,13 +25,5 @@ header.navigation {
 nav a {
   @include serif;
   margin: 0 20px;
-  color: $charcoal
-}
-
-.logo {
-  width: 50px;
-  height: 33px;
-  img {
-    width: 75%;
-  }
+  color: $charcoal;
 }
