@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-  font-family: $text-font;
+  font-family: $work-font;
   color: $charcoal;
   font-weight: 600;
   font-size: 1.5em;
@@ -52,12 +52,13 @@ p {
 // Links
 
 a {
-  @include sans-serif;
-  font-weight: 500;
+  color: inherit;
   text-decoration: none;
-  color: $charcoal;
-  line-height: 1.5em;
-  border-bottom: solid $link-border-size transparent;
+
+  &.dude {
+    line-height: 1.5em;
+    border-bottom: solid $link-border-size transparent;
+  }
   &:hover {
     border-bottom: solid $link-border-size white;
   }
@@ -66,9 +67,4 @@ a {
     // color: #ff1043;
     // border-bottom: solid 10.4em red;
   }
-}
-
-.post-meta {
-  font-family: $work-font;
-  font-weight: 200;
 }

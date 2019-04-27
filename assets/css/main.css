@@ -450,7 +450,7 @@ h2 {
   margin: 0.67em 0 0 0; }
 
 h3 {
-  font-family: "Inconsolata", "sans-serif";
+  font-family: "Work Sans", sans-serif;
   color: #232323;
   font-weight: 600;
   font-size: 1.5em;
@@ -472,20 +472,13 @@ p {
   color: #000000bf; }
 
 a {
-  font-family: "Work Sans", sans-serif;
-  color: #232323;
-  font-weight: 200;
-  font-weight: 500;
-  text-decoration: none;
-  color: #232323;
-  line-height: 1.5em;
-  border-bottom: solid 0.3em transparent; }
+  color: inherit;
+  text-decoration: none; }
+  a.dude {
+    line-height: 1.5em;
+    border-bottom: solid 0.3em transparent; }
   a:hover {
     border-bottom: solid 0.3em white; }
-
-.post-meta {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 200; }
 
 header.navigation {
   display: flex;
@@ -537,30 +530,34 @@ main {
   flex-direction: column;
   width: 100%;
   margin-top: 50px; }
+  @media screen and (max-width: 500px) {
+    .post article {
+      margin-top: 0; } }
   .post article section {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 20px  0px 20px;
     background: white;
     max-width: 700px;
     border: solid 1px #ccc;
     border-radius: 5px;
     box-shadow: 3px 4px 15px 1px #69696952;
     margin-bottom: 100px; }
+    @media screen and (max-width: 500px) {
+      .post article section {
+        border-radius: 0px; } }
     .post article section header h1 {
-      font-size: 2.1em;
+      font-size: 3.1em;
       margin: 5px 0 30px 0; }
-    .post article section header p.post-meta {
-      margin: 0;
-      font-size: 0.9em; }
-    .post article section footer {
-      border: solid 2px red; }
     .post article section img {
       max-width: 100%; }
     .post article section p {
-      margin-bottom: 40px; }
+      margin-bottom: 30px; }
+    .post article section a {
+      color: #03a9f4;
+      text-decoration: underline; }
 
 footer.page {
   display: flex;
@@ -586,13 +583,13 @@ footer.page {
   align-items: center;
   flex-direction: row;
   background: #FFCD00;
-  height: 100vh; }
+  height: 90vh; }
   .goat.home a {
     width: 178px;
     height: 120px;
     border-bottom: solid 6px #fff; }
     .goat.home a:hover {
-      border-bottom: solid 6px red; }
+      border-bottom: solid 6px #03a9f4; }
   .goat.home img {
     width: 70%; }
 
@@ -611,40 +608,44 @@ footer.page {
     position: absolute;
     width: 2em; }
 
-.category {
-  background: yellow; }
-  .category article {
-    background: green;
+.category article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0px; }
+  .category article section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    width: 100%;
-    margin-top: 50px; }
-    .category article section {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-      padding: 40px 20px 40px 20px;
-      background: white;
-      max-width: 700px;
-      border: solid 1px #ccc;
-      border-radius: 5px;
-      box-shadow: 3px 4px 15px 1px #69696952;
-      margin-bottom: 100px; }
+    padding: 30px 20px 30px 20px;
+    background: white;
+    max-width: 700px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 4px 15px 1px #69696952;
+    margin-bottom: 40px;
+    width: 50vw;
+    min-width: 350px; }
+    .category article section header {
+      margin-bottom: 30px; }
       .category article section header h1 {
         font-size: 2.1em;
-        margin: 5px 0 30px 0; }
-      .category article section header p.post-meta {
-        margin: 0;
-        font-size: 0.9em; }
-      .category article section footer {
-        border: solid 2px red; }
-      .category article section img {
-        max-width: 100%; }
-      .category article section p {
-        margin-bottom: 40px; }
+        margin: 5px 0 0px 0; }
+      .category article section header p.date {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 200;
+        font-size: 13px;
+        color: #828282; }
+    .category article section summary p {
+      font-size: 16px;
+      font-weight: 100;
+      color: #656565;
+      line-height: 1.4em; }
+    .category article section img {
+      max-width: 100%; }
 
 body.favs {
   background: #3F51B4; }
@@ -673,7 +674,7 @@ body.favs {
     flex-grow: 1;
     overflow: auto; }
     .fav.categories a.movies {
-      background: #1B24FF; }
+      background: #03a9f4; }
     .fav.categories a.podcasts {
       background: #7C0062; }
     .fav.categories a.albums {
@@ -681,7 +682,7 @@ body.favs {
     .fav.categories a.comics {
       background: #FF7000; }
     .fav.categories a.books {
-      background: #1B24FF; }
+      background: #03a9f4; }
     .fav.categories a.tv {
       background: #FFCD00; }
     .fav.categories a:hover {

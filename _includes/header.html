@@ -2,14 +2,14 @@
 
 <header role="banner" class="navigation">
   <div class="left">
-    <a href="/" class="logo">
+    <a href="/blog" class="logo">
       <img src="/assets/images/{{ include.logo | default: 'goat.svg' }}" />
     </a>
   </div>
   <nav class="right">
     <a class="{% if page.category == 'blog' %}active{% endif %}" href="/blog">Blog</a>
-    <a class="{% if page.category == 'fame' %}active{% endif %}"href="/fame" >Fame</a>
-    <a class="{% if page.category == 'learn' %}active{% endif %}"href="/learn" >Learn</a>
-    <a class="{% if page.category == 'fav' %}active{% endif %}"href="/<3" ><3</a></3>
+    <!-- <a class="{% if page.category == 'fame' %}active{% endif %}"href="/fame" >Fame</a> -->
+    <!-- <a class="{% if page.category == 'learn' %}active{% endif %}"href="/learn" >Learn</a> -->
+    <!-- <a class="{% if page.category == 'fav' %}active{% endif %}"href="/<3" ><3</a></3> -->
   </nav>
 </header>

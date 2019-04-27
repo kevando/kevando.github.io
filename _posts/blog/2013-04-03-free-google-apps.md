@@ -6,6 +6,8 @@ categories: blog
 tags:
   - google
   - help
+summary: For anyone registering a domain, I highly recommend using Google Apps. They offer gmail interface, google docs, google calendar, an awesome dashboard to manage everything, and a great community to help support any issues. They even gave you 50 users before you needed to pay! [...]
+
 ---
 
 For anyone registering a domain, I highly recommend using [Google Apps.](http://www.google.com/enterprise/apps/business/products.html) They offer gmail interface, google docs, google calendar, an awesome dashboard to manage everything, and a great community to help support any issues. They even gave you 50 users before you needed to pay!

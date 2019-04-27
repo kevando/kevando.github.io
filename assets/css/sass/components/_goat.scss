@@ -9,14 +9,14 @@
 .goat.home {
   @include flex();
   background: $yellow;
-  height: 100vh;
+  height: 90vh;;
   a {
     // h,w are some what arbitrary
     width: 178px;
     height: 120px;
     border-bottom: solid 6px #fff;
     &:hover {
-      border-bottom: solid 6px red;
+      border-bottom: solid 6px $blue;
     }
   }
   img {
