@@ -603,10 +603,11 @@ footer.page {
     font-family: "Arvo", serif;
     color: white;
     z-index: 1;
-    font-size: 8em; }
+    font-size: 8em;
+    margin-top: 0px; }
   .wrapper img.goat {
     position: absolute;
-    width: 2em; }
+    width: 1.5em; }
 
 .category article {
   display: flex;
