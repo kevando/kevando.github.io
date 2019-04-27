@@ -1,6 +1,6 @@
 footer.page {
   @include flex();
-  border-top: solid 4px $charcoal;
+  border-top: solid 0px $charcoal;
   .footer-col-wrapper {
     @include flex();
     height: 100px;

@@ -2,29 +2,25 @@
 layout: default
 ---
 
+{%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+
 <div class="post">
   <article itemscope itemtype="http://schema.org/BlogPosting">
     <section itemprop="articleBody">
       <header>
-        <!-- DATE -->
-        <p class="post-meta">
-          <time
-            class="dt-published"
-            datetime="{{ page.date | date_to_xmlschema }}"
-            itemprop="datePublished"
-          >
-            {%- assign date_format = site.minima.date_format | default: "%B %-d,
-            %Y" -%}
-            {{ page.date | date: date_format }}
-          </time>
-        </p>
         <!-- TITLE -->
         <h1 itemprop="name headline">
           <span class="bumble">{{ page.title | escape }}</span>
         </h1>
       </header>
 
+      <!-- CONTENT -->
       {{ content }}
+
+      <!-- FOOTER -->
+      <footer>
+      <p class="post-meta">{{ page.date | date: date_format }}</p>
+      </footer>
     </section>
   </article>
 </div>

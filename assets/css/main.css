@@ -426,44 +426,59 @@ html {
 body {
   background: #FFCD00; }
 
-h2, h3, h4, h5, p, ul {
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
   margin: 0;
   padding: 0; }
 
 h1 {
   font-family: "Work Sans", sans-serif;
   color: #232323;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0.67em 0 0 0; }
+
+h2 {
+  font-family: "Arvo", serif;
+  color: #232323;
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0.67em 0 0 0; }
+
+h3 {
+  font-family: "Work Sans", sans-serif;
+  color: #232323;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0.67em 0 0 0; }
 
 h4 {
-  font-weight: 300; }
+  font-family: "Londrina Shadow", cursive;
+  color: #232323;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0.67em 0 0 0; }
 
 p {
   font-family: "Inconsolata", "sans-serif";
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.42105;
+  line-height: 1.4em;
   color: #000000bf; }
 
 a {
-  font-family: "Work Sans", sans-serif;
-  color: #232323;
-  font-weight: 200;
-  font-weight: 500;
-  text-decoration: none;
-  color: #232323;
-  border-bottom: solid 3px white;
-  line-height: 1.5em; }
+  color: inherit;
+  text-decoration: none; }
+  a.dude {
+    line-height: 1.5em;
+    border-bottom: solid 0.3em transparent; }
   a:hover {
-    font-weight: 500; }
-
-.post-meta {
-  font-family: "Work Sans", sans-serif;
-  font-size: 12px;
-  color: #292929;
-  font-weight: 200;
-  font-weight: 200; }
+    border-bottom: solid 0.3em white; }
 
 header.navigation {
   display: flex;
@@ -489,17 +504,24 @@ header.navigation {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-right: 20px; }
+    margin-right: 20px;
+    padding-top: 0.3em; }
+  header.navigation nav a {
+    font-family: "Arvo", serif;
+    margin: 0 20px;
+    color: #232323; }
+    header.navigation nav a.active {
+      border-bottom-color: white;
+      font-weight: 600; }
 
-nav a {
-  font-family: "Arvo", serif;
-  margin: 0 20px;
-  color: #232323; }
-
-@media screen and (max-width: 500px) {
-  main {
-    margin-left: 0;
-    margin-right: 0; } }
+main {
+  min-height: 80vh; }
+  main .category {
+    padding: 20px; }
+  @media screen and (max-width: 500px) {
+    main {
+      margin-left: 0;
+      margin-right: 0; } }
 
 .post article {
   display: flex;
@@ -508,35 +530,41 @@ nav a {
   flex-direction: column;
   width: 100%;
   margin-top: 50px; }
+  @media screen and (max-width: 500px) {
+    .post article {
+      margin-top: 0; } }
   .post article section {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 20px  0px 20px;
     background: white;
     max-width: 700px;
     border: solid 1px #ccc;
     border-radius: 5px;
     box-shadow: 3px 4px 15px 1px #69696952;
     margin-bottom: 100px; }
+    @media screen and (max-width: 500px) {
+      .post article section {
+        border-radius: 0px; } }
     .post article section header h1 {
-      font-size: 2.1em;
+      font-size: 3.1em;
       margin: 5px 0 30px 0; }
-    .post article section header p.post-meta {
-      margin: 0;
-      font-size: 0.9em; }
     .post article section img {
       max-width: 100%; }
     .post article section p {
-      margin-bottom: 40px; }
+      margin-bottom: 30px; }
+    .post article section a {
+      color: #03a9f4;
+      text-decoration: underline; }
 
 footer.page {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border-top: solid 4px #232323; }
+  border-top: solid 0px #232323; }
   footer.page .footer-col-wrapper {
     display: flex;
     justify-content: center;
@@ -549,6 +577,22 @@ footer.page {
 .goat.big {
   width: 100vw; }
 
+.goat.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: #FFCD00;
+  height: 90vh; }
+  .goat.home a {
+    width: 178px;
+    height: 120px;
+    border-bottom: solid 6px #fff; }
+    .goat.home a:hover {
+      border-bottom: solid 6px #03a9f4; }
+  .goat.home img {
+    width: 70%; }
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -559,15 +603,50 @@ footer.page {
     font-family: "Arvo", serif;
     color: white;
     z-index: 1;
-    font-size: 8em; }
+    font-size: 8em;
+    margin-top: 0px; }
   .wrapper img.goat {
     position: absolute;
-    width: 2em; }
+    width: 1.5em; }
 
-li {
-  margin: 10px 0 10px 16px;
-  list-style: none;
-  font-size: 18px; }
+.category article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0px; }
+  .category article section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 20px 30px 20px;
+    background: white;
+    max-width: 700px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 4px 15px 1px #69696952;
+    margin-bottom: 40px;
+    width: 50vw;
+    min-width: 350px; }
+    .category article section header {
+      margin-bottom: 30px; }
+      .category article section header h1 {
+        font-size: 2.1em;
+        margin: 5px 0 0px 0; }
+      .category article section header p.date {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 200;
+        font-size: 13px;
+        color: #828282; }
+    .category article section summary p {
+      font-size: 16px;
+      font-weight: 100;
+      color: #656565;
+      line-height: 1.4em; }
+    .category article section img {
+      max-width: 100%; }
 
 body.favs {
   background: #3F51B4; }
@@ -596,7 +675,7 @@ body.favs {
     flex-grow: 1;
     overflow: auto; }
     .fav.categories a.movies {
-      background: #1B24FF; }
+      background: #03a9f4; }
     .fav.categories a.podcasts {
       background: #7C0062; }
     .fav.categories a.albums {
@@ -604,7 +683,7 @@ body.favs {
     .fav.categories a.comics {
       background: #FF7000; }
     .fav.categories a.books {
-      background: #1B24FF; }
+      background: #03a9f4; }
     .fav.categories a.tv {
       background: #FFCD00; }
     .fav.categories a:hover {
@@ -641,19 +720,5 @@ article.fav {
       list-style: none;
       font-size: 20px;
       line-height: 1.3em; }
-
-.goat.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background: #FFCD00;
-  height: 100vh; }
-  .goat.home a {
-    width: 182px;
-    height: 116px;
-    border-bottom: solid 6px #fff; }
-  .goat.home img {
-    width: 70%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,13 +1,15 @@
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
 <header role="banner" class="navigation">
   <div class="left">
-    <a href="/" class="logo">
+    <a href="/blog" class="logo">
       <img src="/assets/images/{{ include.logo | default: 'goat.svg' }}" />
     </a>
   </div>
   <nav class="right">
-    {% if page.class != 'blog' %}
-    <a href="/blog">Blog</a>
-    {% endif %}
-    <!-- <a href="/<3" ><3</a> -->
+    <a class="{% if page.category == 'blog' %}active{% endif %}" href="/blog">Blog</a>
+    <!-- <a class="{% if page.category == 'fame' %}active{% endif %}"href="/fame" >Fame</a> -->
+    <!-- <a class="{% if page.category == 'learn' %}active{% endif %}"href="/learn" >Learn</a> -->
+    <!-- <a class="{% if page.category == 'fav' %}active{% endif %}"href="/<3" ><3</a></3> -->
   </nav>
 </header>

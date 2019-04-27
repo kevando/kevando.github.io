@@ -1,28 +1,18 @@
-<footer class="page {{page.layout}}" >
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <p>
-          {% for tag in page.tags %}
-          {% capture tag_name %}{{ tag }}{% endcapture %}
-          {% if site.tag_pages contains tag_name %}
-          <a href="/{{ tag_name }}">
-            <span>#{{ tag_name }}</span>
-          </a>
-          {% else %}
+<!-- <footer class="page {{ page.layout }}">
+  <div class="footer-col-wrapper">
+    <div class="footer-col footer-col-1">
+      <p>
+        {% for tag in page.tags %} {% capture tag_name %}{{ tag }}{% endcapture
+        %} {% if site.tag_pages contains tag_name %}
+        <a href="/{{ tag_name }}">
           <span>#{{ tag_name }}</span>
-          {% endif %}
-
-          {% endfor %}
-        </p>
-        <!-- <h1 class='funky'><a class="u-email" href="/me">@</a></h1> -->
-      </div>
-
+        </a>
+        {% else %}
+        <span>#{{ tag_name }}</span>
+        {% endif %} {% endfor %}
+      </p>
     </div>
-
-
-
+  </div>
 </footer>
 
-
-<!-- • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Kevando</span></span> -->
+ -->
