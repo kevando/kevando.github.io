@@ -14,3 +14,5 @@ wip/*
 _posts/_drafts/*
 
 *.css.map
+
+*.code-workspace

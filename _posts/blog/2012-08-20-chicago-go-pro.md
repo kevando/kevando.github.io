@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Go Pro Timelapse
-summary: A look at the bike path.
 date: 2012-08-20
 category: blog
 vimeo: 47845681

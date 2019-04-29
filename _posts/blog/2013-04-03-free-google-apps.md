@@ -2,7 +2,7 @@
 layout: post
 title:  How to Get Google Apps For Free (Single User)
 date: 2013-04-03
-categories: blog
+category: blog
 tags:
   - google
   - help

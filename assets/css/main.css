@@ -541,6 +541,7 @@ main {
     padding: 40px 20px  0px 20px;
     background: white;
     max-width: 700px;
+    min-width: 700px;
     border: solid 1px #ccc;
     border-radius: 5px;
     box-shadow: 3px 4px 15px 1px #69696952;
@@ -588,8 +589,6 @@ footer.page {
     width: 178px;
     height: 120px;
     border-bottom: solid 6px #fff; }
-    .goat.home a:hover {
-      border-bottom: solid 6px #03a9f4; }
   .goat.home img {
     width: 70%; }
 

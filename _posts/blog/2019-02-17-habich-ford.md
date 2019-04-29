@@ -3,6 +3,7 @@ title:  Habich Ford
 layout: post
 date: 2019-02-17
 image: /assets/images/habich.jpg
+summary_image: /assets/images/habich.jpg
 post_type: photo
 categories: blog
 tags:

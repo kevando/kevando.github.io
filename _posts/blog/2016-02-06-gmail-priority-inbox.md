@@ -1,20 +1,17 @@
 ---
 title:  Level Up your Inbox
 layout: post
-description: Get yourself organized
 date:   2016-02-06
-categories: blog
-# image used for og:image
-image: /assets/images/posts/gmail_goat.png
-summary: Steps for configuring up priority inbox in gmail.
+category: blog
 tags:
   - tutorial
   - guide
   - help
   - gmail
-
 summary: Throughout my email lifetime important messages would always fall through the cracks and this became a real problem when I started a company. People depended on getting timely responses from me and I would let them down. When I found Priority Inbox (default gmail setting), all that changed. [...]
-
+# OG Tags
+description: Get yourself organized
+image: /assets/images/posts/gmail_goat.png 
 ---
 
 
