@@ -9,26 +9,21 @@ layout: default
 {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
 <div class="category">
-  <!-- <p>{% for tag in site.tags %}#{{ tag | first }}{% unless forloop.last %}{% endunless %}{% endfor %}</p> -->
+  
   
   
   <article>
     {%- for page in site.categories[page.category] -%}
     <section>
-      <header class="is-active">
-        <h1><a href="{{ page.url}}">{{ page.title | escape }}</a></h1>
-        <p class="date">{{ page.date | date: date_format }}</p>
-      </header>
-      <summary>
-        <p>{{ page.summary }}</p>
-        {% if page.vimeo %} 
-          {% include vimeo.html vimeo=page.vimeo height=200 %}
-        {% endif %}
 
-        {% if page.summary_image %} 
-          <img src="{{page.summary_image}}" />
-        {% endif %}
-      </summary>
+      <header class="is-active">
+        <p class="date">{{ page.date | date: date_format }}</p>
+        <h1><a href="{{ page.url}}">{{ page.title | escape }}</a></h1>
+      </header>
+      {% include summary.html %}
+      {% include tags.html %}
+
+      
     </section>
     {%- endfor -%}
   </article>

@@ -1,0 +1,10 @@
+<summary>
+    <p>{{ page.summary }}</p>
+    {% if page.vimeo %} 
+      {% include vimeo.html vimeo=page.vimeo height=200 %}
+    {% endif %}
+
+    {% if page.summary_image %} 
+      <img src="{{page.summary_image}}" />
+    {% endif %}
+  </summary>

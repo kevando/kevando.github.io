@@ -7,7 +7,6 @@
 // 3. Base stuff
 @import
   'base/variables',
-  'base/functions',
   'base/mixins',
   'base/base',
   'base/fonts',
@@ -18,15 +17,12 @@
   'layout/header',
   'layout/main',
   'layout/post',
-  'layout/footer';
+  'layout/footer',
+  'layout/404',
+  'layout/category',
+  'layout/favs';
 
 // 5. Components
 @import
   'components/goat',
   'components/button';
-
-// 6. Page-specific styles
-@import
-  'pages/404',
-  'pages/category',
-  'pages/favs';
