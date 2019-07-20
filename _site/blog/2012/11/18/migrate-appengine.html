@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Another Way to ‘Migrate’ your Appengine to the High Replication Datastore</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Another Way to ‘Migrate’ your Appengine to the High Replication Datastore" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="When I decided to learn Python, I figured a great way to host my small demo site would be Google App Engine. I used this platform in the past to host Java applications and had experience with Google’s deployment method. After following these steps to locally launch my Python app I tried to deploy it to an existing app ID that I set up earlier for a Java app, but no longer used. The deployment error I got was this:" />
+<meta property="og:description" content="When I decided to learn Python, I figured a great way to host my small demo site would be Google App Engine. I used this platform in the past to host Java applications and had experience with Google’s deployment method. After following these steps to locally launch my Python app I tried to deploy it to an existing app ID that I set up earlier for a Java app, but no longer used. The deployment error I got was this:" />
+<link rel="canonical" href="http://localhost:4000/blog/2012/11/18/migrate-appengine.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2012/11/18/migrate-appengine.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-11-18T00:00:00-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Another Way to ‘Migrate’ your Appengine to the High Replication Datastore" />
+<meta name="twitter:site" content="@kevando" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/blog/2012/11/18/migrate-appengine.html","headline":"Another Way to ‘Migrate’ your Appengine to the High Replication Datastore","dateModified":"2012-11-18T00:00:00-08:00","datePublished":"2012-11-18T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2012/11/18/migrate-appengine.html"},"description":"When I decided to learn Python, I figured a great way to host my small demo site would be Google App Engine. I used this platform in the past to host Java applications and had experience with Google’s deployment method. After following these steps to locally launch my Python app I tried to deploy it to an existing app ID that I set up earlier for a Java app, but no longer used. The deployment error I got was this:","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- feed meta? --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" /><!-- Analytics --><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff"></head>
+<body class=""><header role="banner" class="navigation">
+  <div class="left">
+    <a href="/blog" class="logo">
+      <img src="/assets/images/goat.svg" />
+    </a>
+  </div>
+  <nav class="right">
+    <a class="" href="/blog">Blog</a>
+    <!-- <a class=""href="/fame" >Fame</a> -->
+    <!-- <a class=""href="/learn" >Learn</a> -->
+    <!-- <a class=""href="/<3" ><3</a></3> -->
+  </nav>
+</header>
+<main><div class="post">
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <section itemprop="articleBody">
+      <header>
+        <!-- TITLE -->
+        <h1 itemprop="name headline" class="page-title">
+          <span class="bumble">Another Way to &#39;Migrate&#39; your Appengine to the High Replication Datastore</span>
+        </h1>
+      </header>
+
+      <!-- CONTENT -->
+      <p>When I decided to learn Python, I figured a great way to host my small demo site would be Google App Engine. I used this platform in the past to host Java applications and had experience with Google’s deployment method. After <a href="https://developers.google.com/appengine/docs/python/gettingstartedpython27/" title="following these steps to locally launch my Python app">following these steps to locally launch my Python app</a> I tried to deploy it to an existing app ID that I set up earlier for a Java app, but no longer used. The deployment error I got was this:</p>
+
+<pre class="wide">
+The 'python27' runtime is only supported for apps using the High Replication Datastore.
+</pre>
+
+<p>The reason for this error is because this specific app id is not created as a High Replication Datastore. <a href="https://developers.google.com/appengine/docs/adminconsole/migration">Google provides these steps to upgrade</a>, but if you are using 10/10 of your free app slots, then you will not be able to duplicate the application. In my case, I did not need to retain the old data, so <a href="https://developers.google.com/appengine/docs/adminconsole/applicationsettings#Disable_or_Delete_Your_Application">completely deleting my application</a> was the best solution. Then I just created a new one with a new appID.</p>
+
+
+      <!-- FOOTER -->
+      <footer>
+      <p class="post-meta">November 18, 2012</p>
+      </footer>
+    </section>
+  </article>
+</div>
+</main><!-- <footer class="page post">
+  <div class="footer-col-wrapper">
+    <div class="footer-col footer-col-1">
+      <p>
+          
+        <span>#appengine</span>
+           
+        <span>#guide</span>
+           
+        <span>#python</span>
+         
+      </p>
+    </div>
+  </div>
+</footer>
+
+ -->
+<div class='extend-color'></div>
+  </body>
+</html>

@@ -9,7 +9,7 @@ tags:
   - winter
 ---
 
-## 😓 Gifshop
+😓 Gifshop
 
 ![gif](/assets/images/mammoth.gif)
 

@@ -1,48 +1,66 @@
-
 .post {
-    article {
-      @include flex(center,center,column);
-      width: 100%;
-      margin-top: 50px;
-
-      // Small screens
-      @media screen and (max-width: 500px) {
-        margin-top: 0;
-      }
-      section {
-        @include flex(flex-start,flex-start,column);
-        padding: 40px 20px  0px 20px;
-        background: white;
-        max-width: 700px;
-        min-width: 700px;
-        border: solid 1px #ccc;
-        border-radius: 5px;
-        // Small screens
+  article {
+    @include flex(center, center, column);
+    width: 100%;
+    margin-top: 50px;
+    @media screen and (max-width: 500px) {
+      margin-top: 0;
+    }
+    section {
+      @include flex(flex-start, flex-start, column);
+      padding: 40px 20px 0px 20px;
+      background: white;
+      max-width: 700px;
+      border: solid 1px #ccc;
+      border-radius: 5px;
       @media screen and (max-width: 500px) {
         border-radius: 0px;
       }
-        box-shadow: 3px 4px 15px 1px #69696952;
-        margin-bottom: 100px;
-        
-        header {
-          h1 {
-            font-size: 3.1em;
-            margin: 5px 0 30px 0;
-          }
-        }
-        footer {
+      box-shadow: 3px 4px 15px 1px #69696952;
+      margin-bottom: 100px;
 
+      header {
+        h1 {
+          margin: 5px 0 30px 0;
         }
-        img {
-          max-width: 100%;
-        }
+      }
+      footer {
+        width: 100%;
+        background-image: linear-gradient(
+          to right,
+          #00000066 50%,
+          rgba(255, 255, 255, 0) 0%
+        );
+        background-position: top;
+        background-size: 11px 1px;
+        background-repeat: repeat-x;
+        margin-top: 20px;
+        padding-top: 20px;
         p {
-          margin-bottom:30px;
+          margin-left: 5px;
         }
-        a {
-          color: $blue;
-          text-decoration: underline;
+      }
+      img {
+        max-width: 100%;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+
+      .video-embed-wrapper {
+        width: 100%;
+        padding: 5px;
+        background-color: #ccc;
+        margin-bottom: 40px;
+        margin-top: -10px;
+        background-color: #fdfdfd;
+        margin-bottom: 80px;
+        border: solid 1px #dedede;
+        box-shadow: #cccccc69 0px 0px 6px 3px;
+        iframe {
+          width: 100%;
         }
       }
     }
+  }
 }

@@ -14,7 +14,7 @@ Here's what mine looked like.&nbsp;
 
 ![image](https://66.media.tumblr.com/fc2d7b5cc70e9734bf0851f04955816e/tumblr_inline_mhj135Wcye1qz4rgp.png)
 
-**Not very cohesive. **
+**Not very cohesive.**
 
 There are probably many ways to achieve titles for all of your posts, but here is a quick 3 step method that I used:
 

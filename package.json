@@ -1,0 +1,10 @@
+{
+  "name": "Kevando",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "github.com:kevando/kevando.github.io.git",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sass assets/css/sass/main.scss:assets/css/main.css --watch & jekyll serve"
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Adding a Title for All Tumblr Post Types</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Adding a Title for All Tumblr Post Types" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="If your Tumblr blog has mixed content with text posts, photo posts, audio posts, etc, it begins to look really weird without titles for some of the posts. The text posts look great with a chosen title, but Tumblr doesn’t let you give song and video posts a title. This disrupts the flow of your site." />
+<meta property="og:description" content="If your Tumblr blog has mixed content with text posts, photo posts, audio posts, etc, it begins to look really weird without titles for some of the posts. The text posts look great with a chosen title, but Tumblr doesn’t let you give song and video posts a title. This disrupts the flow of your site." />
+<link rel="canonical" href="http://localhost:4000/blog/2013/02/01/tumblr-titles.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2013/02/01/tumblr-titles.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-02-01T00:00:00-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Adding a Title for All Tumblr Post Types" />
+<meta name="twitter:site" content="@kevando" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/blog/2013/02/01/tumblr-titles.html","headline":"Adding a Title for All Tumblr Post Types","dateModified":"2013-02-01T00:00:00-08:00","datePublished":"2013-02-01T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2013/02/01/tumblr-titles.html"},"description":"If your Tumblr blog has mixed content with text posts, photo posts, audio posts, etc, it begins to look really weird without titles for some of the posts. The text posts look great with a chosen title, but Tumblr doesn’t let you give song and video posts a title. This disrupts the flow of your site.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- feed meta? --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" /><!-- Analytics --><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff"></head>
+<body class=""><header role="banner" class="navigation">
+  <div class="left">
+    <a href="/blog" class="logo">
+      <img src="/assets/images/goat.svg" />
+    </a>
+  </div>
+  <nav class="right">
+    <a class="" href="/blog">Blog</a>
+    <!-- <a class=""href="/fame" >Fame</a> -->
+    <!-- <a class=""href="/learn" >Learn</a> -->
+    <!-- <a class=""href="/<3" ><3</a></3> -->
+  </nav>
+</header>
+<main><div class="post">
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <section itemprop="articleBody">
+      <header>
+        <!-- TITLE -->
+        <h1 itemprop="name headline" class="page-title">
+          <span class="bumble">Adding a Title for All Tumblr Post Types</span>
+        </h1>
+      </header>
+
+      <!-- CONTENT -->
+      <p>If your Tumblr blog has mixed content with text posts, photo posts, audio posts, etc, it begins to look really weird without titles for some of the posts. The text posts look great with a chosen title, but Tumblr doesn’t let you give song and video posts a title. This disrupts the flow of your site.</p>
+
+<p>Here’s what mine looked like. </p>
+
+<p><img src="https://66.media.tumblr.com/fc2d7b5cc70e9734bf0851f04955816e/tumblr_inline_mhj135Wcye1qz4rgp.png" alt="image" /></p>
+
+<p><strong>Not very cohesive.</strong></p>
+
+<p>There are probably many ways to achieve titles for all of your posts, but here is a quick 3 step method that I used:</p>
+
+<p>1) Go to the <a href="http://www.tumblr.com/customize" title="Will Open in New Window">customization section of your tumblr page</a>, and edit HTML. Before doing anything, copy the entire contents of your current theme and paste to a text editor. In case something goes haywire, you have a backup. Now do a page search for <strong>{block:Video}</strong> in your HTML. This contains the code that generates your video posts.You’ll want to make sure that your {caption} block is the first thing in the video block. </p>
+
+<p>For me, that meant changing this:</p>
+
+<pre>{block:Video}
+&nbsp;&nbsp;&lt;div class="video-wrap"&gt;{Video-500}&lt;/div&gt;
+&nbsp;&nbsp;{block:Caption}&lt;div class="caption"&gt;{Caption}&lt;/div&gt;{/block:Caption}
+{/block:Video}</pre>
+
+<p>To this:</p>
+
+<pre>{block:Video}
+&nbsp;&nbsp;{block:Caption}&lt;div class="caption"&gt;{Caption}&lt;/div&gt;{/block:Caption}
+&nbsp;&nbsp;&lt;div class="video-wrap"&gt;{Video-500}&lt;/div&gt;
+{/block:Video}</pre>
+
+<p>Now do this same thing for Audio, Photo, and Quotes. If you look at your tumblr site now, you would see the posts have reversed the song/video with the post content.</p>
+
+<p>2) Now that you have your post content in the right order, now we need to find out information about your current titles. Open your tumblr in a browser that lets you inspect the html. Right click on your title and choose inspect element, brining you right to that HTML tag</p>
+
+<p><img src="https://66.media.tumblr.com/9ab11c08cfcced8dae3a9a8ae5d4c311/tumblr_inline_mhj1njKlMl1qz4rgp.png" alt="image" /></p>
+
+<p>This shows you the html that creates your post titles. </p>
+
+<p><img src="https://66.media.tumblr.com/e01bf1483410d5ea86a3b33b04e5fb9d/tumblr_inline_mhj1p59cR61qz4rgp.png" alt="image" /></p>
+
+<p>For me the HTML element is:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h3&gt;&lt;a&gt;</span>{title}<span class="nt">&lt;/a&gt;&lt;/h3&gt;</span>
+</code></pre></div></div>
+
+<p>3) Now you need to edit all your previous posts (or just your important ones) and add a title. Edit the old tumblr post, view it as html and you will see something like this:</p>
+
+<pre>&lt;p&gt;New Track!&lt;/p&gt;</pre>
+
+<p>Now, just add the title like we found in step #2. This particular post would become something like:</p>
+
+<pre>&lt;h3&gt;&lt;a href="http://kevinhabich.com/post/40255816223/great-song"&gt;Sir Sly - Gold&lt;/a&gt;&lt;/h3&gt;
+&nbsp;&lt;p&gt;New Track!&lt;/p&gt;</pre>
+
+<p>Note: You’ll need to make sure that you get the correct permalink of your post so the link is correct (something Tumblr automatically generates for posts with titles).</p>
+
+<p><img src="https://66.media.tumblr.com/6b072c9a62d2c9d49742676fbf7a71cd/tumblr_inline_mhj1wxdIIm1qz4rgp.png" alt="image" /></p>
+
+<p>4) Viola! Open your home page and refresh. If you did this correctly, you should see a much better formatted blog!</p>
+
+<p><img src="https://66.media.tumblr.com/c11ce2a82a0cd941f5425d06d5bd06a0/tumblr_inline_mhj2x2LwRo1qz4rgp.png" alt="image" />This poorly represents the progress of what we just did. If this heyour tumblr, or if you have problems let me know in the comments!</p>
+
+<p><a href="http://kevandonation.tumblr.com/post/42007217880/how-to-add-titles-for-all-tumblr-post-types">original</a></p>
+
+
+      <!-- FOOTER -->
+      <footer>
+      <p class="post-meta">February 1, 2013</p>
+      </footer>
+    </section>
+  </article>
+</div>
+</main><!-- <footer class="page post">
+  <div class="footer-col-wrapper">
+    <div class="footer-col footer-col-1">
+      <p>
+          
+        <span>#tumblr</span>
+           
+        <span>#help</span>
+         
+      </p>
+    </div>
+  </div>
+</footer>
+
+ -->
+<div class='extend-color'></div>
+  </body>
+</html>

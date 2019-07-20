@@ -10,5 +10,4 @@ tags:
 ---
 
 I made this after getting inspired.
-
 {% include vimeo.html vimeo=page.vimeo %}
