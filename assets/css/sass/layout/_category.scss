@@ -1,5 +1,8 @@
 .category {
-  // background: yellow;
+  padding: $site-padding;
+  @media screen and (max-width: 500px) {
+    padding: 0;
+  }
   article {
     // background: green;
     @include flex(center, center, column);
@@ -16,6 +19,11 @@
       margin-bottom: 40px;
       width: 70vw;
       min-width: 350px;
+      @media screen and (max-width: 500px) {
+        width: 100vw;
+        border-radius: 0px;
+        margin-bottom: 0;
+      }
 
       header {
         h1 {

@@ -13,12 +13,13 @@
       max-width: 700px;
       border: solid 1px #ccc;
       border-radius: 5px;
-      @media screen and (max-width: 500px) {
-        border-radius: 0px;
-      }
+
       box-shadow: 3px 4px 15px 1px #69696952;
       margin-bottom: 100px;
-
+      @media screen and (max-width: 500px) {
+        border-radius: 0px;
+        padding-top: 20px;
+      }
       header {
         h1 {
           margin: 5px 0 30px 0;

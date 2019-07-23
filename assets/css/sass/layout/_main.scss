@@ -1,12 +1,5 @@
 main {
   min-height: 80vh;
-
-  // Category Pages
-  .category {
-    padding: $site-padding;
-  }
-
-  // Small screens
   @media screen and (max-width: 500px) {
     margin-left: 0;
     margin-right: 0;

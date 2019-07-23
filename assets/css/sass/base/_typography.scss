@@ -26,9 +26,12 @@ h2 {
   font-family: $work-font;
   color: $charcoal;
   font-weight: 600;
-  font-size: 2.0em;
+  font-size: 2em;
   margin: 0 0 0em;
   width: 100%;
+  @media screen and (max-width: 500px) {
+    font-size: 1.5em;
+  }
 }
 
 h3 {
@@ -72,11 +75,7 @@ a {
   }
   &:hover {
     border-bottom: solid $link-border-size white;
-  }
-  &:visited {
-    // TODO ---> Do something interesting with this
-    // color: #ff1043;
-    // border-bottom: solid 10.4em red;
+    text-decoration: underline;
   }
 }
 

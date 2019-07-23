@@ -508,6 +508,11 @@ h2 {
   margin: 0 0 0em;
   width: 100%;
 }
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
 
 h3 {
   font-family: "Work Sans", sans-serif;
@@ -548,7 +553,9 @@ a.dude {
 }
 a:hover {
   border-bottom: solid 0.3em white;
+  text-decoration: underline;
 }
+
 pre {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
@@ -610,9 +617,6 @@ header.navigation nav a.active {
 main {
   min-height: 80vh;
 }
-main .category {
-  padding: 20px;
-}
 @media screen and (max-width: 500px) {
   main {
     margin-left: 0;
@@ -649,6 +653,7 @@ main .category {
 @media screen and (max-width: 500px) {
   .post article section {
     border-radius: 0px;
+    padding-top: 20px;
   }
 }
 .post article section header h1 {
@@ -724,6 +729,14 @@ footer.page p {
   width: 1.5em;
 }
 
+.category {
+  padding: 20px;
+}
+@media screen and (max-width: 500px) {
+  .category {
+    padding: 0;
+  }
+}
 .category article {
   display: flex;
   justify-content: center;
@@ -746,6 +759,13 @@ footer.page p {
   margin-bottom: 40px;
   width: 70vw;
   min-width: 350px;
+}
+@media screen and (max-width: 500px) {
+  .category article section {
+    width: 100vw;
+    border-radius: 0px;
+    margin-bottom: 0;
+  }
 }
 .category article section header h1 {
   font-size: 1.6em;
