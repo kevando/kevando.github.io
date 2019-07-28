@@ -1,0 +1,25 @@
+---
+title: Past Experiences
+permalink: /life
+layout: 90s
+category: life
+---
+
+<header class="nav">
+  <span class="title"><a href="/life">Life</a></span>
+  <span class="links"><a href="/life">Life</a></span>
+  <span class="links"><a href="/words">Done</a></span>
+  <span class="links"><a href="/life">Words</a></span>
+</header>
+
+Life yo
+
+{%- for post in site.categories[page.category] -%}
+
+  {% assign currentdate = post.date | date: "%Y" %}
+  {% if currentdate != date %}
+    <h1 >{{ currentdate }}</h1>
+    {% assign date = currentdate %} 
+  {% endif %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}

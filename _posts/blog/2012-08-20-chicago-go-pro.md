@@ -2,7 +2,7 @@
 layout: post
 title:  Go Pro Timelapse
 date: 2012-08-20
-category: blog
+category: life
 vimeo: 47845681
 tags:
   - gopro

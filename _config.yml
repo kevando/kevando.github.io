@@ -3,7 +3,7 @@
 #    Site settings
 # ----------------------
 
-# title: Kevando
+title: Kevando
 description: A repository of highlights.
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kevando.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -44,7 +44,7 @@ google_analytics: UA-16078011-4
 
 
 # ----------------------
-#    Groups of Shit
+#    Types of content
 # ----------------------
 
 collections:
@@ -53,6 +53,10 @@ collections:
   favs:
     output: true
     permalink: /<3/:name
+  guides:
+    output: true
+    permalink: /fresh/:title
+
 
 
 

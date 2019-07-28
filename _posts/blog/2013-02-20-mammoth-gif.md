@@ -2,7 +2,7 @@
 layout: post
 title:  Mammoth Gifshop
 date: 2013-02-20
-categories: blog
+category: life
 tags:
   - gif
   - gifshop

@@ -1,0 +1,38 @@
+// HEADER
+header {
+  nav {
+    border-bottom: solid 5px red;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    div:nth-child(1) {
+    //   border: solid 2px blue;
+      a {
+        @include nav-title;
+      }
+    }
+    div:nth-child(2) {
+    //   border: solid 2px green;
+      display: flex;
+      align-items: flex-end;
+      a {
+        @include nav-title-sub;
+      }
+    }
+  }
+
+}
+
+
+.post {
+  p {
+    @include text;
+  }
+}
+
+// Categories
+body {
+  &.done {
+    background-color: #ccc;
+  }
+}
