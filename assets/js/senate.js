@@ -1,8 +1,11 @@
 var browserHeight = window.innerHeight;
+var browserWidth = window.innerWidth;
 
-var w = 1080,
-    // h = 800,
-    h = browserHeight-60,
+var dimension = Math.min(browserWidth, 800)
+
+var w = dimension,
+    h = dimension,
+    // h = browserHeight-60,
     rx = w / 2,
     ry = h / 2,
     m0,
@@ -25,7 +28,7 @@ var line = d3.svg.line.radial()
 // Chrome 15 bug: <http://code.google.com/p/chromium/issues/detail?id=98951>
 var div = d3.select("#chart").insert("div")
     .style("top", "20px")
-    .style("left", "140px")
+    // .style("left", "140px")
     .style("width", w + "px")
     .style("height", w + "px")
     .style("position", "absolute")

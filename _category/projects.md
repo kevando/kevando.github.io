@@ -1,14 +1,11 @@
 ---
-title: Things I've done.
-name: done
-permalink: /done
-category: done
+title: My Projects
+permalink: /projects
+category: projects
 layout: 90s
 ---
 
-
 # I like to make things.
-
 
 - [chaz](https://apps.apple.com/us/app/chaz-recommendations/id1234092253)
 - [screenshit](http://github.com/kevando/screenshit)
@@ -24,7 +21,9 @@ layout: 90s
 - [Marker](https://twitter.com/kevando_/status/914350723428704256)
 - [Word Vomit 3d](https://apps.apple.com/us/app/word-vomit-3d/id1314707004)
 - [Doodle Lens](http://doodlelens.app)
+- -------
 
+{%- for post in site.categories[page.category] -%}
 
-
-<!-- product hunt user, videos, graphs I made, emoji map -->
+- [{{ post.title | escape }}]({{ post.url}})
+  {%- endfor -%}

@@ -1,6 +1,6 @@
 ---
 layout: empty
-title: Life is thrilling in every direction, but you cant have it all
+title: Life is thrilling in every direction but you cant have it all
 ---
 
 <div class='goat home'>

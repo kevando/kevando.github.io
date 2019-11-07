@@ -53,11 +53,6 @@ collections:
   favs:
     output: true
     permalink: /<3/:name
-  guides:
-    output: true
-    permalink: /fresh/:title
-
-
 
 
 defaults:

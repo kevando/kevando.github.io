@@ -7,9 +7,17 @@
   margin: 0px;
   overflow: hidden;
   position: relative;
-  width: 1200px;
-  margin-left: -500px;
+  /* width: 1200px; */
+  width: 100%;
+  /* margin-left: -500px; */
+
+  /* border: solid 1px red; */
   
+}
+
+#chart > div {
+  /* border: solid 2px blue; */
+  /* margin: 10px 20px; */
 }
 
 

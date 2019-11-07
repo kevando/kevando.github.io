@@ -608,9 +608,13 @@ header.navigation nav a {
   font-family: "Arvo", serif;
   margin: 0 20px;
   color: #232323;
+  border-bottom-width: 0.3em;
+  border-bottom-style: solid;
+  border-bottom-color: #FFCD00;
 }
-header.navigation nav a.active {
+header.navigation nav a.active, header.navigation nav a:hover {
   border-bottom-color: white;
+  text-decoration: none;
   font-weight: 600;
 }
 
@@ -642,9 +646,9 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  padding: 40px 20px 0px 20px;
+  padding: 40px 40px 0px 40px;
   background: white;
-  max-width: 700px;
+  max-width: 900px;
   border: solid 1px #ccc;
   border-radius: 5px;
   box-shadow: 3px 4px 15px 1px #69696952;
@@ -653,7 +657,7 @@ main {
 @media screen and (max-width: 500px) {
   .post article section {
     border-radius: 0px;
-    padding-top: 20px;
+    padding: 20px 20px 0px 20px;
   }
 }
 .post article section header h1 {
@@ -765,6 +769,9 @@ footer.page p {
     width: 100vw;
     border-radius: 0px;
     margin-bottom: 0;
+    background: transparent;
+    box-shadow: none;
+    border: none;
   }
 }
 .category article section header h1 {
@@ -780,6 +787,11 @@ footer.page p {
   font-size: 16px;
   color: #8e8e8e;
 }
+@media screen and (max-width: 500px) {
+  .category article section header p.date {
+    color: #616161;
+  }
+}
 .category article section summary p {
   margin-top: 10px;
   font-size: 16px;
@@ -787,12 +799,22 @@ footer.page p {
   color: #656565;
   line-height: 1.4em;
 }
+@media screen and (max-width: 500px) {
+  .category article section summary {
+    display: none;
+  }
+}
 .category article section p.tags {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   color: #000000;
   margin-top: 12px;
   letter-spacing: 0.07rem;
+}
+@media screen and (max-width: 500px) {
+  .category article section p.tags {
+    display: none;
+  }
 }
 .category article section img {
   max-width: 100%;

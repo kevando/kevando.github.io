@@ -26,8 +26,12 @@ header.navigation {
     @include serif;
     margin: 0 20px;
     color: $charcoal;
-    &.active {
+    border-bottom-width: 0.3em;
+    border-bottom-style: solid;
+    border-bottom-color: $yellow;
+    &.active, &:hover {
       border-bottom-color: white;
+      text-decoration: none;
       font-weight: 600;
     }
   }
