@@ -1,12 +1,12 @@
 header.navigation {
   @include flex(space-between, inherit);
   height: $nav-height;
-  border-bottom: solid 5px $charcoal;
+  border-bottom: solid 2px $charcoal;
 
   .logo {
     border-bottom-width: 0px;
     width: 50px;
-    height: 33px;
+    height: 41px;
     img {
       width: 75%;
     }
@@ -28,11 +28,10 @@ header.navigation {
     color: $charcoal;
     border-bottom-width: 0.3em;
     border-bottom-style: solid;
-    border-bottom-color: $yellow;
+    border-bottom-color: $purple;
     &.active, &:hover {
       border-bottom-color: white;
       text-decoration: none;
-      font-weight: 600;
     }
   }
 }

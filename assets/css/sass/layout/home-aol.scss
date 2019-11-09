@@ -1,0 +1,107 @@
+body {
+  background: $white;
+
+  .aol.home {
+    @include flex(center, center, column);
+    // background: $white;
+    // height: 90vh;
+    border: solid 1px red;
+    height: 100vh;
+    width: 100%;
+
+    .boxes {
+      @include flex(center, stretch, column);
+      border: solid 3px blue;
+      height: 100vh;
+      width: 100%;
+
+      .box {
+        @include flex(center, stretch);
+        flex-grow: 1;
+        padding: 10px;
+        box-shadow: #000000ad 2px 2px 2px 1px;
+        border-radius: 1px;
+        margin: 0 5px;
+        // max-width: 33.333%;
+        .content {
+          @include flex();
+          flex-grow: 1;
+          // width: 301px;
+          // height: 150px;
+          border: solid 7px $blue;
+          background: $purple;
+
+          // Link
+          a {
+            border: solid 2px red;
+            width: 100%;
+            height: 100%;
+            @include flex(center, center);
+
+          
+          img {
+            width: 100px;
+          }
+        }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+// BACKUP
+
+// body {
+//   background: $white;
+
+//   .aol.home {
+//     @include flex(center, center);
+//     // background: $white;
+//     // height: 90vh;
+//     // border: solid 1px red;
+//     height: 100vh;
+//     width: 100%;
+
+//     .boxes {
+//       @include flex(center, center);
+//       // border: solid 3px red;
+//       height: 400px;
+//       width: 800px;
+
+//       .box {
+//         @include flex();
+//         flex-grow: 1;
+//         padding: 10px;
+//         box-shadow: #000000ad 2px 2px 2px 1px;
+//         border-radius: 1px;
+//         margin: 0 5px;
+//         max-width: 33.333%;
+//         .content {
+//           @include flex();
+//           flex-grow: 1;
+//           // width: 301px;
+//           height: 150px;
+//           border: solid 7px $blue;
+//           background: $purple;
+
+//           // Link
+//           a {
+//             border: solid 2px red;
+//             width: 100%;
+//             height: 100%;
+//             @include flex(center, center);
+
+          
+//           img {
+//             width: 100px;
+//           }
+//         }
+//         }
+//       }
+//     }
+//   }
+// }

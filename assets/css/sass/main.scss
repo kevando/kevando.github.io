@@ -1,10 +1,10 @@
 @charset 'UTF-8';
 
-// 2. Vendors
+// 1. Vendors
 @import
   'vendors/normalize';
 
-// 3. Base stuff
+// 2. Config
 @import
   'base/variables',
   'base/mixins',
@@ -20,9 +20,8 @@
   'layout/footer',
   'layout/404',
   'layout/category',
-  'layout/favs';
+  'layout/home-aol';
 
 // 5. Components
 @import
-  'components/goat',
   'components/button';
