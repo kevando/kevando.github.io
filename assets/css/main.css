@@ -447,19 +447,10 @@ template {
   display: none;
 }
 
-/**
- * Set up a decent box model on the root element
- */
 html {
   box-sizing: border-box;
 }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
 *,
 *::before,
 *::after {
@@ -471,7 +462,7 @@ html {
 }
 
 body {
-  background: #FFCD00;
+  background: #CBCBFF;
 }
 
 h2,
@@ -530,7 +521,7 @@ h4 {
   margin: 0.67em 0 0 0;
 }
 h4 a {
-  color: #03a9f4;
+  color: #0D3762;
   text-decoration: underline;
 }
 
@@ -579,12 +570,12 @@ header.navigation {
   align-items: inherit;
   flex-direction: row;
   height: 60px;
-  border-bottom: solid 5px #232323;
+  border-bottom: solid 2px #232323;
 }
 header.navigation .logo {
   border-bottom-width: 0px;
   width: 50px;
-  height: 33px;
+  height: 41px;
 }
 header.navigation .logo img {
   width: 75%;
@@ -610,12 +601,11 @@ header.navigation nav a {
   color: #232323;
   border-bottom-width: 0.3em;
   border-bottom-style: solid;
-  border-bottom-color: #FFCD00;
+  border-bottom-color: #CBCBFF;
 }
 header.navigation nav a.active, header.navigation nav a:hover {
   border-bottom-color: white;
   text-decoration: none;
-  font-weight: 600;
 }
 
 main {
@@ -714,25 +704,6 @@ footer.page p {
   color: #232323;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 100vh;
-}
-.wrapper h1 {
-  font-family: "Arvo", serif;
-  color: white;
-  z-index: 1;
-  font-size: 8em;
-  margin-top: 0px;
-}
-.wrapper img.goat {
-  position: absolute;
-  width: 1.5em;
-}
-
 .category {
   padding: 20px;
 }
@@ -755,14 +726,15 @@ footer.page p {
   align-items: flex-start;
   flex-direction: column;
   padding: 20px 20px 20px 20px;
-  background: white;
-  max-width: 700px;
-  border: solid 1px #ccc;
+  background: #FBFEF2;
+  width: 500px;
+  border: solid 7px #0D3762;
+  min-height: 200px;
   border-radius: 5px;
+  margin-bottom: 21px;
+}
+.category article section:hover {
   box-shadow: 3px 4px 15px 1px #69696952;
-  margin-bottom: 40px;
-  width: 70vw;
-  min-width: 350px;
 }
 @media screen and (max-width: 500px) {
   .category article section {
@@ -778,7 +750,7 @@ footer.page p {
   font-size: 1.6em;
   margin: 5px 0 0px 0;
 }
-.category article section header h1 a:hover > h1 {
+.category article section header h1 a:hover > h13 {
   color: red;
 }
 .category article section header p.date {
@@ -820,113 +792,58 @@ footer.page p {
   max-width: 100%;
 }
 
-body.favs {
-  background: #3F51B4;
+body {
+  background: #FBFEF2;
 }
-body.favs header {
-  border-bottom: solid 5px white;
-}
-
-.fav.categories {
-  display: flex;
-  justify-content: stretch;
-  align-items: center;
-  flex-direction: row;
-  align-items: stretch;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: calc(100vh - 60px);
-}
-.fav.categories a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex: 1;
-  font-family: "Londrina Shadow", cursive;
-  color: white;
-  font-size: 50px;
-  min-width: 300px;
-  flex-grow: 1;
-  overflow: auto;
-}
-.fav.categories a.movies {
-  background: #03a9f4;
-}
-.fav.categories a.podcasts {
-  background: #7C0062;
-}
-.fav.categories a.albums {
-  background: #FF003D;
-}
-.fav.categories a.comics {
-  background: #FF7000;
-}
-.fav.categories a.books {
-  background: #03a9f4;
-}
-.fav.categories a.tv {
-  background: #FFCD00;
-}
-.fav.categories a:hover {
-  background: #0a0a0a;
-  color: white;
-}
-
-article.fav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 50px;
-  min-height: calc(100vh - 214px);
-}
-article.fav section {
+body .aol.home {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: white;
-  width: 600px;
-  border: solid 1px #ccc;
-  border-radius: 5px;
-  box-shadow: 3px 4px 15px 1px #69696952;
+  border: solid 1px red;
+  height: 100vh;
+  width: 100%;
 }
-article.fav section h2 {
-  font-family: "Londrina Shadow", cursive;
-  color: #0a0a0a;
-  font-size: 50px;
-  min-width: 300px;
+body .aol.home .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  border: solid 3px blue;
+  height: 100vh;
+  width: 100%;
 }
-article.fav section li {
-  font-family: "Work Sans", sans-serif;
-  color: #232323;
-  font-weight: 200;
-  list-style: none;
-  font-size: 20px;
-  line-height: 1.3em;
+body .aol.home .boxes .box {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 10px;
+  box-shadow: #000000ad 2px 2px 2px 1px;
+  border-radius: 1px;
+  margin: 0 5px;
 }
-
-.goat.big {
-  width: 100vw;
-}
-
-.goat.home {
+body .aol.home .boxes .box .content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background: #FFCD00;
-  height: 90vh;
+  flex-grow: 1;
+  border: solid 7px #0D3762;
+  background: #CBCBFF;
 }
-.goat.home a {
-  width: 178px;
-  height: 120px;
-  border-bottom: solid 6px #fff;
+body .aol.home .boxes .box .content a {
+  border: solid 2px red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
-.goat.home img {
-  width: 70%;
+body .aol.home .boxes .box .content a img {
+  width: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */

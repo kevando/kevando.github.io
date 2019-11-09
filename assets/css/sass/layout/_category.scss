@@ -4,21 +4,23 @@
     padding: 0;
   }
   article {
-    // background: green;
     @include flex(center, center, column);
     width: 100%;
     margin-top: 0px;
+
     section {
       @include flex(flex-start, flex-start, column);
       padding: 20px 20px 20px 20px;
-      background: white;
-      max-width: 700px;
-      border: solid 1px #ccc;
+      background: $white;
+      width: 500px;
+      border: solid 7px $blue;
+      min-height: 200px;
       border-radius: 5px;
-      box-shadow: 3px 4px 15px 1px #69696952;
-      margin-bottom: 40px;
-      width: 70vw;
-      min-width: 350px;
+      
+      margin-bottom: 21px;
+      &:hover {
+        box-shadow: 3px 4px 15px 1px #69696952;
+      }
       @media screen and (max-width: 500px) {
         width: 100vw;
         border-radius: 0px;
@@ -29,12 +31,13 @@
       }
 
       header {
+        // display: none;
         h1 {
           font-size: 1.6em;
           margin: 5px 0 0px 0;
 
           a {
-            &:hover > h1 {
+            &:hover > h13 {
               color: red;
             }
           }
@@ -50,6 +53,7 @@
         }
       }
       summary {
+        // display: none;
         p {
           margin-top: 10px;
           font-size: 16px;
@@ -62,6 +66,7 @@
         }
       }
       p.tags {
+        // display: none;
         font-family: $work-font;
         font-size: 16px;
         color: #000000;

@@ -1,17 +1,17 @@
 
-.wrapper {
-  @include flex(center,center);
-  height: 100vh;
+// .wrapper {
+//   @include flex(center,center);
+//   height: 100vh;
 
-  h1 {
-    @include serif;
-    color: white;
-    z-index: 1;
-    font-size: 8em;
-    margin-top: 0px;
-  }
-  img.goat {
-    position: absolute;
-    width: 1.5em;
-  }
-}
+//   h1 {
+//     @include serif;
+//     color: white;
+//     z-index: 1;
+//     font-size: 8em;
+//     margin-top: 0px;
+//   }
+//   img.goat {
+//     position: absolute;
+//     width: 1.5em;
+//   }
+// }

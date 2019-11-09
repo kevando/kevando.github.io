@@ -1,15 +1,25 @@
 ---
 layout: empty
-title: Life is thrilling in every direction but you cant have it all
+title: Kevando Online!
 ---
 
-<div class='goat home'>
-<!-- <a href="/blog">Blog</a>
-  <a href="/hello" >
-    <img src="/assets/images/goat.svg" />
-  </a> -->
+<div class='aol home'>
 
-  <a href="/blog" >
-    <img src="/assets/images/goat.svg" />
+<div class="boxes">
+
+  <div class="box"><div class="content">
+    <a href="/blog" >
+    <img src="/assets/images/aol-man-running.png" />
   </a>
+  </div></div>
+  <div class="box"><div class="content">
+  <a href="/blog" >
+    <img src="/assets/images/aol-man-running.png" />
+  </a></div></div>
+  <div class="box"><div class="content">
+  <a href="/blog" >
+    <img src="/assets/images/aol-man-running.png" />
+  </a></div></div>
+  
+</div>
 </div>
