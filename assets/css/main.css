@@ -7,7 +7,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Arvo|Work+Sans:200,300,400,500,700|Londrina+Shadow|Inconsolata:400,700");
+@import url("https://fonts.googleapis.com/css?family=Arvo|Work+Sans:200,300,400,500,700|Londrina+Shadow|Inconsolata:400,700|Homemade+Apple");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -667,6 +667,7 @@ main {
   background-repeat: repeat-x;
   margin-top: 20px;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 .post article section footer p {
   margin-left: 5px;
@@ -675,7 +676,7 @@ main {
   max-width: 100%;
 }
 .post article section p {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .post article section .video-embed-wrapper {
   width: 100%;
@@ -690,6 +691,12 @@ main {
 }
 .post article section .video-embed-wrapper iframe {
   width: 100%;
+}
+.post.text article section {
+  max-width: 700px;
+}
+.post.text article section header h1 {
+  font-size: 2.4em;
 }
 
 footer.page {
@@ -813,6 +820,88 @@ body .aol.home .boxes {
   align-items: center;
   flex-direction: row;
   height: 100vh;
+  width: 100%;
+}
+body .aol.home .boxes .box {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  padding: 10px;
+  box-shadow: #000000ad 4px 4px 6px -2px;
+  border: solid 1px #e6e6e6;
+  border-radius: 1px;
+  width: 300px;
+  height: 200px;
+}
+body .aol.home .boxes .box .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+}
+body .aol.home .boxes .box .content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: solid 7px #0D3762;
+  background: #CBCBFF;
+  width: 100%;
+  height: 100%;
+}
+body .aol.home .boxes .box .content a:visited {
+  border-color: #0D3762;
+  background: #CBCBFF;
+}
+body .aol.home .boxes .box .content a img {
+  width: 100px;
+}
+
+body .aol.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+body .aol.home .kevando-online {
+  display: none;
+  width: 300px;
+  height: 140px;
+}
+body .aol.home .kevando-online .kevando {
+  text-align: center;
+  /* display: inline-block; */
+  /* width: 100%; */
+  /* position: absolute; */
+  font-size: 50px;
+  font-family: "Work Sans", sans-serif;
+}
+body .aol.home .kevando-online svg {
+  position: absolute;
+  top: 155px;
+  width: 300px;
+  margin-left: 186px;
+  overflow: visible;
+}
+body .aol.home .kevando-online path {
+  fill: transparent;
+}
+body .aol.home .kevando-online text {
+  font-size: 30px;
+  font-family: "Homemade Apple", cursive;
+  transform: rotate(24deg);
+  fill: #FFCD00;
+}
+body .aol.home .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 400px;
   width: 100%;
 }
 body .aol.home .boxes .box {

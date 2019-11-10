@@ -12,7 +12,7 @@
   'base/fonts',
   'base/typography';
 
-// 4. Layout-related sections
+// 3. Layout-related sections
 @import
   'layout/base',
   'layout/header',
@@ -21,6 +21,12 @@
   'layout/footer',
   'layout/category',
   'layout/home-aol';
+
+
+// 4. Page speficic
+@import
+'pages/home';
+
 
 // 5. Components
 @import

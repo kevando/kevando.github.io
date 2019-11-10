@@ -35,6 +35,10 @@
 }
 
 
+@mixin cursive {
+  font-family: $cursive-font;
+}
+
 @mixin serif {
   font-family: $arvo-font;
 }

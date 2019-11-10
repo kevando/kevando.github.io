@@ -18,7 +18,6 @@
       box-shadow: 3px 4px 15px 1px #69696952;
       margin-bottom: 100px;
 
-
       @media screen and (max-width: 500px) {
         border-radius: 0px;
         padding: 20px 20px 0px 20px;
@@ -40,6 +39,8 @@
         background-repeat: repeat-x;
         margin-top: 20px;
         padding-top: 20px;
+        margin-bottom: 20px;
+
         p {
           margin-left: 5px;
         }
@@ -48,7 +49,7 @@
         max-width: 100%;
       }
       p {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
       }
 
       .video-embed-wrapper {
@@ -65,7 +66,21 @@
           width: 100%;
         }
       }
-     
+    }
+  }
+
+  &.text {
+    
+    article {
+      section {
+        max-width: 700px;
+        header {
+          h1 {
+            font-size: 2.4em
+          }
+        }
+       
+      }
     }
   }
 }

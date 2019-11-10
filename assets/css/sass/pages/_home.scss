@@ -1,0 +1,84 @@
+body {
+  // background: $white;
+
+  .aol.home {
+    @include flex(center, center, column);
+    height: 100vh;
+    width: 100%;
+
+    // KEVANDO AONLINE LOGO!
+    .kevando-online {
+        display: none;
+      width: 300px;
+      height: 140px;
+    //   border: solid 2px blue;
+
+      .kevando {
+        text-align: center;
+        /* display: inline-block; */
+        /* width: 100%; */
+        // border: solid 2px red;
+        /* position: absolute; */
+        font-size: 50px;
+        font-family: $work-font;
+      }
+
+      svg {
+        position: absolute;
+        top: 155px;
+        width: 300px;
+        margin-left: 186px;
+        overflow: visible;
+      }
+      path {
+          fill: transparent
+      }
+      text {
+        font-size: 30px;
+        @include cursive;
+        transform: rotate(24deg);
+        fill: $yellow;
+
+      }
+    }
+
+    .boxes {
+
+      @include flex();
+      height: 400px;
+      width: 100%;
+
+      .box {
+        @include flex(center, stretch);
+        padding: 10px;
+        box-shadow: #000000ad 4px 4px 6px -2px;
+        border: solid 1px #e6e6e6;
+        border-radius: 1px;
+        width: 300px;
+        height: 200px;
+
+        .content {
+          @include flex();
+          flex-grow: 1;
+
+          a {
+            @include flex();
+            border: solid 7px $blue;
+            background: $purple;
+            width: 100%;
+            height: 100%;
+
+            &:visited {
+              border-color: $blue;
+              background: $purple;
+            }
+
+            img {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

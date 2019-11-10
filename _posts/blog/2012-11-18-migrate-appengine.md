@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_text
 title:  Another Way to 'Migrate' your Appengine to the High Replication Datastore
 date: 2012-11-18
 categories: blog
