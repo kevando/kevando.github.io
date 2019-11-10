@@ -5,7 +5,6 @@
   "repository": "github.com:kevando/kevando.github.io.git",
   "license": "MIT",
   "scripts": {
-    "90s": "sass assets/style/90s.scss:assets/css/90s.css --watch & jekyll serve",
-    "dev": "sass assets/css/sass/main.scss:assets/css/main.css --watch & jekyll serve"
+    "dev": "sass assets/sass/main.scss:assets/css/main.css --watch & jekyll serve"
   }
 }
