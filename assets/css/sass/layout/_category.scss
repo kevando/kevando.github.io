@@ -1,4 +1,5 @@
 .category {
+  background: $purple;
   padding: $site-padding;
   @media screen and (max-width: 500px) {
     padding: 0;
@@ -9,13 +10,13 @@
     margin-top: 0px;
 
     section {
-      @include flex(flex-start, flex-start, column);
-      padding: 20px 20px 20px 20px;
-      background: $white;
+      @include flex(space-around, flex-start, column);
+      padding: 10px 20px 20px 20px;
+      background: #FBFEF2;
       width: 500px;
-      border: solid 7px $blue;
-      min-height: 200px;
-      border-radius: 5px;
+      border: solid 4px #0D3762;
+      border-radius: 1px;
+
       
       margin-bottom: 21px;
       &:hover {
@@ -31,7 +32,6 @@
       }
 
       header {
-        // display: none;
         h1 {
           font-size: 1.6em;
           margin: 5px 0 0px 0;
@@ -53,7 +53,6 @@
         }
       }
       summary {
-        // display: none;
         p {
           margin-top: 10px;
           font-size: 16px;
@@ -66,7 +65,7 @@
         }
       }
       p.tags {
-        // display: none;
+        display: none;
         font-family: $work-font;
         font-size: 16px;
         color: #000000;

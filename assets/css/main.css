@@ -461,10 +461,6 @@ html {
   outline: none;
 }
 
-body {
-  background: #CBCBFF;
-}
-
 h2,
 h3,
 h4,
@@ -564,6 +560,13 @@ pre {
   line-height: 1.5em;
 }
 
+body {
+  background: #CBCBFF;
+}
+body.empty {
+  background: #FBFEF2;
+}
+
 header.navigation {
   display: flex;
   justify-content: space-between;
@@ -618,6 +621,9 @@ main {
   }
 }
 
+.post {
+  background: #CBCBFF;
+}
 .post article {
   display: flex;
   justify-content: center;
@@ -705,6 +711,7 @@ footer.page p {
 }
 
 .category {
+  background: #CBCBFF;
   padding: 20px;
 }
 @media screen and (max-width: 500px) {
@@ -722,15 +729,14 @@ footer.page p {
 }
 .category article section {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
-  padding: 20px 20px 20px 20px;
+  padding: 10px 20px 20px 20px;
   background: #FBFEF2;
   width: 500px;
-  border: solid 7px #0D3762;
-  min-height: 200px;
-  border-radius: 5px;
+  border: solid 4px #0D3762;
+  border-radius: 1px;
   margin-bottom: 21px;
 }
 .category article section:hover {
@@ -777,6 +783,7 @@ footer.page p {
   }
 }
 .category article section p.tags {
+  display: none;
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   color: #000000;
@@ -792,24 +799,19 @@ footer.page p {
   max-width: 100%;
 }
 
-body {
-  background: #FBFEF2;
-}
 body .aol.home {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid 1px red;
   height: 100vh;
   width: 100%;
 }
 body .aol.home .boxes {
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  flex-direction: column;
-  border: solid 3px blue;
+  align-items: center;
+  flex-direction: row;
   height: 100vh;
   width: 100%;
 }
@@ -818,11 +820,12 @@ body .aol.home .boxes .box {
   justify-content: center;
   align-items: stretch;
   flex-direction: row;
-  flex-grow: 1;
   padding: 10px;
-  box-shadow: #000000ad 2px 2px 2px 1px;
+  box-shadow: #000000ad 4px 4px 6px -2px;
+  border: solid 1px #e6e6e6;
   border-radius: 1px;
-  margin: 0 5px;
+  width: 300px;
+  height: 200px;
 }
 body .aol.home .boxes .box .content {
   display: flex;
@@ -830,20 +833,47 @@ body .aol.home .boxes .box .content {
   align-items: center;
   flex-direction: row;
   flex-grow: 1;
-  border: solid 7px #0D3762;
-  background: #CBCBFF;
 }
 body .aol.home .boxes .box .content a {
-  border: solid 2px red;
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  border: solid 7px #0D3762;
+  background: #CBCBFF;
+  width: 100%;
+  height: 100%;
+}
+body .aol.home .boxes .box .content a:visited {
+  border-color: #0D3762;
+  background: #CBCBFF;
 }
 body .aol.home .boxes .box .content a img {
   width: 100px;
+}
+
+.aol.box {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  padding: 10px;
+  box-shadow: #000000ad 4px 4px 6px -2px;
+  border: solid 1px #e6e6e6;
+  border-radius: 1px;
+  width: 600px;
+  height: 354px;
+}
+.aol.box .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+  border: solid 7px #0D3762;
+  background: #CBCBFF;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

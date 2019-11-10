@@ -12,14 +12,6 @@ title: Kevando Online!
     <img src="/assets/images/aol-man-running.png" />
   </a>
   </div></div>
-  <div class="box"><div class="content">
-  <a href="/blog" >
-    <img src="/assets/images/aol-man-running.png" />
-  </a></div></div>
-  <div class="box"><div class="content">
-  <a href="/blog" >
-    <img src="/assets/images/aol-man-running.png" />
-  </a></div></div>
-  
+
 </div>
 </div>

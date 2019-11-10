@@ -1,0 +1,7 @@
+body {
+  background: $purple;
+
+  &.empty {
+    background: $white;
+  }
+}

@@ -14,14 +14,15 @@
 
 // 4. Layout-related sections
 @import
+  'layout/base',
   'layout/header',
   'layout/main',
   'layout/post',
   'layout/footer',
-  'layout/404',
   'layout/category',
   'layout/home-aol';
 
 // 5. Components
 @import
+  'components/aol-box',
   'components/button';
