@@ -28,12 +28,12 @@ tomatoRef
 
 const placegroundScenePipelineModule = () => {
   // alert(modelUrl)
-  const modelFile = 'assets/tree.glb'
+  // const modelFile = 'assets/tree.glb'
   // const modelFile = 'https://kevando.github.io/assets/tree.glb'
-  // const modelFile = modelUrl;
+  const modelFile = modelUrl;
   const startScale = new THREE.Vector3(0.0001, 0.0001, 0.0001) // Initial scale value for our model
-  const endScale = new THREE.Vector3(0.002,0.002,0.002)      // TREE
-  // const endScale = new THREE.Vector3(1.2, 1.2, 1.2)      // TOMATO
+  // const endScale = new THREE.Vector3(0.002,0.002,0.002)      // TREE
+  const endScale = new THREE.Vector3(1.2, 1.2, 1.2)      // TOMATO
   const animationMillis = 750                                  // Animate over 0.75 seconds
 
   const raycaster = new THREE.Raycaster()
