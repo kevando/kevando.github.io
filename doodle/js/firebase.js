@@ -15,17 +15,21 @@ var tomatoRef = storage.ref("tomato-7lc4vhi3o4.glb");
 tomatoRef
   .getDownloadURL()
   .then(function(url) {
-    modelUrl = url;
+    log(url)
+    // modelUrl = url;
     XRExtras.Loading.showLoading({ onxrloaded }); // init
   })
   .catch(function(error) {
-    alert("failed to get model url");
+    log("failed to get model url");
   });
 
 // Returns a pipeline module that initializes the threejs scene when the camera feed starts, and
 // handles subsequent spawning of a glb model whenever the scene is tapped.
 const placegroundScenePipelineModule = () => {
-  const modelFile = "tree.glb"; // 3D model to spawn at tap
+
+  // const modelFile = "tree.glb"; // 3D model to spawn at tap
+  const modelFile = modelUrl; // 3D model from Firebase!
+  
   const startScale = new THREE.Vector3(0.0001, 0.0001, 0.0001); // Initial scale value for our model
   const endScale = new THREE.Vector3(0.002, 0.002, 0.002); // Ending scale value for our model
   const animationMillis = 750; // Animate over 0.75 seconds
@@ -183,3 +187,4 @@ const load = () => {
 window.onload = () => {
   window.XRExtras ? load() : window.addEventListener("xrextrasloaded", load);
 };
+

@@ -74,17 +74,19 @@ a:focus {
 }
 
 #logger {
-  background-color: white;
+  background-color: black;
   z-index: 999;
   position: absolute;
   bottom: 30px;
   width: 98%;
+  left: 1%;
   border: solid 1px #ccc;
-  text-align: center;
-  font-family: Verdana;
+  text-align: left;
+  text-indent: 5px;
+  font-family: Courier;
   font-size: 20px;
   padding: 5px 0;
-  color: black;
+  color: white;
 }
 
 #version {
