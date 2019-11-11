@@ -156,9 +156,9 @@ const placegroundScenePipelineModule = () => {
 
     var mesh = getVideoMesh();
 
-    log('i')
+    log('itemsPlaced: ' + itemsPlaced)
 
-    if(i > 1) {
+    if(itemsPlaced > 1) {
         // try it!
         XR.Threejs.xrScene().scene.add(mesh);
     } else {
@@ -166,7 +166,7 @@ const placegroundScenePipelineModule = () => {
         XR.Threejs.xrScene().scene.add(model.scene);
     }
 
-    i++
+    itemsPlaced++
 
     
 
@@ -280,7 +280,6 @@ const onxrloaded = () => {
   XR.run({ canvas: document.getElementById("camerafeed") });
 
   log("dude 2");
-  log('i='+i)
 };
 
 // Show loading screen before the full XR library has been loaded.
