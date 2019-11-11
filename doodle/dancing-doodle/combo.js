@@ -145,6 +145,7 @@ const placegroundScenePipelineModule = () => {
   };
 
   const animateIn = (model, pointX, pointZ, yDegrees) => {
+      log('animateIn')
     console.log(`animateIn: ${pointX}, ${pointZ}, ${yDegrees}`);
     const scale = Object.assign({}, startScale);
 
@@ -198,6 +199,7 @@ const placegroundScenePipelineModule = () => {
   };
 
   const placeObjectTouchHandler = e => {
+      log('placeObjectTouchHandler')
     console.log("placeObjectTouchHandler");
     // Call XrController.recenter() when the canvas is tapped with two fingers. This resets the
     // AR camera to the position specified by XrController.updateCameraProjectionMatrix() above.
