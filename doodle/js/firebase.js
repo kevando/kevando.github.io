@@ -15,7 +15,7 @@ var tomatoRef = storage.ref("tomato-7lc4vhi3o4.glb");
 tomatoRef
   .getDownloadURL()
   .then(function(url) {
-    log('url loaded')
+    console.log('url loaded', url)
     modelUrl = url;
     XRExtras.Loading.showLoading({ onxrloaded }); // init
   })
@@ -68,6 +68,7 @@ const placegroundScenePipelineModule = () => {
 
   const animateIn = (model, pointX, pointZ, yDegrees) => {
     console.log(`animateIn: ${pointX}, ${pointZ}, ${yDegrees}`);
+    console.log('model',model)
     const scale = Object.assign({}, startScale);
 
     model.scene.rotation.set(0.0, yDegrees, 0.0);
@@ -88,17 +89,20 @@ const placegroundScenePipelineModule = () => {
   // Load the glb model at the requested point on the surface.
   const placeObject = (pointX, pointZ) => {
     console.log(`placing at ${pointX}, ${pointZ}`);
+    console.log('modelFile',modelFile)
+    
     loader.load(
       modelFile, // resource URL.
       gltf => {
+        console.log('gltf',gltf)
         animateIn(gltf, pointX, pointZ, Math.random() * 360);
       }, // loaded handler.
       xhr => {
         console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
       }, // progress handler.
       error => {
-        console.log("An error happened");
-        log('error placing object')
+        console.log("An error happened",error);
+        log('error placing object: ' + error)
       } // error handler.
     );
   };
@@ -132,6 +136,8 @@ const placegroundScenePipelineModule = () => {
       placeObject(intersects[0].point.x, intersects[0].point.z);
     }
   };
+
+  placeObject(1,1);
 
   return {
     // Pipeline modules need a name. It can be whatever you want but must be unique within your app.
