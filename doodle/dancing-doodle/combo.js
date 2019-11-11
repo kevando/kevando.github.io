@@ -269,10 +269,10 @@ window.onload = () => {
   // video.play()
   if (window.XRExtras) {
       console.log('window.XRExtras == true')
-    load();
+    // load();
   } else {
     console.log('window.XRExtras == false')
-    window.addEventListener("xrextrasloaded", load);
+    // window.addEventListener("xrextrasloaded", load);
   }
 };
 
