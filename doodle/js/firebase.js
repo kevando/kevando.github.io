@@ -15,8 +15,8 @@ var tomatoRef = storage.ref("tomato-7lc4vhi3o4.glb");
 tomatoRef
   .getDownloadURL()
   .then(function(url) {
-    log(url)
-    // modelUrl = url;
+    log('url loaded')
+    modelUrl = url;
     XRExtras.Loading.showLoading({ onxrloaded }); // init
   })
   .catch(function(error) {
@@ -27,11 +27,12 @@ tomatoRef
 // handles subsequent spawning of a glb model whenever the scene is tapped.
 const placegroundScenePipelineModule = () => {
 
-  const modelFile = "assets/tree.glb"; // 3D model to spawn at tap
-  // const modelFile = modelUrl; // 3D model from Firebase!
+  // const modelFile = "assets/tree.glb"; // 3D model to spawn at tap
+  const modelFile = modelUrl; // 3D model from Firebase!
   
   const startScale = new THREE.Vector3(0.0001, 0.0001, 0.0001); // Initial scale value for our model
-  const endScale = new THREE.Vector3(0.002, 0.002, 0.002); // Ending scale value for our model
+  // const endScale = new THREE.Vector3(0.002, 0.002, 0.002); // Ending scale value for our model
+  const endScale = new THREE.Vector3(1,1,1); // Ending scale value for our TOMATO!
   const animationMillis = 750; // Animate over 0.75 seconds
 
   const raycaster = new THREE.Raycaster();
@@ -74,6 +75,7 @@ const placegroundScenePipelineModule = () => {
     model.scene.scale.set(scale.x, scale.y, scale.z);
     XR.Threejs.xrScene().scene.add(model.scene);
 
+    log('animated in')
     new TWEEN.Tween(scale)
       .to(endScale, animationMillis)
       .easing(TWEEN.Easing.Elastic.Out) // Use an easing function to make the animation smooth.
@@ -96,6 +98,7 @@ const placegroundScenePipelineModule = () => {
       }, // progress handler.
       error => {
         console.log("An error happened");
+        log('error placing object')
       } // error handler.
     );
   };
