@@ -4,6 +4,8 @@ var camera, scene, renderer;
 var uniforms;
 var video;
 
+var itemsPlaced = 0;
+
 function getVideoMesh() {
   // load video
   video = document.getElementById("video");
@@ -150,8 +152,24 @@ const placegroundScenePipelineModule = () => {
     model.scene.position.set(pointX, 0.0, pointZ);
     model.scene.scale.set(scale.x, scale.y, scale.z);
 
-    log("adding a model.scene at pointX: " + pointX);
-    XR.Threejs.xrScene().scene.add(model.scene);
+
+    var mesh = getVideoMesh();
+
+    log('i='+i)
+
+    if(i > 1) {
+        // try it!
+        XR.Threejs.xrScene().scene.add(mesh);
+    } else {
+        // first add soe trees
+        XR.Threejs.xrScene().scene.add(model.scene);
+    }
+
+    i++
+
+    
+
+    
 
     new TWEEN.Tween(scale)
       .to(endScale, animationMillis)
@@ -269,10 +287,10 @@ window.onload = () => {
   // video.play()
   if (window.XRExtras) {
       console.log('window.XRExtras == true')
-    // load();
+    load();
   } else {
     console.log('window.XRExtras == false')
-    // window.addEventListener("xrextrasloaded", load);
+    window.addEventListener("xrextrasloaded", load);
   }
 };
 
