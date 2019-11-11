@@ -33,7 +33,7 @@ function getVideoMesh() {
   mesh.scale.setScalar(0.8);
 
   log("returning mesh");
-  console.log(mesh);
+//   console.log(mesh);
   return mesh;
 }
 
@@ -156,7 +156,7 @@ const placegroundScenePipelineModule = () => {
 
     var mesh = getVideoMesh();
 
-    log('i='+i)
+    log('i')
 
     if(i > 1) {
         // try it!
@@ -183,6 +183,7 @@ const placegroundScenePipelineModule = () => {
 
   // Load the glb model at the requested point on the surface.
   const placeObject = (pointX, pointZ) => {
+      log('placing object')
     console.log(`placing at ${pointX}, ${pointZ}`);
     loader.load(
       modelFile, // resource URL.
@@ -194,6 +195,7 @@ const placegroundScenePipelineModule = () => {
       }, // progress handler.
       error => {
         console.log("An error happened");
+        log('error happened')
       } // error handler.
     );
   };
@@ -278,6 +280,7 @@ const onxrloaded = () => {
   XR.run({ canvas: document.getElementById("camerafeed") });
 
   log("dude 2");
+  log('i='+i)
 };
 
 // Show loading screen before the full XR library has been loaded.
