@@ -276,6 +276,6 @@ window.onload = () => {
   }
 };
 
-// boot
+// boot animation
 initMp4(true);
 animateMp4();
