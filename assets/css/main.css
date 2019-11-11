@@ -7,7 +7,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Arvo|Work+Sans:200,300,400,500,700|Londrina+Shadow|Inconsolata:400,700|Homemade+Apple");
+@import url("https://fonts.googleapis.com/css?family=Arvo|Work+Sans:200,300,400,500,700|Londrina+Shadow|Inconsolata:400,700|Homemade+Apple|Fugaz+One|Monoton");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -868,33 +868,36 @@ body .aol.home {
   width: 100%;
 }
 body .aol.home .kevando-online {
-  display: none;
   width: 300px;
   height: 140px;
+  position: relative;
 }
-body .aol.home .kevando-online .kevando {
+body .aol.home .kevando-online p.kevando {
   text-align: center;
-  /* display: inline-block; */
-  /* width: 100%; */
-  /* position: absolute; */
-  font-size: 50px;
-  font-family: "Work Sans", sans-serif;
+  color: #0f3762;
+  text-shadow: #cccbff 1px 1px 0px;
+  font-size: 60px;
+  font-family: "Fugaz One", cursive;
 }
-body .aol.home .kevando-online svg {
-  position: absolute;
-  top: 155px;
-  width: 300px;
-  margin-left: 186px;
-  overflow: visible;
-}
-body .aol.home .kevando-online path {
-  fill: transparent;
-}
-body .aol.home .kevando-online text {
-  font-size: 30px;
+body .aol.home .kevando-online span.cursive {
   font-family: "Homemade Apple", cursive;
-  transform: rotate(24deg);
-  fill: #FFCD00;
+  position: absolute;
+  display: inline-block;
+  right: 4px;
+  bottom: 55px;
+  transform: rotate(-9deg);
+  text-shadow: #f933ae 1px 1px 0px, #f933aea3 -1px -1px 0px, #f933ae 0px 0px 10px;
+  color: white;
+}
+body .aol.home .kevando-online span.cursive span.large {
+  font-size: 28px;
+  float: left;
+}
+body .aol.home .kevando-online span.cursive span.normal {
+  float: left;
+  font-size: 20px;
+  margin-top: 6px;
+  margin-left: 3px;
 }
 body .aol.home .boxes {
   display: flex;
