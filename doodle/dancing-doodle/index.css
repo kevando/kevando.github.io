@@ -79,7 +79,7 @@ body {
     background-color: white;
 z-index: 999;
 position: absolute;
-bottom: 0;
+bottom: 30px;
 width: 98%;
 border: solid 1px #ccc;
 text-align: center;

@@ -65,6 +65,7 @@
       <label for="play-button">video controls: </label>
       <button id="play-button">Play</button>
       <button id="stop-button">Stop</button>
+      <button id="hide-camera-button">Hide Camera</button>
     </div>
 
     <script id="vertexShader" type="x-shader/x-vertex">
@@ -96,6 +97,10 @@
       function log(text) {
         document.getElementById("logger").innerText = text;
       }
+
+      document.getElementById("hide-camera-button").addEventListener("click", e => {
+    document.getElementById("camerafeed").style.display = "none"
+  });
     </script>
 
 
