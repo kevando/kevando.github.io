@@ -30,7 +30,6 @@
     ></script>
 
     <!-- client code -->
-    <script src="glb.js"></script>
   </head>
 
   <body>
@@ -93,9 +92,19 @@
       }
     </script>
 
-    <!-- <script src="mp4.js"></script> -->
+    <script>
+      function log(text) {
+        document.getElementById("logger").innerText = text;
+      }
+    </script>
+
+
 
     <canvas id="camerafeed"></canvas>
     <p id="logger"></p>
+
+
+        <script src="glb.js"></script>
+        <!-- <script src="mp4.js"></script> -->
   </body>
 </html>

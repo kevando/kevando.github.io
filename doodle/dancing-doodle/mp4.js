@@ -3,28 +3,9 @@ var container;
 var camera, scene, renderer;
 var uniforms;
 
-function init(showStats) {
-  // stats
-  if (showStats) {
-    var stats = new Stats();
-    stats.domElement.style.zIndex = '200';
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.left = '0';
-    stats.domElement.style.top = '0';
-    document.body.appendChild(stats.domElement);
-    requestAnimationFrame(function updateStats(){
-      stats.update();
-      requestAnimationFrame(updateStats);
-    });
-  }
-  
-  // basic setup
-  container = document.getElementById( 'container' );
-  camera = new THREE.Camera();
-  camera.position.z = 1;
-  scene = new THREE.Scene();
-  
-  // load video
+function getVideoMesh() {
+
+    // load video
   var video = document.getElementById( 'video' );
   videoTexture = new THREE.VideoTexture( video );
   videoTexture.minFilter = THREE.LinearFilter;
@@ -48,7 +29,40 @@ function init(showStats) {
   var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
   var mesh = new THREE.Mesh( geometry, material );
   mesh.scale.setScalar(0.8);
+
+  log('returning mesh')
+  console.log(mesh)
+  return mesh;
+
+}
+
+function init(showStats) {
+  // stats
+  if (showStats) {
+    var stats = new Stats();
+    stats.domElement.style.zIndex = '200';
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0';
+    stats.domElement.style.top = '0';
+    document.body.appendChild(stats.domElement);
+    requestAnimationFrame(function updateStats(){
+      stats.update();
+      requestAnimationFrame(updateStats);
+    });
+  }
+  
+  // basic setup
+  container = document.getElementById( 'container' );
+  camera = new THREE.Camera();
+  camera.position.z = 1;
+  scene = new THREE.Scene();
+  
+  // Kev
+  var mesh = getVideoMesh()
   scene.add( mesh );
+
+
+  // Do I need thsi??
   renderer = new THREE.WebGLRenderer({ alpha: true });
   renderer.setPixelRatio( window.devicePixelRatio / parseFloat(document.getElementById('resolution').value) );
   container.appendChild( renderer.domElement );

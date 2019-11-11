@@ -1,9 +1,7 @@
 
 
 
-function log(text) {
-  document.getElementById('logger').innerText = text;
-}
+
 
 // Returns a pipeline module that initializes the threejs scene when the camera feed starts, and
 // handles subsequent spawning of a glb model whenever the scene is tapped.
@@ -51,6 +49,8 @@ const placegroundScenePipelineModule = () => {
     model.scene.rotation.set(0.0, yDegrees, 0.0)
     model.scene.position.set(pointX, 0.0, pointZ)
     model.scene.scale.set(scale.x, scale.y, scale.z)
+
+    log('adding a model.scene at pointX: ' + pointX)
     XR.Threejs.xrScene().scene.add(model.scene)
 
     new TWEEN.Tween(scale)
@@ -148,7 +148,7 @@ const onxrloaded = () => {
   // Open the camera and start running the camera run loop.
   XR.run({canvas: document.getElementById('camerafeed')})
 
-  log('duudee')
+  log('dude 2')
 }
 
 // Show loading screen before the full XR library has been loaded.
