@@ -27,8 +27,8 @@ tomatoRef
 // handles subsequent spawning of a glb model whenever the scene is tapped.
 const placegroundScenePipelineModule = () => {
 
-  // const modelFile = "tree.glb"; // 3D model to spawn at tap
-  const modelFile = modelUrl; // 3D model from Firebase!
+  const modelFile = "assets/tree.glb"; // 3D model to spawn at tap
+  // const modelFile = modelUrl; // 3D model from Firebase!
   
   const startScale = new THREE.Vector3(0.0001, 0.0001, 0.0001); // Initial scale value for our model
   const endScale = new THREE.Vector3(0.002, 0.002, 0.002); // Ending scale value for our model

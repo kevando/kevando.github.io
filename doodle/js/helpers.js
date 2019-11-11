@@ -1,10 +1,10 @@
 function log(text) {
 
-  var p = document.createElement("p");
-  p.innerHTML = text
-  p.id = 'logger'
-  console.log(document.body)
-  document.body.appendChild(p);
+//   var p = document.createElement("p");
+//   p.innerHTML = text
+//   p.id = 'logger'
+//   console.log(document.body)
+//   document.body.appendChild(p);
 }
 
 
