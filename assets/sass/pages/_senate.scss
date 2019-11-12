@@ -1,4 +1,5 @@
-body {
+
+  body {
     background-color: white;
     text-align: center;
     font-family: sans-serif;
@@ -42,7 +43,7 @@ body {
   
   .highlight {
     opacity: 1 !important;
-    stroke: red !important;
+    stroke: orange !important;
     stroke-width: 2px !important;
     stroke-opacity: 0.8 !important;
   }
@@ -59,6 +60,29 @@ body {
     text-shadow: 1px 1px 0 #252525, 1px -1px 0 #252525, -1px 1px 0 #252525, -1px -1px 0 #252525;
   }
 
-  svg.mainn {
+  #mainsvg {
     border: solid 1px red;
+  }
+
+
+  // ----
+
+  .states {
+      fill: #ccc;
+  }
+  .states :hover {
+    // fill: red;
+  }
+
+  .active {
+      fill: blue;
+  }
+  
+  .state-borders {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
   }

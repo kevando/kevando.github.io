@@ -12,7 +12,7 @@ var urls = {
       "flights.csv"
   };
   
-  var svg  = d3.select("svg");
+  var svg  = d3.select("#mainsvg");
   
   var width  = parseInt(svg.attr("width"));
   var height = parseInt(svg.attr("height"));
@@ -53,12 +53,12 @@ var urls = {
   d3.json(urls.map).then(drawMap);
   
   // load the airport and flight data together
-  let promises = [
+  let flightPromises = [
     d3.csv(urls.airports, typeAirport),
     d3.csv(urls.flights,  typeFlight)
   ];
   
-  Promise.all(promises).then(processData);
+  Promise.all(flightPromises).then(processData);
   
   // process airport and flight data
   function processData(values) {
@@ -107,8 +107,8 @@ var urls = {
     console.log(" removed: " + (old - airports.length) + " airports with low outgoing degree");
   
     // done filtering airports can draw
-    // drawAirports(airports);
-    // drawPolygons(airports);
+    drawAirports(airports);
+    drawPolygons(airports);
   
     // reset map to only include airports post-filter
     iata = new Map(airports.map(node => [node.iata, node]));
@@ -119,7 +119,7 @@ var urls = {
     console.log(" removed: " + (old - flights.length) + " flights");
   
     // done filtering flights can draw
-    // drawFlights(airports, flights);
+    drawFlights(airports, flights);
   
     console.log({airports: airports});
     console.log({flights: flights});
