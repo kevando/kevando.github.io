@@ -9,22 +9,16 @@
     <script src="https://d3js.org/topojson.v2.min.js"></script>
     <script src="https://unpkg.com/d3-delaunay@4"></script>
     <script src="https://unpkg.com/d3-geo-voronoi@1"></script>
-
   </head>
 
   <body>
-    <svg width="960" height="600" id="mainsvg">
-      <!-- must be in this order for drawing -->
+    <svg width="960" height="600" id="main">
       <g id="basemap"></g>
-      <g id="flights"></g>
-      <g id="airports"></g>
-      <!-- <g id="voronoi"></g> -->
+      <!-- <g id="flights"></g> -->
       <text id="tooltip" style="display: none;"></text>
     </svg>
 
     <script src="js/helpers.js"></script>
     <script src="js/ui.js"></script>
-    
-    
   </body>
 </html>
