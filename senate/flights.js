@@ -107,8 +107,8 @@ var urls = {
     console.log(" removed: " + (old - airports.length) + " airports with low outgoing degree");
   
     // done filtering airports can draw
-    drawAirports(airports);
-    drawPolygons(airports);
+    // drawAirports(airports);
+    // drawPolygons(airports);
   
     // reset map to only include airports post-filter
     iata = new Map(airports.map(node => [node.iata, node]));
@@ -119,7 +119,7 @@ var urls = {
     console.log(" removed: " + (old - flights.length) + " flights");
   
     // done filtering flights can draw
-    drawFlights(airports, flights);
+    // drawFlights(airports, flights);
   
     console.log({airports: airports});
     console.log({flights: flights});
@@ -279,10 +279,10 @@ var urls = {
       // settle at a layout faster
       .alphaDecay(0.1)
       // nearby nodes attract each other
-      .force("charge", d3.forceManyBody()
-        .strength(10)
-        .distanceMax(scales.airports.range()[1] * 2)
-      )
+    //   .force("charge", d3.forceManyBody()
+    //     .strength(10)
+    //     .distanceMax(scales.airports.range()[1] * 2)
+    //   )
       // edges want to be as short as possible
       // prevents too much stretching
       .force("link", d3.forceLink()
@@ -290,6 +290,7 @@ var urls = {
         .distance(0)
       )
       .on("tick", function(d) {
+          console.log('tick')
         links.attr("d", line);
       })
       .on("end", function(d) {
