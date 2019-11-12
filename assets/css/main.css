@@ -918,6 +918,7 @@ g#voronoi {
   font-weight: 900;
   fill: white;
   text-shadow: 1px 1px 0 #252525, 1px -1px 0 #252525, -1px 1px 0 #252525, -1px -1px 0 #252525;
+  pointer-events: none;
 }
 
 #mainsvg {
@@ -926,6 +927,10 @@ g#voronoi {
 
 .states {
   fill: #ccc;
+}
+
+.purple {
+  fill: purple;
 }
 
 .active {
