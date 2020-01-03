@@ -1,80 +1,44 @@
 .category {
-  background: $purple;
+  background: $white;
   padding: $site-padding;
   @media screen and (max-width: 500px) {
-    padding: 0;
+    padding: 20px 0;
+
   }
   article {
-    @include flex(center, center, column);
+    @include flex(flex-start, flex-start, column);
     width: 100%;
     margin-top: 0px;
 
+    
+
     section {
-      @include flex(space-around, flex-start, column);
-      padding: 10px 20px 20px 20px;
-      background: #FBFEF2;
-      width: 500px;
-      border: solid 4px #0D3762;
-      border-radius: 1px;
+      @include flex(space-between, flex-start);
+      width: 100%;
+      border-bottom: solid 1px $charcoal;
+      margin-bottom: 25px;
 
-      
-      margin-bottom: 21px;
-      &:hover {
-        box-shadow: 3px 4px 15px 1px #69696952;
-      }
-      @media screen and (max-width: 500px) {
-        width: 100vw;
-        border-radius: 0px;
-        margin-bottom: 0;
-        background: transparent;
-        box-shadow: none;
-        border: none;
-      }
+      h1 {
+        font-size: 1.4em;
+        font-weight: 500;
+        margin: 0;
 
-      header {
-        h1 {
-          font-size: 1.6em;
-          margin: 5px 0 0px 0;
-
-          a {
-            &:hover > h13 {
-              color: red;
-            }
-          }
-        }
-        p.date {
-          font-family: $work-font;
-          font-weight: 300;
-          font-size: 16px;
-          color: #8e8e8e;
-          @media screen and (max-width: 500px) {
-            color: #616161;
-          }
-        }
-      }
-      summary {
-        p {
-          margin-top: 10px;
-          font-size: 16px;
-          font-weight: 100;
-          color: #656565;
-          line-height: 1.4em;
-        }
         @media screen and (max-width: 500px) {
-          display: none;
+          padding: 0px 5px 5px;
+          font-size: 1.2em;
         }
       }
-      p.tags {
-        display: none;
+      p.date {
         font-family: $work-font;
+        font-weight: 300;
         font-size: 16px;
-        color: #000000;
-        margin-top: 12px;
-        letter-spacing: 0.07rem;
+        text-align: left;
+        color: #8e8e8e;
         @media screen and (max-width: 500px) {
           display: none;
         }
       }
+
       img {
         max-width: 100%;
       }

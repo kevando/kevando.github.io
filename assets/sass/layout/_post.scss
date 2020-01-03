@@ -3,9 +3,9 @@
   article {
     @include flex(center, center, column);
     width: 100%;
-    margin-top: 50px;
+    padding-top: 50px;
     @media screen and (max-width: 500px) {
-      margin-top: 0;
+      padding-top: 0;
     }
     section {
       @include flex(flex-start, flex-start, column);

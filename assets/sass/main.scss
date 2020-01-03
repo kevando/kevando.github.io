@@ -4,32 +4,28 @@
 @import
   'vendors/normalize';
 
-// 2. Config
+// Config
 @import
   'base/variables',
   'base/mixins',
   'base/base',
-  'base/fonts',
   'base/typography';
 
-// 3. Layout-related sections
+// Layouts
 @import
-  'layout/base',
   'layout/header',
   'layout/main',
   'layout/post',
   'layout/footer',
-  'layout/category',
-  'layout/home-aol';
+  'layout/category';
 
 
-// 4. Page speficic
+// Pages
 @import
 'pages/senate',
 'pages/home';
 
 
-// 5. Components
+// Components
 @import
-  'components/aol-box',
   'components/button';

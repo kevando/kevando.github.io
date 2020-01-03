@@ -11,12 +11,11 @@ layout: default
   <article>
     {%- for page in site.categories[page.category] -%}
     <section>
-      <header class="is-active">
         <h1>
           <a href="{{ page.url }}">{{ page.title | escape }}</a>
         </h1>
         <p class="date">{{ page.date | date: date_format }}</p>
-      </header>
+
       <!-- {% include summary.html %} {% include tags.html %} -->
     </section>
     {%- endfor -%}

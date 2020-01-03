@@ -6,42 +6,6 @@ body {
     height: 100vh;
     width: 100%;
 
-    // KEVANDO AONLINE LOGO!
-    .kevando-online {
-      width: 300px;
-      height: 140px;
-      position: relative;
-
-      p.kevando {
-        text-align: center;
-        color: #0f3762;
-        text-shadow: #cccbff 1px 1px 0px;
-        font-size: 60px;
-        font-family: $vapor-font;
-      }
-      span.cursive {
-        @include cursive;
-        position: absolute;
-        display: inline-block;
-        right: 4px;
-    bottom: 55px;
-        transform: rotate(-9deg);
-        text-shadow:#f933ae 1px 1px 0px, #f933aea3 -1px -1px 0px, #f933ae 0px 0px 10px;
-        color: white;
-
-        span.large {
-          font-size: 28px;
-          float: left;
-        }
-        span.normal {
-          float: left;
-          font-size: 20px;
-          margin-top: 6px;
-          margin-left: 3px;
-        }
-      }
-    }
-
     .boxes {
       @include flex();
       height: 400px;
@@ -62,18 +26,33 @@ body {
 
           a {
             @include flex();
-            border: solid 7px $blue;
+            border-color: $blue;
+            border-style: solid;
+            border-width: 7px;
+
             background: $purple;
             width: 100%;
             height: 100%;
 
-            &:visited {
-              border-color: $blue;
-              background: $purple;
+            border-width: 7px;
+
+            &:hover {
+              img {
+                margin-left: -10px;
+              }
+            }
+
+            &:focus {
+              img {
+                margin-left: 150px;
+                opacity: 0;
+                @include transition(all 0.2s 0s);
+              }
             }
 
             img {
               width: 100px;
+              @include transition(margin-left 0.5s 0s);
             }
           }
         }

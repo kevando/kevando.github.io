@@ -2,6 +2,7 @@ header.navigation {
   @include flex(space-between, inherit);
   height: $nav-height;
   border-bottom: solid 2px $charcoal;
+  background-color: $purple;
 
   .logo {
     border-bottom-width: 0px;
@@ -29,7 +30,8 @@ header.navigation {
     border-bottom-width: 0.3em;
     border-bottom-style: solid;
     border-bottom-color: $purple;
-    &.active, &:hover {
+    &.active,
+    &:hover {
       border-bottom-color: white;
       text-decoration: none;
     }

@@ -461,6 +461,10 @@ html {
   outline: none;
 }
 
+html {
+  background-color: #CBCBFF;
+}
+
 h2,
 h3,
 h4,
@@ -560,13 +564,6 @@ pre {
   line-height: 1.5em;
 }
 
-body {
-  background: #CBCBFF;
-}
-body.empty {
-  background: #FBFEF2;
-}
-
 header.navigation {
   display: flex;
   justify-content: space-between;
@@ -574,6 +571,7 @@ header.navigation {
   flex-direction: row;
   height: 60px;
   border-bottom: solid 2px #232323;
+  background-color: #CBCBFF;
 }
 header.navigation .logo {
   border-bottom-width: 0px;
@@ -612,6 +610,7 @@ header.navigation nav a.active, header.navigation nav a:hover {
 }
 
 main {
+  background-color: #CBCBFF;
   min-height: 80vh;
 }
 @media screen and (max-width: 500px) {
@@ -630,11 +629,11 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 @media screen and (max-width: 500px) {
   .post article {
-    margin-top: 0;
+    padding-top: 0;
   }
 }
 .post article section {
@@ -718,87 +717,51 @@ footer.page p {
 }
 
 .category {
-  background: #CBCBFF;
+  background: #FBFEF2;
   padding: 20px;
 }
 @media screen and (max-width: 500px) {
   .category {
-    padding: 0;
+    padding: 20px 0;
   }
 }
 .category article {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   width: 100%;
   margin-top: 0px;
 }
 .category article section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  flex-direction: column;
-  padding: 10px 20px 20px 20px;
-  background: #FBFEF2;
-  width: 500px;
-  border: solid 4px #0D3762;
-  border-radius: 1px;
-  margin-bottom: 21px;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: solid 1px #232323;
+  margin-bottom: 25px;
 }
-.category article section:hover {
-  box-shadow: 3px 4px 15px 1px #69696952;
+.category article section h1 {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin: 0;
 }
 @media screen and (max-width: 500px) {
-  .category article section {
-    width: 100vw;
-    border-radius: 0px;
-    margin-bottom: 0;
-    background: transparent;
-    box-shadow: none;
-    border: none;
+  .category article section h1 {
+    padding: 0px 5px 5px;
+    font-size: 1.2em;
   }
 }
-.category article section header h1 {
-  font-size: 1.6em;
-  margin: 5px 0 0px 0;
-}
-.category article section header h1 a:hover > h13 {
-  color: red;
-}
-.category article section header p.date {
+.category article section p.date {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
+  text-align: left;
   color: #8e8e8e;
 }
 @media screen and (max-width: 500px) {
-  .category article section header p.date {
-    color: #616161;
-  }
-}
-.category article section summary p {
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: 100;
-  color: #656565;
-  line-height: 1.4em;
-}
-@media screen and (max-width: 500px) {
-  .category article section summary {
-    display: none;
-  }
-}
-.category article section p.tags {
-  display: none;
-  font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  color: #000000;
-  margin-top: 12px;
-  letter-spacing: 0.07rem;
-}
-@media screen and (max-width: 500px) {
-  .category article section p.tags {
+  .category article section p.date {
     display: none;
   }
 }
@@ -806,62 +769,8 @@ footer.page p {
   max-width: 100%;
 }
 
-body .aol.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-}
-body .aol.home .boxes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 100vh;
-  width: 100%;
-}
-body .aol.home .boxes .box {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-direction: row;
-  padding: 10px;
-  box-shadow: #000000ad 4px 4px 6px -2px;
-  border: solid 1px #e6e6e6;
-  border-radius: 1px;
-  width: 300px;
-  height: 200px;
-}
-body .aol.home .boxes .box .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-grow: 1;
-}
-body .aol.home .boxes .box .content a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  border: solid 7px #0D3762;
-  background: #CBCBFF;
-  width: 100%;
-  height: 100%;
-}
-body .aol.home .boxes .box .content a:visited {
-  border-color: #0D3762;
-  background: #CBCBFF;
-}
-body .aol.home .boxes .box .content a img {
-  width: 100px;
-}
-
 body {
   background-color: white;
-  text-align: center;
   font-family: sans-serif;
 }
 
@@ -954,38 +863,6 @@ body .aol.home {
   height: 100vh;
   width: 100%;
 }
-body .aol.home .kevando-online {
-  width: 300px;
-  height: 140px;
-  position: relative;
-}
-body .aol.home .kevando-online p.kevando {
-  text-align: center;
-  color: #0f3762;
-  text-shadow: #cccbff 1px 1px 0px;
-  font-size: 60px;
-  font-family: "Fugaz One", cursive;
-}
-body .aol.home .kevando-online span.cursive {
-  font-family: "Homemade Apple", cursive;
-  position: absolute;
-  display: inline-block;
-  right: 4px;
-  bottom: 55px;
-  transform: rotate(-9deg);
-  text-shadow: #f933ae 1px 1px 0px, #f933aea3 -1px -1px 0px, #f933ae 0px 0px 10px;
-  color: white;
-}
-body .aol.home .kevando-online span.cursive span.large {
-  font-size: 28px;
-  float: left;
-}
-body .aol.home .kevando-online span.cursive span.normal {
-  float: left;
-  font-size: 20px;
-  margin-top: 6px;
-  margin-left: 3px;
-}
 body .aol.home .boxes {
   display: flex;
   justify-content: center;
@@ -1018,41 +895,33 @@ body .aol.home .boxes .box .content a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: solid 7px #0D3762;
+  border-color: #0D3762;
+  border-style: solid;
+  border-width: 7px;
   background: #CBCBFF;
   width: 100%;
   height: 100%;
+  border-width: 7px;
 }
-body .aol.home .boxes .box .content a:visited {
-  border-color: #0D3762;
-  background: #CBCBFF;
+body .aol.home .boxes .box .content a:hover img {
+  margin-left: -10px;
+}
+body .aol.home .boxes .box .content a:focus img {
+  margin-left: 150px;
+  opacity: 0;
+  -webkit-transition: all 0.2s 0s;
+  -moz-transition: all 0.2s 0s;
+  -ms-transition: all 0.2s 0s;
+  -o-transition: all 0.2s 0s;
+  transition: all 0.2s 0s;
 }
 body .aol.home .boxes .box .content a img {
   width: 100px;
-}
-
-.aol.box {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-direction: row;
-  padding: 10px;
-  box-shadow: #000000ad 4px 4px 6px -2px;
-  border: solid 1px #e6e6e6;
-  border-radius: 1px;
-  width: 600px;
-  height: 354px;
-}
-.aol.box .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-grow: 1;
-  border: solid 7px #0D3762;
-  background: #CBCBFF;
-  width: 100%;
-  height: 100%;
+  -webkit-transition: margin-left 0.5s 0s;
+  -moz-transition: margin-left 0.5s 0s;
+  -ms-transition: margin-left 0.5s 0s;
+  -o-transition: margin-left 0.5s 0s;
+  transition: margin-left 0.5s 0s;
 }
 
 /*# sourceMappingURL=main.css.map */
