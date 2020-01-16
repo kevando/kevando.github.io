@@ -1,47 +1,17 @@
 .category {
-  background: $white;
   padding: $site-padding;
-  @media screen and (max-width: 500px) {
-    padding: 20px 0;
 
-  }
-  article {
-    @include flex(flex-start, flex-start, column);
-    width: 100%;
-    margin-top: 0px;
-
-    
-
-    section {
-      @include flex(space-between, flex-start);
-      width: 100%;
-      border-bottom: solid 1px $charcoal;
-      margin-bottom: 25px;
-
-      h1 {
-        font-size: 1.4em;
-        font-weight: 500;
-        margin: 0;
-
-        @media screen and (max-width: 500px) {
-          padding: 0px 5px 5px;
-          font-size: 1.2em;
-        }
-      }
-      p.date {
-        font-family: $work-font;
-        font-weight: 300;
-        font-size: 16px;
-        text-align: left;
-        color: #8e8e8e;
-        @media screen and (max-width: 500px) {
-          display: none;
-        }
-      }
-
-      img {
-        max-width: 100%;
-      }
+  header {
+    padding-bottom: 10px;
+    h1.title {
+      color: $blue;
+      font-family: $pattern-font;
+      font-size: 70px;
+      letter-spacing: 0.1em;
+      margin: 0;
     }
+  }
+  a {
+    text-decoration: underline;
   }
 }

@@ -1,31 +1,17 @@
 @charset 'UTF-8';
 
 // 1. Vendors
-@import
-  'vendors/normalize';
+@import "vendors/normalize";
 
 // Config
-@import
-  'base/variables',
-  'base/mixins',
-  'base/base',
-  'base/typography';
+@import "base/variables", "base/mixins", "base/keyframes", "base/base",
+  "base/typography";
 
 // Layouts
-@import
-  'layout/header',
-  'layout/main',
-  'layout/post',
-  'layout/footer',
-  'layout/category';
-
+@import "layout/default", "layout/post", "layout/category";
 
 // Pages
-@import
-'pages/senate',
-'pages/home';
-
+@import "pages/senate", "pages/home", "pages/sampler";
 
 // Components
-@import
-  'components/button';
+@import "components/button", "components/footer", "components/nav";

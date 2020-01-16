@@ -1,5 +1,17 @@
 html {
-  box-sizing: border-box;
+  &.default {
+    background: $purple;
+    body {
+      background: $purple;
+    }
+  }
+  &.empty {
+    background: $white;
+     body {
+      background: $white;
+     }
+  }
+  
 }
 
 *,
@@ -11,12 +23,4 @@ html {
 // Remove weird border from focus elements
 :focus {
   outline: none;
-}
-
-
-
-// theme stuff
-
-html {
-  background-color: $purple;
 }

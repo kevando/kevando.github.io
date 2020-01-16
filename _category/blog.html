@@ -8,16 +8,18 @@ layout: default
 {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
 <div class="category">
-  <article>
+  <header>
+    <h1 class="title">Blog</h1>
+  </header>
+  <ul>
     {%- for page in site.categories[page.category] -%}
-    <section>
-        <h1>
-          <a href="{{ page.url }}">{{ page.title | escape }}</a>
-        </h1>
-        <p class="date">{{ page.date | date: date_format }}</p>
 
+    <li>
+      <a href="{{ page.url }}">{{ page.title | escape }}</a>
       <!-- {% include summary.html %} {% include tags.html %} -->
-    </section>
+      <!-- <span class="date">{{ page.date | date: date_format }}</span> -->
+    </li>
+
     {%- endfor -%}
-  </article>
+  </ul>
 </div>

@@ -1,110 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo|Work+Sans:200,300,400,500,700|Londrina+Shadow|Inconsolata:400,700|Homemade+Apple|Fugaz+One|Monoton');
+@import url("https://fonts.googleapis.com/css?family=Arvo|Work+Sans:200,300,400,500,700|Londrina+Shadow|Inconsolata:400,700|Homemade+Apple|Fugaz+One|Monoton|Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 
 // ---------------------------
 //         Fonts
 // ---------------------------
 
-$arvo-font:   'Arvo', serif;
-$work-font:   'Work Sans', sans-serif;
-$text-font:   'Inconsolata', 'sans-serif';
-$shadow-font: 'Londrina Shadow', cursive;
-$cursive-font: 'Homemade Apple', cursive;
-$pattern-font: 'Monoton', cursive;
-$vapor-font:'Fugaz One', cursive;
+$arvo-font: "Arvo", serif;
+$work-font: "Work Sans", sans-serif;
+$text-font: "Inconsolata", "sans-serif";
+$shadow-font: "Londrina Shadow", cursive;
+$cursive-font: "Homemade Apple", cursive;
+$pattern-font: "Monoton", cursive;
+$vapor-font: "Fugaz One", cursive;
+$lato-font: "Lato", sans-serif;
 
 // ---------------------------
 //         Colors
 // ---------------------------
 
-$white: #FBFEF2;
-$yellow: #FFCD00;
-$dark-blue: #3F51B4;
-$purple: #CBCBFF;
-$red: #FF003D;
-$blue: #0D3762;
-$green: #00CBD7;
-$orange: #FF7000;
-
+$white: #fbfef2;
+$yellow: #ffcd00;
+$dark-blue: #3f51b4;
+$purple: #cbcbff;
+$red: #ff003d;
+$blue: #0d3762;
+$green: #00cbd7;
+$orange: #ff7000;
 
 // Darks
 $black: #0a0a0a;
 $charcoal: #232323;
-$meta-gray: #292929;;
+$meta-gray: #292929;
 $border-color: #dddddd;
 
+// ---------------------------
+//      Heights & Widths
+// ---------------------------
+
+$nav-height: 60px;
+$main-height: 95vh;
+$footer-height: 5vh;
 
 // ---------------------------
-//         Padding
+//         Spacing
 // ---------------------------
 
 $site-padding: 20px;
-$nav-height: 60px;
+$content-margin: 20px;
 
 // ---------------------------
 //         Borders
 // ---------------------------
+
 $link-border-size: 0.3em;
-
-
-// ------------------------------------------------------
-
-
-/// Regular font family
-/// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-$text-color: $charcoal;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
-
-
-
-/// Container's maximum width
-/// @type Length
-$max-width: 1180px !default;
-
-
-
-
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px
 ) !default;
-
-
-
-
-
 
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$base-url: "/assets/" !default;

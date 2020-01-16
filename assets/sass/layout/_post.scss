@@ -70,17 +70,85 @@
   }
 
   &.text {
-    
     article {
       section {
         max-width: 700px;
         header {
           h1 {
-            font-size: 2.4em
+            font-size: 2.4em;
           }
         }
-       
       }
     }
+  }
+}
+
+// Movies I like
+
+.post.movie {
+  background-color: $white;
+  padding-bottom: 40px;
+  @include flex(flex-start, center, column);
+  @include for-phone-only {
+    padding-top: 0px;
+  }
+  padding-top: 50px;
+
+  .box {
+    @include flex(center, stretch);
+    @include aol-outer-box;
+    @include for-phone-only {
+      padding: 0px;
+    }
+
+    position: relative;
+    max-width: 800px;
+
+    .content {
+      @include flex(center, flex-start, column);
+      @include aol-inner-box($white, 7px);
+      @include for-phone-only {
+        border-width: 0px;
+      }
+
+      padding: 0px $content-margin 40px $content-margin;
+
+      header {
+        margin: 40px 0;
+        h1.title {
+          color: $blue;
+          font-size: 60px;
+          line-height: 0.8em;
+          margin: 0;
+        }
+        p.subtitle {
+          font-family: $vapor-font;
+          color: $yellow;
+          font-size: 17px;
+          // line-height: 0.9em;
+          text-indent: 3px;
+        }
+      }
+
+      article {
+        padding-top: 0px;
+
+        img {
+          width: 80%;
+          margin: 40px 10%;
+        }
+        p:last-child {
+          text-shadow: #52525252 1px 1px 20px;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+  p.date {
+    font-size: 0.7em;
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+    opacity: 0.7;
   }
 }

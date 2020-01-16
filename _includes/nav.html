@@ -1,6 +1,6 @@
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-<header role="banner" class="navigation">
+<header role="banner" class="nav">
   <div class="left">
     <a href="/{% if page.permalink != '/blog' %}blog{% endif %}" class="logo">
       <img src="/assets/images/aol-man-running.png" />
@@ -9,7 +9,5 @@
   <nav class="right">
     <a href="/resume" target="blank_">Résumé</a>
     <a class="active" href="/blog">Blog</a>
-    <!-- <a class="{% if page.category == 'learn' %}active{% endif %}"href="/learn" >Learn</a> -->
-    <!-- <a class="{% if page.category == 'fav' %}active{% endif %}"href="/<3" ><3</a></3> -->
   </nav>
 </header>

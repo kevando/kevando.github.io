@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+
+<div class="post movie">
+  <div class="box">
+    <div class="content">
+      <header>
+        <h1 itemprop="name headline" class="title">
+          {{ page.title | escape }}
+        </h1>
+        <p class="subtitle">{{ page.sub_title | escape }}</p>
+      </header>
+      <article>
+        {{ content }}
+      </article>
+      <p class="date">{{ page.date | date: date_format }}</p>
+    </div>
+  </div>
+</div>
