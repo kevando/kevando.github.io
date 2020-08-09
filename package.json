@@ -1,10 +1,12 @@
 {
-  "name": "Kevando",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "github.com:kevando/kevando.github.io.git",
-  "license": "MIT",
+  "name": "kevando-online",
+  "description": "Static website built in Jekyll. Hosted on Github.",
+  "version": "21",
+  "license": "to chill",
   "scripts": {
-    "dev": "sass assets/sass/main.scss:assets/css/main.css --watch & jekyll serve"
+    "dev": "bundle exec jekyll serve --livereload",
+    "git": "git add . && git commit -m",
+    "pregit": "git pull origin master",
+    "postgit": "git push origin master"
   }
 }

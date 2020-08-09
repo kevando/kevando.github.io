@@ -1,24 +1,14 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    {%- seo -%}
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-
-    <!-- feed meta? -->
+  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <title>{{ page.meta.title | default: page.title }}</title>
+  
+    <link rel="stylesheet" href="{{ "/css/kevando.css" | relative_url }}">
+  
+    {%- include head/favicon.html -%}
+    {%- include head/google-analytics.html -%} 
     {%- feed_meta -%}
-
-    <!-- Analytics -->
-    {%- if jekyll.environment == 'production' and site.google_analytics -%}
-      {%- include google-analytics.html -%}
-    {%- endif -%}
-
-
-    {%- include favicon.html -%}
-
-
-
-
   </head>
