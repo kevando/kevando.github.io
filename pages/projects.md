@@ -27,4 +27,4 @@ permalink: /projects
   {%- endfor -%}
 
 
-torch, chaz, wooie
+torch, chaz, wooie zharki
