@@ -6,9 +6,10 @@
   
     <title>{{ page.meta.title | default: page.title }}</title>
   
-    <link rel="stylesheet" href="{{ "/css/kevando.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/kevando.css" | relative_url }}">
   
-    {%- include head/favicon.html -%}
-    {%- include head/google-analytics.html -%} 
+    <link rel="icon" type="image/png" href="/assets/images/icon-32.png" />
+    
+    {%- include google-analytics.html -%} 
     {%- feed_meta -%}
   </head>

@@ -3,7 +3,7 @@ layout: default
 title: Kevando Online
 permalink: /
 meta:
-  title: "Welcome to Kevin's Website"
+  title: "Kevin's Website"
 ---
 
 # **Kevin Habich**
@@ -13,15 +13,15 @@ meta:
 
 ---
 
-I made a [website](https://chaz.co) that showcases empathy.
-
 I make [Snapchat Lenses](https://lensstudio.snapchat.com/creator/Mpx2Ow0xd7dWLQp62cK0Jg).
 
-I write [code](http://github.com/kevando).
+I have a [dog](https://byte.co/@darby).
 
-I made a [tool](https://wookietranslator.com) for talking to wookies.
+I made this [website](https://chaz.co) to explain empathy.
 
-I started an [eyewear](https://www.instagram.com/frameri/) company that no longer exists.
+I made this [tool](https://wookietranslator.com) for talking to wookies.
+
+I started an [eyewear](https://www.instagram.com/frameri/) company.
 
 I started another company called [Kevaid](https://kevaid.com). 
 
