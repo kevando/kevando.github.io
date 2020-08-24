@@ -7,14 +7,15 @@ body {
   margin: 0;
 }
 
-h1,h2,h3,p {
+h1,
+h2,
+h3,
+p {
   font-family: Arial;
 }
 h2 {
   font-size: 1.3em;
 }
-
-
 
 // ----- LAYOUT ------
 
@@ -56,86 +57,82 @@ h2 {
     flex-direction: column;
     justify-content: flex-end;
 
-    margin: 20px 0;
+    margin: 0 20px 0 0;
     h2 {
       margin-bottom: 0;
     }
     p {
-      margin-top: 5px
+      margin-top: 5px;
     }
     img {
       max-width: 100%;
     }
-
   }
   .video.item {
     width: 40%;
-    // border: solid 1px red;
+    position: relative;
     min-height: 700px;
+
+    video {
+      border: solid 10px $blue;
+      float: right;
+      // position: absolute;
+      // right: 0;
+    }
+    // img {
+    //   z-index: 9;
+    // }
+    // video {
+    //   z-index: 10;
+    // }
+    p {
+      background: red;
+      color: yellow;
+      position: absolute;
+      right: 10px;
+      bottom: 40px;
+      font-size: 35px;
+      padding: 5px 10px;
+      font-weight: bold;
+      z-index: 10;
+    }
   }
 }
 
-.main.section {
-  .news.item {
-    font-size: 1.7em;
-    width: 50%;
-    max-height: 400px;
-  }
-}
+
 
 #MostWanted {
   background-color: #e6e6e6;
+  background-image: url("/assets/ifam/wanted.jpg");
   border: solid 10px black;
+  color: white;
+  font-size: 1.7em;
+  width: 50%;
+  max-height: 500px;
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .advertisement {
-  background: yellow;
+  background: #9d00ff;
   padding: 10px 30px;
-  
 }
 
-
-.main-section {
-  height: $header-height;
-  position: relative;
-  background: green;
-
-  h3 {
-    position: absolute;
-    background-color: red;
-    color: yellow;
-    font-family: Arial;
-    padding: 0.3rem 1rem;
-    font-size: 2rem;
-    right: 5rem;
-
-  }
-  .video-wrapper {
-    border: solid 5px red;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    // width: 400px;
-
-  }
-
-
-}
 .footer {
   background-color: red;
   margin-top: 50px;
 
   p {
     margin: 0;
-    padding:40px 0;
+    padding: 40px 0;
     font-size: 1.2em;
     text-align: center;
     button {
-       background: blue;
-       font-size: 30px;
-       margin-left: 140px;
-       color: yellow;
-
+      background: blue;
+      font-size: 30px;
+      margin-left: 140px;
+      color: yellow;
     }
   }
 }
