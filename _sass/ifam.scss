@@ -1,0 +1,89 @@
+// ------------------
+
+body {
+  background: #ccc;
+  margin: 0;
+}
+
+h1 {
+  font-family: Arial;
+  font-size: 8vh; //4rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  z-index: 10;
+}
+
+h2 {
+  font-family: Arial;
+  color: white;
+  // font-weight: bold;
+
+  margin: 1vh 0 0 0;
+  padding-left: 20px;
+}
+
+$header-height: 10vh;
+
+// LAYOUT
+.header {
+  background-color: blue;
+  height: $header-height;
+  border-bottom: solid 10px orange;
+  padding-left: 20px;
+  h1 {
+    float: left;
+  }
+  h2 {
+    float: left;
+  }
+}
+
+.main-section {
+  height: 100vh-$header-height;
+  position: relative;
+  background: green;
+
+  h3 {
+    position: absolute;
+    background-color: red;
+    color: yellow;
+    font-family: Arial;
+    padding: 0.3rem 1rem;
+    font-size: 2rem;
+    right: 5rem;
+
+  }
+  .video-wrapper {
+    border: solid 5px red;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    // width: 400px;
+
+  }
+
+  .message {
+    background: blue;
+    width: 600px;
+    margin-left: 50px;
+    padding-top: 100px;
+    p {
+      font-family: Arial;
+      // font-size: 8vh; //4rem;
+      font-weight: bold;
+      // color: white;
+      // margin: 0;
+      // z-index: 10;
+      
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.198);
+    }
+  }
+}
+
+.advertisement {
+  width: 90vw;
+  margin-left: 5vw;
+  background: yellow;
+}
