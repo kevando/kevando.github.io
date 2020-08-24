@@ -1,46 +1,109 @@
 // ------------------
 
+$blue: #090282;
+$header-height: 80px;
+
 body {
-  background: #ccc;
   margin: 0;
 }
 
-h1 {
+h1,h2,h3,p {
   font-family: Arial;
-  font-size: 8vh; //4rem;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-  z-index: 10;
 }
-
 h2 {
-  font-family: Arial;
-  color: white;
-  // font-weight: bold;
-
-  margin: 1vh 0 0 0;
-  padding-left: 20px;
+  font-size: 1.3em;
 }
 
-$header-height: 10vh;
 
-// LAYOUT
+
+// ----- LAYOUT ------
+
 .header {
-  background-color: blue;
+  background-color: $blue;
   height: $header-height;
-  border-bottom: solid 10px orange;
-  padding-left: 20px;
+  padding: 0 20px;
   h1 {
     float: left;
+    font-size: 70px;
+    margin: 0;
+    color: yellow;
   }
   h2 {
+    margin: 0;
     float: left;
+    font-size: 32px;
+    margin-top: 20px;
+    color: white;
+    margin-left: 55px;
+    font-family: Baskerville;
+    font-weight: 100;
+    letter-spacing: 1px;
   }
 }
 
+.content {
+  padding: 0 20px;
+}
+
+.section {
+  display: flex;
+
+  .news.item {
+    width: 33%;
+    color: black;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin: 20px 0;
+    h2 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 5px
+    }
+    img {
+      max-width: 100%;
+    }
+
+  }
+  .video.item {
+    width: 40%;
+    // border: solid 1px red;
+    min-height: 700px;
+  }
+}
+
+.main.section {
+  .news.item {
+    font-size: 1.7em;
+    width: 50%;
+    max-height: 400px;
+  }
+}
+
+#MostWanted {
+  background-color: #e6e6e6;
+  border: solid 10px black;
+}
+
+.advertisement {
+  background: yellow;
+  padding: 10px 30px;
+  
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+
 .main-section {
-  height: 100vh-$header-height;
+  height: $header-height;
   position: relative;
   background: green;
 
@@ -63,27 +126,23 @@ $header-height: 10vh;
 
   }
 
-  .message {
-    background: blue;
-    width: 600px;
-    margin-left: 50px;
-    padding-top: 100px;
-    p {
-      font-family: Arial;
-      // font-size: 8vh; //4rem;
-      font-weight: bold;
-      // color: white;
-      // margin: 0;
-      // z-index: 10;
-      
-      padding: 1rem;
-      background: rgba(0, 0, 0, 0.198);
+
+}
+.footer {
+  background-color: red;
+  margin-top: 50px;
+
+  p {
+    margin: 0;
+    padding:40px 0;
+    font-size: 1.2em;
+    text-align: center;
+    button {
+       background: blue;
+       font-size: 30px;
+       margin-left: 140px;
+       color: yellow;
+
     }
   }
-}
-
-.advertisement {
-  width: 90vw;
-  margin-left: 5vw;
-  background: yellow;
 }
