@@ -31,6 +31,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
 		crossorigin="anonymous"></script>
 
+		<script src="/assets/paulie/scripts/helpers.js"></script>
+
 
 	<script>console.clear();</script>
 
@@ -41,14 +43,16 @@
 
 <body>
 
-    {{ content }}
+	{%- include paulie/audio.html -%}	
 
-	<div id="Paulie">
-        {%- include paulie_faces.html -%}
-    </div>
+	{{ content }}
+	
+	{%- include paulie/icons.html -%}	
+	{%- include paulie/cursor.html -%}
+
 
 </body>
 
-<script src="/assets/js/paulie.js?cache=3"></script>
+<script src="/assets/paulie/scripts/index.js?cache=6"></script>
 
 </html>
