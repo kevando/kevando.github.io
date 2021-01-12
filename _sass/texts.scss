@@ -1,0 +1,48 @@
+
+
+@font-face {
+  font-family: "Silom";
+  src: url("../../assets/fonts/Silom.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Typewriter";
+  src: url("../../assets/fonts/AmericanTypewriter.ttc") format("truetype");
+}
+
+@font-face {
+  font-family: "Rockwell";
+  src: url("../../assets/fonts/Rockwell.ttc") format("truetype");
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+h1 {
+  // margin-bottom: -10px;
+  font-family: Silom;
+}
+
+hr {
+  margin: 10px 0;
+}
+p {
+ font-size: 1.3rem;
+ font-weight: 100;
+ font-family: Arial;
+}
+
+li {
+  font-size: 17px;
+  margin: 5px 0;
+}
+
+code {
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: Courier New;
+  background: #ddd;
+}

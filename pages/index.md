@@ -6,12 +6,9 @@ meta:
   title: "Kevin's Website"
 ---
 
-
 # **Kevin Habich**
 
-
 [Twitter](https://twitter.com/kevando_) . [LinkedIn](https://www.linkedin.com/in/kevando/) . [Instagram](https://www.instagram.com/kevando)
-
 
 ---
 
@@ -29,7 +26,11 @@ I started [Kevaid](http://www.kevaid.com/help)
 
 We build Augmented Reality (AR) experiences.
 
-[BS Paint](http://bspaint.net) . [Word Vomit 3D](https://apps.apple.com/ao/app/word-vomit-3d/id1314707004) . [Doodle Lens](http://doodlelens.app) 
-
+[BS Paint](http://bspaint.net) . [Word Vomit 3D](https://apps.apple.com/ao/app/word-vomit-3d/id1314707004) . [Doodle Lens](http://doodlelens.app)
 
 # 🌐
+
+<script>
+  // Goofs
+  $('p').addClass("spaced")
+</script>

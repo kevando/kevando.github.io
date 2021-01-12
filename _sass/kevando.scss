@@ -1,10 +1,18 @@
-@import "base", "typography", "layout", "links";
-
+@import "base";
+@import "mixins";
+@import "texts";
+@import "layouts";
 
 $background-color: #cacaca;
 body {
   background-color: $background-color;
 }
 
+p {
+  transition: all 120s 1s ease-in-out;
+  white-space: nowrap;
 
-
+  &.spaced {
+    letter-spacing: 70px;
+  }
+}
