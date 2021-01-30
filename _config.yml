@@ -1,23 +1,23 @@
-# ----------------------
-# Basic Shit
-# ----------------------
+# ---------------------------------
+#   Basic Shit
+# ---------------------------------
 
 title: Kevando Online
 description: Surfing the web revival wave
 url: "https://kevando.github.io"
 google_analytics: UA-16078011-4
 
-# ----------------------
-# Build Settings
-# ----------------------
+# ---------------------------------
+#   Build Settings
+# ---------------------------------
 
 theme: minima
 plugins:
   - jekyll-feed
 
-# ----------------------
-# Content Stuff
-# ----------------------
+# ---------------------------------
+#   Content Stuff
+# ---------------------------------
 
 defaults:
   - scope:
@@ -25,17 +25,21 @@ defaults:
     values:
       layout: "base"
 
-# ----------------------
-# SASS/CSS 
-# ----------------------
+# ---------------------------------
+#   SASS/CSS 
+# ---------------------------------
 
 sass:
   sass_dir: _sass 
   style: compressed
 
 
-# ----------------------
-# Collections
-# ----------------------
+# ---------------------------------
+#   Custom Locations
+# ---------------------------------
 
 collections_dir: _collections
+layouts_dir: _html/_layouts
+includes_dir: _html/_includes
+
+include: ["_pages"]

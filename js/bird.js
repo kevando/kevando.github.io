@@ -81,7 +81,7 @@ function renderLoop() {
 	$bird.css("transform", str);
 	$bird.css("top", y);
 	$bird.css("left", x);
-	$("p").text(looper);
+
 	window.requestAnimationFrame(renderLoop);
 }
 

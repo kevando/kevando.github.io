@@ -2,8 +2,6 @@
 layout: simple
 title: Kevando Online
 permalink: /
-meta:
-  title: "Kevin's Website"
 ---
 
 # **Kevin Habich**
@@ -30,3 +28,6 @@ We build Augmented Reality (AR) experiences.
 
 
 # 🌐
+
+
+<script src="/js/bird.js"></script>
