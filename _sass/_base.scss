@@ -1,8 +1,8 @@
 
 
 body {
-  // margin: 0;
-  // padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -18,9 +18,14 @@ html {
   outline: none;
 }
 body {
-  // margin: 0;
   height: 100%;
 }
 img {
   max-width: 100%;
+}
+
+
+
+body {
+  background-color: $grey;
 }

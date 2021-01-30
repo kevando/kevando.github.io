@@ -1,0 +1,199 @@
+// ADDS A BROWSER PREFIX TO THE PROPERTY (star of the show)
+@mixin css3-prefix($property, $value) {
+	-webkit-#{$property}: #{$value};
+	-khtml-#{$property}: #{$value};
+	-moz-#{$property}: #{$value};
+	-ms-#{$property}: #{$value};
+	-o-#{$property}: #{$value};
+	#{$property}: #{$value};
+}
+
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@-ms-keyframes #{$animation-name} {
+		@content;
+	}
+	@-o-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($str) {
+	-webkit-animation: #{$str};
+	-moz-animation: #{$str};
+	-ms-animation: #{$str};
+	-o-animation: #{$str};
+	animation: #{$str};
+}
+
+@mixin backface-visibility($visibility: hidden) {
+	backface-visibility: $visibility;
+	-webkit-backface-visibility: $visibility;
+	-moz-backface-visibility: $visibility;
+	-ms-backface-visibility: $visibility;
+	-o-backface-visibility: $visibility;
+}
+
+@mixin transition($time) {
+	transition: $time;
+	-webkit-transition: $time;
+	-moz-transition: $time;
+	-o-transition: $time;
+}
+
+@mixin transform($transformation) {
+	transform: $transformation;
+	-webkit-transform: $transformation;
+	-moz-transform: $transformation;
+	-ms-transform: $transformation;
+	-o-transform: $transformation;
+}
+
+@mixin transform-style($style) {
+	transform-style: $style;
+	-moz-transform-style: $style;
+	-o-transform-style: $style;
+	-ms-transform-style: $style;
+	-webkit-transform-style: $style;
+}
+
+@mixin transform-origin($style) {
+	transform-origin: $style;
+	-moz-transform-origin: $style;
+	-o-transform-origin: $style;
+	-ms-transform-origin: $style;
+	-webkit-transform-origin: $style;
+}
+
+// ==========================
+//      Media Queries
+// ==========================
+
+@mixin phone($mode: "any") {
+	@media only screen and (max-width: 760px) {
+		@media screen and (orientation: portrait) {
+			@if $mode == "portrait" {
+				@content;
+			}
+		}
+		@media screen and (orientation: landscape) {
+			@if $mode == "landscape" {
+				@content;
+			}
+		}
+		@if $mode == "any" {
+			@content;
+		}
+	}
+}
+
+
+@function generateFire() {
+	$value: "0 0 2px #fefcc9";
+
+	$blaze: 7px;
+	$value: "#{$value} , #{$blaze} #{-$blaze}  3px #feec85";
+	$value: "#{$value} , #{-$blaze} #{$blaze}  3px #feec85";
+	$value: "#{$value} , 15px -20px 6px #ffae34";
+	$value: "#{$value} , -15px -20px 6px #ffae34";
+	$value: "#{$value} , 10px -25px 7px #ec760c";
+	$value: "#{$value} , 10px -30px 9px #cd4606";
+	$value: "#{$value} , 25px -30px 10px #973716";
+	$value: "#{$value} , 60px -60px 8px #451b0e";
+
+	@return unquote($value);
+}
+
+@mixin fire() {
+	text-shadow: generateFire();
+}
+
+
+@mixin footer() {
+	html,
+	body,
+	.wrapper {
+		height: 100%;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+	.content {
+		flex: 1 0 auto;
+	}
+	.footer {
+		flex-shrink: 0;
+	}
+}
+
+$big-time: 1400px;
+$small-time: 500px;
+
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+
+
+@mixin fluid-type1($font-min, $font-max, $screen-min, $screen-max) {
+	font-size: #{$font-min}px;
+
+	@media only screen and (min-width: #{$screen-min}px) {
+		font-size: calc(
+			#{$font-min}px + #{($font-max - $font-min)} * (100vw - #{$screen-min}px) / (#{$screen-max} - #{$screen-min})
+		);
+	}
+
+	@media only screen and (min-width: #{$screen-max}px) {
+		font-size: #{$font-max}px;
+	}
+}
+
+// ============================================================
+//       				Fluid Text Size
+// ============================================================
+
+
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+	$u1: unit($min-vw);
+	$u2: unit($max-vw);
+	$u3: unit($min-font-size);
+	$u4: unit($max-font-size);
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			font-size: $min-font-size;
+			@media screen and (min-width: $min-vw) {
+				font-size: calc(
+					#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+						((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+				);
+			}
+			@media screen and (min-width: $max-vw) {
+				font-size: $max-font-size;
+			}
+		}
+	}
+}
+
+// borders?
+@mixin superHero {
+	text-shadow: -10px 10px 0px #00e6e6, -20px 20px 0px #01cccc, -30px 30px 0px #00bdbd;
+}
+
+@mixin heavyTextShadow {
+	text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1),
+	0px 34px 30px rgba(0, 0, 0, 0.1);
+}

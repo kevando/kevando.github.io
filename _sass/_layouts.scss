@@ -1,8 +1,22 @@
-@include footer();
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 18px;
+$max_font: 28px;
 
 
 
-.post {
-
-    // max-width: 70vw;;
+.simple.layout {
+	@include fluid-type($min_width, $max_width, $min_font, $max_font);
+	height: 100%;
+	overflow: auto;
+	
+	> * {
+		margin-left: 2vw;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }

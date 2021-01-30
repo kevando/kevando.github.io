@@ -1,34 +1,41 @@
-title:
-description: Surfing the 90s design revival wave.
+# ----------------------
+# Basic Shit
+# ----------------------
+
+title: Kevando Online
+description: Surfing the web revival wave
 url: "https://kevando.github.io"
 google_analytics: UA-16078011-4
 
-twitter:
-  username: kevando
-  card: summary
+# ----------------------
+# Build Settings
+# ----------------------
 
-# Tag Pages (not active)
-tag_pages:
-  - videos
-  - soundcloud
-
-# Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
-
+# ----------------------
+# Content Stuff
+# ----------------------
 
 defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
-      meta:
-        title: Default Meta Title
-        description: Default Meta Description
+      layout: "base"
 
+# ----------------------
+# SASS/CSS 
+# ----------------------
 
 sass:
-  sass_dir: _sass # All .scss partials go here
-  # style: compressed
+  sass_dir: _sass 
+  style: compressed
+
+
+# ----------------------
+# Collections
+# ----------------------
+
+collections_dir: _collections

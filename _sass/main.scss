@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+
+$pressStart: "Press Start 2P", cursive;
+$bungeeShade: "Bungee Shade", cursive;
+$bungeeOutline: "Bungee Outline", cursive;
+$bungeeHairline: "Bungee Hairline", cursive;
+
+$grey: #cacaca;
+
+@mixin font($family, $size: 12, $color: black) {
+	font-family: "Press Start 2P", cursive;
+}
+
+@import "shared";
+@import "base";
+@import "texts";
+@import "layouts";
+
+@import "components/smartline";

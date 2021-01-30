@@ -1,0 +1,51 @@
+$pink: #6b0f6d;
+$purple: #33227c;
+$brown: #6c2f14;
+$blue-light: #00ecfc;
+$blue: #0076c6;
+
+.smartline {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+
+	background-image: linear-gradient($pink, $purple);
+
+	h1 {
+		
+		color: $blue-light;
+		// text-shadow: -5px 5px 0px yellow;
+
+		font-size: 6vw;
+		text-align: center;
+	}
+	h2 {
+		
+		font-size: 6vw;
+		text-align: center;
+	}
+	h3 {
+		
+		font-size: 6vw;
+		text-align: center;
+		color: white;
+
+		position: absolute;
+		top: 10%;
+		left: 20%;
+
+		&:nth-child(1) {
+			color: white;
+			font-family: $bungeeHairline;
+		}
+		&:nth-child(2) {
+			color: white;
+			font-family: $bungeeHairline;
+		}
+		&:nth-child(3) {
+			color: yellow;
+			font-family: $bungeeShade;
+		}
+	}
+
+}
