@@ -13,91 +13,105 @@ let initialized = false;
 
 (function () {
 	if (initialized) return;
-})();
 
-let x = 0;
-let y = 0;
-let rotation = 0;
-let skew = 0;
-let cursor = { x: 0, y: 0, proximity: 0, distanceX: null, distanceY: null };
-let $bird = $("<div>");
-let img = new Image();
+	let looper = 0;
+	let x = 0;
+	let y = 0;
+	let width = null;
+	let rotation = 0;
+	let skew = 0;
+	let cursor = { x: 0, y: 0, proximity: 0, distanceX: null, distanceY: null };
+	let $bird = $("<div>");
 
-$bird.attr("id", "Bird"); // Our Lead Actor
-$bird.css("position", "absolute").css("top", "0px").css("left", "0px");
-img.style.float = "right";
+	$bird
+		.attr("id", "Bird")
+		.css("position", "absolute")
+		.css("top", "0px")
+		.css("left", "0px");
 
-let width;
+	let img = new Image();
+	img.style.float = "right";
 
-img.onload = (event) => {
-	width = img.naturalWidth;
-	$("body").append($bird.append(img));
-	window.requestAnimationFrame(renderLoop);
-};
+	// ---------------------
+	// 			 Handlers
+	// ---------------------
 
-document.addEventListener(
-	"mousemove",
-	function (e) {
+	function ready(event) {
+		width = img.naturalWidth;
+		$("body").append($bird.append(img));
+		window.requestAnimationFrame(renderLoop);
+		initialized = true;
+	}
+
+	function onMouseMove(e) {
 		cursor.x = e.clientX;
 		cursor.y = e.clientY;
-	},
-	false
-);
-
-let looper = 0;
-
-function renderLoop() {
-	looper++;
-
-	cursor.distanceX = cursor.x - x;
-	cursor.distanceY = cursor.y - y;
-	cursor.proximityY = cursor.distanceY / window.innerHeight;
-	cursor.proximityX = cursor.distanceX / window.innerWidth;
-
-	scale = lerp(0.5, 1.4, cursor.proximityX);
-	x = lerp(-80, -60, cursor.proximityX);
-
-	if (looper > 300) {
-		y = lerp(y, cursor.y, 0.009);
-	}
-	if (looper > 400) {
-		looper = 0;
 	}
 
-	// ROTATION
-	const angle = [cursor.y - y, cursor.x - x];
-	var targetRotation = (Math.atan2(angle[0], angle[1]) * 180) / Math.PI;
-	targetRotation = targetRotation * 0.5;
-	rotation = lerp(rotation, targetRotation, 0.09);
 
-	var containerWidth = range(50, 0, width, width * 1.8, Math.abs(rotation));
-	$bird.width(containerWidth);
+	function renderLoop() {
 
-	var str = "";
-	str += "rotateZ(" + rotation.toFixed(2) + "deg) ";
-	str += "skew( " + skew + "deg) ";
-	str += "scale( " + scale + ")";
+		looper++;
+		
+		cursor.distanceX = cursor.x - x;
+		cursor.distanceY = cursor.y - y;
+		cursor.proximityY = cursor.distanceY / window.innerHeight;
+		cursor.proximityX = cursor.distanceX / window.innerWidth;
 
-	$bird.css("transform", str);
-	$bird.css("top", y);
-	$bird.css("left", x);
+		// SCALE
+		scale = lerp(0.5, 1.0, cursor.proximityX);
+		
+		// POSITION
+		x = lerp(-80, -60, cursor.proximityX);
 
-	window.requestAnimationFrame(renderLoop);
-}
+		if (looper > 300) {
+			y = lerp(y, cursor.y, 0.009);
+		}
+		if (looper > 400) {
+			looper = 0;
+		}
 
-// ------------------------------
-// ------------------------------
-// ------------------------------
-// ------------------------------
-// ------------------------------
-// ------------------------------
-// Roll out the red carpet
-// ------------------------------
-img.src = IMG_SRC;
+		// ROTATION
+		const angle = [cursor.y - y, cursor.x - x];
+		var targetRotation = (Math.atan2(angle[0], angle[1]) * 180) / Math.PI;
+		targetRotation = targetRotation * 0.5;
+		rotation = lerp(rotation, targetRotation, 0.09);
 
-// ------------------------------
-// Helpers
-// ------------------------------
+		// scoot in a bit when looking really far up or far down
+		const containerWidth = range(50, 0, width, width * 1.8, Math.abs(rotation));
+		$bird.width(containerWidth);
+
+		let str = "";
+		str += "rotateZ(" + rotation.toFixed(2) + "deg) ";
+		str += "skew( " + skew + "deg) ";
+		str += "scale( " + scale + ")";
+
+		$bird.css("transform", str);
+		$bird.css("top", y);
+		$bird.css("left", x);
+
+		window.requestAnimationFrame(renderLoop);
+	}
+
+	// Events, Listeners
+	img.onload = ready;
+	document.addEventListener("mousemove", onMouseMove, false);
+
+	// ------------------------------
+	// ------------------------------
+	// ------------------------------
+	// ------------------------------
+	// ------------------------------
+	// ------------------------------
+	// Roll out the red carpet
+	// ------------------------------
+	img.src = IMG_SRC;
+	// The star has arrived. When he is ready, the show will start
+})();
+
+// ---------------------
+// 			 Helpers
+// ---------------------
 
 const lerp = (x, y, a) => x * (1 - a) + y * a;
 const clamp = (a, min = 0, max = 1) => Math.min(max, Math.max(min, a));
