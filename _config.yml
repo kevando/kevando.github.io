@@ -24,7 +24,7 @@ defaults:
       path: ""
     values:
       layout: "base"
-      favicon: icon-ralph.png
+      favicon: icon-32.png
 
 # ---------------------------------
 #   Content
