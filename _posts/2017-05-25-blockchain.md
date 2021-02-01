@@ -20,4 +20,3 @@ can start to see why Pepe on the blockchain makes sense.
 
 I learned about [rarepepes the digital trading card](https://avc.com/2017/05/rare-pepe)
 and followed Fred's instructions to get my own.
-{% include embed/tweet.html tweet_id='pepe' %}

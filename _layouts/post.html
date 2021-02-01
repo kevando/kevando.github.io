@@ -1,0 +1,15 @@
+---
+layout: simple
+class: post
+---
+<div class="post layout">
+
+	<h1 class="title">{{ page.title | escape }}</h1>
+
+	{{ content }}
+
+	<p class="date">
+		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+		{{ page.date | date: date_format }}
+	</p>
+</div>

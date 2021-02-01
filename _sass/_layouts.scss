@@ -1,12 +1,4 @@
-$min_width: 320px;
-$max_width: 1200px;
-$min_font: 18px;
-$max_font: 28px;
-
-
-
 .simple.layout {
-	@include fluid-type($min_width, $max_width, $min_font, $max_font);
 	height: 100%;
 	overflow: auto;
 	
@@ -18,5 +10,22 @@ $max_font: 28px;
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+}
+
+.post.layout {
+	max-width: 1400px;
+	h1 {
+		font-family: $silom;
+	}
+	p {
+		font-family: Verdana;
+	}
+	.date {
+		color: #888;
+		font-size: 0.8em;
+	}
+	img {
+		max-width: 900px;
 	}
 }

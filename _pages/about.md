@@ -1,7 +1,8 @@
 ---
 layout: simple
 title: Kevando Online
-permalink: /
+permalink: /me
+categories: [Tech, Personal]
 ---
 
 # **Kevin Habich**
@@ -30,4 +31,3 @@ We build Augmented Reality (AR) experiences.
 # 🌐
 
 
-<script src="/js/bird.js"></script>

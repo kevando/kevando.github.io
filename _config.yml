@@ -16,7 +16,7 @@ plugins:
   - jekyll-feed
 
 # ---------------------------------
-#   Content Stuff
+#   Front Matter Defaults
 # ---------------------------------
 
 defaults:
@@ -24,7 +24,15 @@ defaults:
       path: ""
     values:
       layout: "base"
+      favicon: icon-32.png
 
+# ---------------------------------
+#   Content
+# ---------------------------------
+
+collections:
+  categories:
+    permalink: /:collection/:name
 # ---------------------------------
 #   SASS/CSS 
 # ---------------------------------
@@ -35,11 +43,9 @@ sass:
 
 
 # ---------------------------------
-#   Custom Locations
+#   Content
 # ---------------------------------
 
-collections_dir: _collections
-layouts_dir: _html/_layouts
-includes_dir: _html/_includes
-
+permalink: /:categories/:year/:month/:day/:title
 include: ["_pages"]
+

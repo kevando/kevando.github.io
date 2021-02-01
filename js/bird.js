@@ -48,11 +48,9 @@ let initialized = false;
 		cursor.y = e.clientY;
 	}
 
-
 	function renderLoop() {
-
 		looper++;
-		
+
 		cursor.distanceX = cursor.x - x;
 		cursor.distanceY = cursor.y - y;
 		cursor.proximityY = cursor.distanceY / window.innerHeight;
@@ -60,11 +58,12 @@ let initialized = false;
 
 		// SCALE
 		scale = lerp(0.5, 1.0, cursor.proximityX);
-		
+
 		// POSITION
 		x = lerp(-80, -60, cursor.proximityX);
 
 		if (looper > 300) {
+			// move in sorta sporadic fashion
 			y = lerp(y, cursor.y, 0.009);
 		}
 		if (looper > 400) {
@@ -86,14 +85,15 @@ let initialized = false;
 		str += "skew( " + skew + "deg) ";
 		str += "scale( " + scale + ")";
 
-		$bird.css("transform", str);
-		$bird.css("top", y);
-		$bird.css("left", x);
+		$bird.css("transform", str).css("top", y).css("left", x);
 
-		window.requestAnimationFrame(renderLoop);
+		window.requestAnimationFrame(renderLoop); // Repeat
 	}
 
-	// Events, Listeners
+	// ------------------------------
+	// Event Listeners
+	// ------------------------------
+
 	img.onload = ready;
 	document.addEventListener("mousemove", onMouseMove, false);
 
@@ -107,6 +107,7 @@ let initialized = false;
 	// ------------------------------
 	img.src = IMG_SRC;
 	// The star has arrived. When he is ready, the show will start
+	// This will trigger the img.onload function
 })();
 
 // ---------------------

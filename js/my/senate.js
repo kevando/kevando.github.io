@@ -48,7 +48,7 @@ svg.append("svg:path")
 
 
 // d3.json("/pub/senate.json", function(classes) {
-d3.json("/assets/data/senate.json", function(classes) {
+d3.json("/assets/senate.json", function(classes) {
   var nodes = cluster.nodes(packages.root(classes)),
       links = packages.imports(nodes),
       splines = bundle(links);

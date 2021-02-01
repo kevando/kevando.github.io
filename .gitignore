@@ -17,3 +17,4 @@ _posts/_drafts/*
 *.css.map
 
 *.code-workspace
+_drafts
