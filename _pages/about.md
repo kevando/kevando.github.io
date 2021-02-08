@@ -1,7 +1,7 @@
 ---
 layout: simple
-title: Kevando Online
-permalink: /me
+title: Who is Kevando?
+permalink: /about
 categories: [Tech, Personal]
 ---
 
@@ -31,3 +31,9 @@ We build Augmented Reality (AR) experiences.
 # 🌐
 
 
+i was on shark tank
+improv
+darby
+i like learning
+story telling
+conspiracy theories

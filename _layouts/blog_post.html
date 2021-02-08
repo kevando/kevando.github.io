@@ -1,0 +1,31 @@
+---
+layout: base
+body_class: blog post
+---
+
+<a href="/" class="home">Home</a>
+
+
+<div class="content">
+
+	
+	<p class="date">
+		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+		{{ page.date | date: date_format }}
+	</p>
+
+	<h1 class="title">{{ page.title | escape }}</h1>
+
+	<hr />
+	{{ content }}
+
+
+</div>
+
+<div class="footer">
+	<hr />
+
+	<!-- "download my ashes in my hard drive when i die" -->
+	1985-2021
+
+</div>
