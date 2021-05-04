@@ -2,8 +2,8 @@
 #   Basic Shit
 # ---------------------------------
 
-title: Kevando Online
-description: Surfing the web revival wave
+title: Kevando
+description: Web Surfer
 url: "https://kevando.github.io"
 google_analytics: UA-16078011-4
 
@@ -23,7 +23,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "base"
+      layout: "default"
       favicon: icon-32-goat.png
 
 # ---------------------------------
@@ -31,21 +31,23 @@ defaults:
 # ---------------------------------
 
 collections:
-  categories:
-    permalink: /:collection/:name
-# ---------------------------------
-#   SASS/CSS 
-# ---------------------------------
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
 
 sass:
   sass_dir: _sass 
   style: compressed
 
 
-# ---------------------------------
-#   Content
-# ---------------------------------
-
-permalink: /:categories/:year/:month/:day/:title
+# permalink: /:category/:year-:month-:day/:title
 include: ["_pages"]
 

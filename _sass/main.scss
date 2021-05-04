@@ -1,26 +1,298 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
 
-@import url("/assets/fonts/Silom.ttf");
+// @import url("/assets/fonts/Silom.ttf");
 
-$pressStart: "Press Start 2P", cursive;
-$bungeeShade: "Bungee Shade", cursive;
-$bungeeOutline: "Bungee Outline", cursive;
-$bungeeHairline: "Bungee Hairline", cursive;
+// $pressStart: "Press Start 2P", cursive;
+// $bungeeShade: "Bungee Shade", cursive;
+// $bungeeOutline: "Bungee Outline", cursive;
+// $bungeeHairline: "Bungee Hairline", cursive;
 
-$silom: "Silom";
+// $silom: "Silom";
 
-$grey: #cacaca;
+// $grey: #cacaca;
 
-@mixin font($family, $size: 12, $color: black) {
-	font-family: "Press Start 2P", cursive;
-}
+// @mixin font($family, $size: 12, $color: black) {
+// 	font-family: "Press Start 2P", cursive;
+// }
 
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+// $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+// "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$small-font-size: $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+// $spacing-unit: 30px !default;
+
+// //  COLORS
+
+// $green: #68ffbb;
+// $red: #ff0000;
+// $grey: #eeeeee;
+// $header-bg: #eeeeee;
+// $content-bg: b8d8;
+// $border: solid #000 4px;
+// $content-padding: 5px;
+// $blue: #2962ff;
+
+// $text-color: #111 !default;
+$background-color: #eeeeee;
+// $brand-color: #2a7ae2 !default;
+
+// $grey-color: #828282 !default;
+// $grey-color-light: lighten($grey-color, 40%) !default;
+// $grey-color-dark: darken($grey-color, 25%) !default;
+
+// $table-text-align: left !default;
 @import "shared";
 @import "base";
-@import "texts";
-@import "layouts";
+@import "layout";
 
-@import "components/smartline";
+@import "themes/simple";
+// @mixin relative-font-size($ratio) {
+// 	font-size: $base-font-size * $ratio;
+// }
+
+// // // Import partials.
+
+// @font-face {
+// 	font-family: VT323;
+// 	src: url(../VT323.ttf);
+// }
+// @font-face {
+// 	font-family: terminal;
+// 	src: url(../acorn/terminal-grotesque.ttf);
+// }
+
+// @import "acorn/shared";
+// @import "acorn/base";
+
+// // @import "acorn/layout";
+
+// // @import "acorn/icons";
+// // @import "acorn/cursor";
+// // @import "acorn/windows";
+// @import "acorn/windows2";
+
+// // "acorn/syntax-highlighting";
+
+// // Use media queries like this:
+// // @include media-query($on-palm) {
+// //   .wrapper {
+// //     padding-right: $spacing-unit / 2;
+// //     padding-left: $spacing-unit / 2;
+// //   }
+// // }
+
+// body.paulie {
+// 	cursor: url("/assets/paulie/body-smirk.svg"), auto !important;
+
+// 	button {
+// 		cursor: url("/assets/paulie/cursor1.png"), auto !important;
+// 	}
+// 	#Desktop {
+// 		cursor: url("/assets/paulie/cursor1.png"), auto !important;
+// 	}
+// 	#PaintCanvas {
+// 		// cursor: url("/assets/paulie/cursor-with-pencil.png") 8 8, auto !important;
+// 	}
+// }
+
+// #PoweredOff {
+// 	background-color: black;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	height: 100vh;
+// 	button {
+// 		width: 100px;
+// 		height: 32px;
+// 		font-size: 20px;
+// 	}
+// }
+// #Desktop {
+// 	background-color: $green;
+// 	height: 100vh;
+// 	width: 100vw;
+// 	top: 0;
+// 	left: 0;
+// 	position: absolute;
+// }
+
+// .window {
+// 	div {
+// 		text-align: center;
+// 	}
+// }
+
+// $z-intropaulie: 250;
+// $z-poop: 200;
+// $z-pet: 300;
+// $z-kennel: 300;
+// $z-updater1: 210;
+// $z-updater2: 210;
+// $z-updater1overlay: 200;
+// $z-updater2overlay: 200;
+
+// // PAULIE
+// #PaulieIntro {
+// 	width: 100px;
+// 	height: 100px;
+// 	position: absolute;
+// 	top: 43%;
+// 	left: 47%;
+// 	z-index: $z-intropaulie;
+// 	img.face {
+// 		position: absolute;
+// 		top: 0px;
+// 		left: 0px;
+// 		width: 100%;
+// 		height: 100%;
+// 		z-index: 100;
+// 		@include transition(all 100ms ease-out);
+// 	}
+// 	img.body {
+// 		position: absolute;
+// 		top: 0px;
+// 		left: 0px;
+// 		width: 100%;
+// 		height: 100%;
+// 		z-index: 100;
+// 		@include transition(all 100ms ease-out);
+// 	}
+// 	img.shadow {
+// 		position: absolute;
+// 		top: 13px;
+// 		left: -18px;
+// 		opacity: 0.7;
+// 		width: 110%;
+// 		height: 110%;
+// 		@include transition(all 100ms ease-out);
+// 	}
+// }
+
+// // DIALOG
+// #Dialog {
+// 	position: absolute;
+// 	top: 1%;
+// 	left: 5%;
+// 	width: 90%;
+// 	height: 5%;
+// 	background-color: #eee;
+// 	border: inset 4px;
+// }
+
+// // PET
+// .pet {
+// 	position: absolute;
+// 	// border: solid 1px;
+// 	text-align: center;
+// 	padding: 10px;
+// 	z-index: $z-pet;
+// 	img {
+// 		max-width: 100%;
+// 	}
+// 	&.left img {
+// 		transform: scaleX(1);
+// 	}
+// 	&.right img {
+// 		transform: scaleX(-1);
+// 	}
+// }
+
+// #Kennel {
+// 	z-index: $z-kennel;
+// }
+
+// // POOP
+// .poop {
+// 	position: absolute;
+// 	z-index: $z-poop;
+
+// 	&::after {
+// 		content: "";
+
+// 		position: absolute;
+// 		width: 50px;
+// 		left: 50%;
+// 		margin-left: -25px;
+// 		bottom: 27px;
+
+// 		// border: solid 2px blue;
+// 		background-image: url(../screenshots/poop.svg);
+// 		height: 50px;
+
+// 		background-color: transparent;
+// 		background-size: contain;
+// 	}
+// }
+
+// #Updater1 {
+// 	z-index: $z-updater1;
+// }
+
+// #Updater2 {
+// 	z-index: $z-updater2;
+// }
+
+// .overlay {
+// 	background: rgba(0, 0, 0, 0.01);
+// 	position: absolute;
+// 	width: 100%;
+// 	height: 100%;
+// 	left: 0;
+// 	top: 0;
+// 	z-index: $z-updater1overlay;
+// 	&.updater1 {
+// 		z-index: $z-updater1overlay;
+// 	}
+// 	&.updater2 {
+// 		z-index: $z-updater2overlay;
+// 	}
+// }
+
+// .speech.bubble {
+// 	background: white;
+// 	border: solid 3px black;
+// 	border-radius: 5px;
+// 	line-height: 1.2em;
+// 	padding: 5px 10px;
+// 	min-height: 50px;
+// 	width: 100px;
+
+// 	display: flex;
+// 	align-items: center;
+
+// 	&::after {
+// 		content: " ";
+// 		position: absolute;
+// 		bottom: 20%;
+// 		z-index: 900;
+// 		width: 40px;
+// 		height: 50px;
+// 		background-image: url(../screenshots/carot.svg);
+// 		background-repeat: no-repeat;
+// 		background-size: 30px;
+// 		background-position: bottom right;
+// 	}
+
+// 	&.left-carot::after {
+// 		left: -40px;
+// 		// right: ;
+// 		// transform: scaleX(-1);
+// 	}
+
+// 	&.right-carot::after {
+// 		left: unset;
+// 		right: -40px;
+// 		transform: scaleX(-1);
+// 	}
+// }

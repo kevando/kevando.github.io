@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>{{ page.title }}</title>
+	<link rel="icon" type="image/png" href="/assets/icons/icon-32-goat.png" />
+	{%- include google-analytics.html -%}
+
+</head>
+
+<link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+<style>
+	h1 {
+		text-align: center;
+		margin-top: 45vh;
+		font-weight: 100;
+		font-family: Times New Roman;
+		font-size: 2vw;
+		color: #444;
+	}
+</style>
+
+<body>
+
+
+	{{ content }}
+
+
+</body>
+
+{%- include after_body.html -%}
+
+</html>
