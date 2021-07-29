@@ -5,15 +5,20 @@ category: blog
 layout: default
 ---
 
+<hr />
+
 <h1>blog</h1>
 
-<ul>
+<table>
+	{% for post in site.categories[page.category] %}
+	<tr>
+		<td>{{ post.date | date: '%Y-%m-%d' }}</td>
+		<td>&nbsp;---&nbsp;</td>
 
-	<ul>
+		<!-- <td>[Photo]</td> -->
 
-		{% for post in site.categories[page.category] %}
-		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</ul>
-	</li>
 
+		<td><a href="{{ post.url }}">{{ post.title }}</a></td>
+	</tr>
+	{% endfor %}
+</table>

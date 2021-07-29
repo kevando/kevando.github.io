@@ -1,3 +1,18 @@
+// ------- SMART LINE THEME -------
+
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+
+@import url("/assets/fonts/Silom.ttf");
+
+$pressStart: "Press Start 2P", cursive;
+$bungeeShade: "Bungee Shade", cursive;
+$bungeeOutline: "Bungee Outline", cursive;
+$bungeeHairline: "Bungee Hairline", cursive;
+
 $pink: #6b0f6d;
 $purple: #33227c;
 $brown: #6c2f14;
@@ -12,7 +27,6 @@ $blue: #0076c6;
 	background-image: linear-gradient($pink, $purple);
 
 	h1 {
-		
 		color: $blue-light;
 		// text-shadow: -5px 5px 0px yellow;
 
@@ -20,12 +34,10 @@ $blue: #0076c6;
 		text-align: center;
 	}
 	h2 {
-		
 		font-size: 6vw;
 		text-align: center;
 	}
 	h3 {
-		
 		font-size: 6vw;
 		text-align: center;
 		color: white;
@@ -47,5 +59,4 @@ $blue: #0076c6;
 			font-family: $bungeeShade;
 		}
 	}
-
 }

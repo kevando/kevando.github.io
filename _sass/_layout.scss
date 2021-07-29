@@ -1,101 +1,34 @@
+$contentPadding: 1em;
 
+$background-color: #eeeeee;
+
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$small-font-size: $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
 
 body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	background-color: yellow;
-  }
-  
-  main.content {
+	> header {
+		padding-left: $contentPadding;
+	}
+}
+
+main.content {
 	flex: 1;
-	// background-color: red;
-  }
+	padding: $contentPadding;
+}
 
+// --------- COLORS ---------
 
-  @include tablet {
-	main.content {
-		background-color: green;
-	  }
-  }
-  @include table-portrait {
-	main.content {
-		background-color: orange;
-	  }
-  }
-  @include table-landscape {
-	main.content {
-		background-color: blue;
-	  }
-  }
+body {
+	background-color: $background-color;
+}
 
+// --------- TEXT ---------
 
-  @include phone {
-	main.content {
-		background-color: grey;
-	  }
-  }
-
-// .post.layout {
-// 	max-width: 1400px;
-// 	h1 {
-// 		font-family: $silom;
-// 	}
-// 	p {
-// 		font-family: Verdana;
-// 	}
-
-// 	img {
-// 		max-width: 900px;
-// 	}
-// }
-
-// ----------------------------
-// 	       Blog Layout
-// ----------------------------
-
-// $footer-height-min: 50px;
-
-// body.blog {
-// 	$min_width: 320px;
-// 	$max_width: 1200px;
-// 	$min_font: 18px;
-// 	$max_font: 22px;
-
-// 	@include fluid-type($min_width, $max_width, $min_font, $max_font);
-// 	@include sticky-footer(100px);
-
-// 	.content {
-// 		margin: 40px 20px 0 20px;
-// 	}
-// 	.footer {
-// 		font-size: 0.7em;
-// 		padding-left: 20px;
-// 	}
-
-// 	.date {
-// 		color: #888;
-// 		font-size: 0.8em;
-// 		font-family: Avenir;
-// 		margin-bottom: -23px;
-// 	}
-
-// 	a.home {
-// 		position: absolute;
-// 		top: 20px;
-// 		right: 20px;
-// 	}
-// }
-
-// ----------------------------
-// 	       Hi Layout
-// ----------------------------
-
-// body.hi {
-// 	ul {
-// 		float: right;
-// 		width: 30vw;
-// 		list-style: none;
-// 		line-height: 2em;
-// 	}
-// }
+h3 {
+	font-weight: 100;
+}

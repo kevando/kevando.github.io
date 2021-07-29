@@ -1,7 +1,9 @@
 ---
-layout: blank
+layout: default
 title: kevando.github.io
 permalink: /
 ---
 
-# hawaii
+
+--- 
+# 🌐
