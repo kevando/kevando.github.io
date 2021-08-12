@@ -1,12 +1,9 @@
 ---
-layout: default
-title: kevando.github.io
+layout: page
+title: /projects
 permalink: /projects
----
 
 ---
-
-# **Projects**
 
 
 

@@ -4,7 +4,8 @@
 
 title: Kevando
 description: Web Surfer
-url: "https://kevando.github.io"
+url: 'https://kevando.github.io'
+
 google_analytics: UA-16078011-4
 
 # ---------------------------------
@@ -13,41 +14,34 @@ google_analytics: UA-16078011-4
 
 theme: minima
 plugins:
-  - jekyll-feed
-
-# ---------------------------------
-#   Front Matter Defaults
-# ---------------------------------
+    - jekyll-feed
 
 defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-      favicon: icon-32-goat.png
+    - scope:
+          path: ''
+      values:
+          # Default Page Values
+          layout: 'default'
+          favicon: icon-32-goat.png
+          meta_description: 'A website about me, Kevin Habich.'
 
 # ---------------------------------
 #   Content
 # ---------------------------------
 
 collections:
-  category:
-    output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: category
-    values:
-      layout: "category"
-
+    category:
+        output: true
+        defaults:
+            - scope:
+                  path: ''
+                  type: category
+              values:
+                  layout: 'category'
 
 sass:
-  sass_dir: _sass 
-  style: compressed
-
+    sass_dir: _sass
+    style: compressed
 
 # permalink: /:category/:year-:month-:day/:title
-include: ["_pages"]
-
+include: ['_pages']

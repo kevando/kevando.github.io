@@ -1,5 +1,9 @@
 @charset "utf-8";
 
-@import "shared";
+@import "shared/prefixers";
+@import "shared/mixins";
+@import "shared/helpers";
+
 @import "base";
 @import "layout";
+@import "text";

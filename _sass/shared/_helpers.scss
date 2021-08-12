@@ -1,0 +1,16 @@
+/* Helpers */
+
+.phone-only {
+	@include for-computer() {
+		display: none;
+	}
+	@include for-tablet() {
+		display: none;
+	}
+}
+
+.no-phone {
+	@include for-phone() {
+		display: none;
+	}
+}

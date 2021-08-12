@@ -1,88 +1,120 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
-// -----------------------------------------------------------------------------
+/* Devices Wooooooo */
 
-@mixin flex($j: center, $a: center, $d: row) {
-  display: flex;
-  justify-content: $j;
-  align-items: $a;
-  flex-direction: $d;
+$PHONE_SIZE_MIN: 375px;
+$PHONE_SIZE_MAX: 768px;
+
+@mixin for-phone {
+	@media only screen and (min-device-width: $PHONE_SIZE_MIN) and (max-device-width: $PHONE_SIZE_MAX) {
+		@content;
+	}
 }
+
+@mixin for-tablet {
+	@media only screen and (min-device-width: $PHONE_SIZE_MAX) and (max-device-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin for-computer {
+	@media only screen and (min-width: $PHONE_SIZE_MAX) {
+		@content;
+	}
+}
+
+/* CSS3 */
 
 @mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
-}
-
-
-// ---------------------------
-//         Animations
-// ---------------------------
-
-@mixin slide-in-from-left($duration: 1s, $delay: 0s) {
-  transform: translateX(-200%);
-  animation: $duration ease-in $delay 1 slideInFromLeft;
-  animation-fill-mode: forwards;
-
-}
-
-// @mixin animation($args...) {
-//   animation-duration: 1s; /* the duration of the animation */
-//   animation-timing-function: ease-out; /* how the animation will behave */
-//   animation-delay: 0s; /* how long to delay the animation from starting */
-//   animation-iteration-count: 1; /* how many times the animation will play */
-//   animation-name: slideInFromLeft; /* the name of the animation we defined above */
-// }
-
-
-
-
-// ---------------------------
-//         Text
-// ---------------------------
-
-@mixin link-size {
-  // font-size: 15px; //maxx(2px,10vw)
-  font-size: calc(1vw + 1vh + 0.5vmin);
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
 }
 
 @mixin meta {
-  font-family: $work-font;
-  font-size: 12px;
-  color: $meta-gray;
-  font-weight: 200;
+	font-family: $work-font;
+	font-size: 12px;
+	color: $meta-gray;
+	font-weight: 200;
 }
 
 @mixin cursive {
-  font-family: $cursive-font;
+	font-family: $cursive-font;
 }
 
 @mixin serif {
-  font-family: $arvo-font;
+	font-family: $arvo-font;
 }
 
 @mixin sans-serif {
-  font-family: $work-font;
-  color: $charcoal;
-  font-weight: 200;
+	font-family: $work-font;
+	color: $charcoal;
+	font-weight: 200;
 }
 
-// AOL-style box
+@mixin load-font($name, $extension: ".ttf", $directory: "/assets/fonts/") {
+	$path: $directory + $name + $extension;
 
-@mixin aol-outer-box {
-  box-shadow: #000000ad 4px 4px 6px -2px;
-  border: solid 1px #e6e6e6;
-  border-radius: 1px;
-  padding: 10px;
+	@font-face {
+		font-family: $name;
+		src: url($path) format("truetype");
+	}
 }
 
-@mixin aol-inner-box($bg: $purple, $bw: 7px) {
-  border-color: $blue;
-  border-style: solid;
-  border-width: $bw;
-  background: $bg;
+/* Shadow Stuff */
+
+@mixin superHero {
+	text-shadow: -10px 10px 0px #00e6e6, -20px 20px 0px #01cccc, -30px 30px 0px #00bdbd;
 }
 
+@mixin heavyTextShadow {
+	text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1),
+		0px 34px 30px rgba(0, 0, 0, 0.1);
+}
+
+@mixin pretty-box-shadow($shadow-name: "default") {
+	@if $shadow-name == "material" {
+		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	}
+	@if $shadow-name == "photo-blog" {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		border: solid 3px #eeeeee;
+	}
+	
+	// Add more!
+	// https://getcssscan.com/css-box-shadow-examples
+}
+
+/* Dynamic Sizing Fonts (this is awesome) */
+
+$min_width: 320px;
+$max_width: 1200px;
+
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($font-size-min: 18px, $font-size-max: 28px, $screen-size-min: 320px, $screen-size-max: 1200px) {
+	$u1: unit($screen-size-min);
+	$u2: unit($screen-size-max);
+	$u3: unit($font-size-min);
+	$u4: unit($font-size-max);
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			font-size: $font-size-min;
+			@media screen and (min-width: $screen-size-min) {
+				font-size: calc(
+					#{$font-size-min} + #{strip-unit($font-size-max - $font-size-min)} *
+						((100vw - #{$screen-size-min}) / #{strip-unit($screen-size-max - $screen-size-min)})
+				);
+			}
+			@media screen and (min-width: $screen-size-max) {
+				font-size: $font-size-max;
+			}
+		}
+	}
+
+	// Need to reset line height
+	line-height: 1em;
+}

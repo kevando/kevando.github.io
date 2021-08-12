@@ -1,24 +1,29 @@
 ---
-tag: android
 permalink: /blog
 category: blog
 layout: default
 ---
 
-<hr />
+<h3><a href="/blog/photos">Photos</a>, <a href="/blog/articles">Articles</a>, <a href="/blog/music">Music</a></h3>
 
-<h1>blog</h1>
-
-<table>
+<table class="blog-posts">
 	{% for post in site.categories[page.category] %}
 	<tr>
-		<td>{{ post.date | date: '%Y-%m-%d' }}</td>
-		<td>&nbsp;---&nbsp;</td>
-
-		<!-- <td>[Photo]</td> -->
+		<td class="date no-phone">{{ post.date | date: '%Y/%m/%d' }} </td>
 
 
-		<td><a href="{{ post.url }}">{{ post.title }}</a></td>
+		<!-- <td class="emoji">{{ post.emoji }}</td> -->
+
+		<!-- <td>&nbsp;/&nbsp;</td> -->
+
+		<td>
+			<p><a href="{{ post.url }}">{{ post.title }}</a></p>
+			<p class="date phone-only"> {{ post.date | date: '%Y-%m-%d' }}</p>
+		</td>
 	</tr>
 	{% endfor %}
 </table>
+
+<br />
+
+<h1>🚧</h1>

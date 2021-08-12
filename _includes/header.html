@@ -1,4 +1,9 @@
+<h4 style="font-size:1.59em;margin:1em 0 0.3em 0">Kevin Habich</h4>
 
-<h1>Kevin Habich</h1>
+<a href="/about" {% if page.permalink == "/about" %}class="active"{% endif %}>about</a>, 
 
-<a href="/about">about</a> . <a href="/projects">projects</a> . <a href="/blog">blog</a>
+<a href="/projects" {% if page.permalink == "/projects" %}class="active"{% endif %}>projects</a>, 
+
+<a href="/blog" {% if page.permalink == "/blog" %}class="active"{% endif %}>blog</a>
+
+<hr />

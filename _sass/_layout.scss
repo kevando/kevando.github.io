@@ -18,17 +18,87 @@ body {
 
 main.content {
 	flex: 1;
-	padding: $contentPadding;
-}
+	padding: 0 $contentPadding;
 
-// --------- COLORS ---------
+	&.article {
+		img {
+			@include pretty-box-shadow("material");
+		}
+	}
+}
 
 body {
 	background-color: $background-color;
 }
 
-// --------- TEXT ---------
+ul {
+	li {
+		margin: 5px 0;
+	}
 
-h3 {
-	font-weight: 100;
+	@include for-phone() {
+		padding-left: 20px;
+		li::marker {
+			font-size: 0.8em;
+		}
+	}
+}
+hr {
+	margin: 3vh 0;
+}
+
+.page.title {
+	margin-top: 0;
+}
+.page.content p,
+.post.content p {
+	max-width: 1000px;
+}
+
+/* Tables */
+
+table {
+	&.blog-posts {
+		td {
+			@include for-phone() {
+				padding-bottom: 0.8rem;
+			}
+
+			p {
+				margin: 0;
+				@include fluid-type(18px, 16px);
+				&.date {
+					@include fluid-type(12px, 12px);
+					margin-top: 4px;
+					font-family: monospace;
+					color: rgb(73, 73, 73);
+				}
+			}
+		}
+
+		td.date {
+			// font-size: 0.6em;
+			min-width: 85px;
+		}
+		td.emoji {
+			font-size: 1.3em;
+			line-height: 1.5em;
+		}
+	}
+	&.photos {
+		max-width: 400px;
+		img {
+			@include pretty-box-shadow("photo-blog");
+		}
+		h4 {
+			@include fluid-type(20px, 20px);
+			font-weight: bold;
+			margin-bottom:5px;
+		}
+	}
+}
+
+img + .caption {
+	margin-top: 4px;
+	color: rgb(53, 53, 53);
 }

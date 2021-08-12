@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  How to Get Google Apps For Free (Single User)
+layout: article
+title:  How to Get Google Apps For Free
+emoji: 📝
 date: 2013-04-03
-category: blog
+categories: 
+  - blog
+  - article
 tags:
   - google
   - help
@@ -43,3 +46,5 @@ You can still get Google Apps for fee, however it's a little tricky. They do not
 You might also want to [create email aliases](http://support.google.com/a/bin/answer.py?hl=en&amp;answer=182527), or configure so that any email comes to your address. You won't be able to send mail with multiple accounts, but this way you could still put contact@domain.com and sales@domain.com on your website to give the illusion you have many email accounts.
 
 I hope this helps someone. Leave a comment if you have any problems following these steps
+
+`Originally posted 2013-04-03`

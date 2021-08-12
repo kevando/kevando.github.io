@@ -1,0 +1,15 @@
+// AOL-style box
+
+@mixin aol-outer-box {
+	box-shadow: #000000ad 4px 4px 6px -2px;
+	border: solid 1px #e6e6e6;
+	border-radius: 1px;
+	padding: 10px;
+  }
+  
+  @mixin aol-inner-box($bg: $purple, $bw: 7px) {
+	border-color: $blue;
+	border-style: solid;
+	border-width: $bw;
+	background: $bg;
+  }

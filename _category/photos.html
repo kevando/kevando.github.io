@@ -1,0 +1,16 @@
+---
+permalink: /blog/photos
+layout: default
+---
+
+{% assign photo_posts = site.posts | where: "categories", "photo" | where: "categories", "blog" %}
+
+<h1 class="page title bungee">Photos</h1>
+
+<table class="photos">
+	{% for post in photo_posts %}
+	{% include_relative li_photo.html dude="kevin" %}
+	{% endfor %}
+</table>
+
+{{ post.content }}

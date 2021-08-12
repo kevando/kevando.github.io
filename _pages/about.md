@@ -1,13 +1,15 @@
 ---
-layout: default
-title: kevando.github.io/about
+layout: page
+title: About Me
 permalink: /about
 ---
 
----
-
-I am a programmer. [These are my favorite things.](https://kevando.notion.site/fe886d019ec445b39e7f1335f5ce9bb0?v=d63ee646d8bf4fc7ac76c46ab81021fe) One time I drew a lobster that went viral on [VSCO](https://vsco.co/kevando/media/5903bdb11fdd9a043e0a73ea). I my pitched company  [Frameri Eyewear](https://www.instagram.com/frameri/) on ABC's Shark Tank. 
-I am an [Official Lens Creator](https://lensstudio.snapchat.com/creator/Mpx2Ow0xd7dWLQp62cK0Jg) for Snapchat. I'm generally easy to get a hold of @kevando
+- I am a programmer. 
+- [These are my favorite things.](https://kevando.notion.site/fe886d019ec445b39e7f1335f5ce9bb0?v=d63ee646d8bf4fc7ac76c46ab81021fe) 
+- One time I drew a lobster that went [viral](https://vsco.co/kevando/media/5903bdb11fdd9a043e0a73ea)
+- I started the company [Frameri Eyewear](https://www.instagram.com/frameri/)
+- I am an [Official Lens Creator](https://lensstudio.snapchat.com/creator/Mpx2Ow0xd7dWLQp62cK0Jg) for Snapchat. 
+- I'm generally easy to get a hold of @kevando
 
 
 ---

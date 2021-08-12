@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-{% assign cachedz = site.time | date: '%M%S' %}
-
 {%- include head.html -%}
-
-<link rel="stylesheet" href="/assets/stylesheets/main.css?cachedz={{ cachedz}}">
 
 <body class="Site">
 
 	<header>{%- include header.html -%}</header>
-	<main class="content">
+
+	<main class="{{ layout.name }} content">
 		{{ content }}
 	</main>
+
 	<footer>{%- include footer.html -%}</footer>
 </body>
 
