@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------
 // Put your custom bird here:
-const IMG_SRC = "https://assets.codepen.io/5740/birdbrain_1.png";
+const IMG_SRC = 'https://assets.codepen.io/5740/birdbrain_1.png'
 // --------------------------------------------------------------------
 
 // Version 1.0
@@ -9,112 +9,120 @@ const IMG_SRC = "https://assets.codepen.io/5740/birdbrain_1.png";
 
 // --------------------------------------------------------------------
 
-let initialized = false;
+let initialized = false
 
-(function () {
-	if (initialized) return;
+;(function () {
+    if (initialized) return
 
-	let looper = 0;
-	let x = 0;
-	let y = 0;
-	let width = null;
-	let rotation = 0;
-	let skew = 0;
-	let cursor = { x: 0, y: 0, proximity: 0, distanceX: null, distanceY: null };
-	let $bird = $("<div>");
+    let looper = 0
+    let x = 0
+    let y = 0
+    let width = null
+    let rotation = 0
+    let skew = 0
+    let cursor = { x: 0, y: 0, proximity: 0, distanceX: null, distanceY: null }
+    let $bird = $('<div>')
 
-	$bird
-		.attr("id", "Bird")
-		.css("position", "absolute")
-		.css("top", "0px")
-		.css("left", "0px");
+    $bird
+        .attr('id', 'Bird')
+        .css('position', 'absolute')
+        .css('top', '0px')
+        .css('left', '0px')
 
-	let img = new Image();
-	img.style.float = "right";
+    let img = new Image()
+    img.style.float = 'right'
 
-	// ---------------------
-	// 			 Handlers
-	// ---------------------
+    // ---------------------
+    // 		 Handlers
+    // ---------------------
 
-	function ready(event) {
-		width = img.naturalWidth;
-		$("body").append($bird.append(img));
-		window.requestAnimationFrame(renderLoop);
-		initialized = true;
-	}
+    function ready(event) {
+        width = img.naturalWidth
+        $('body').append($bird.append(img))
+        window.requestAnimationFrame(renderLoop)
+        initialized = true
+    }
 
-	function onMouseMove(e) {
-		cursor.x = e.clientX;
-		cursor.y = e.clientY;
-	}
+    function onMouseMove(e) {
+        cursor.x = e.clientX
+        cursor.y = e.clientY
+    }
 
-	function renderLoop() {
-		looper++;
+    function renderLoop() {
+        looper++
 
-		cursor.distanceX = cursor.x - x;
-		cursor.distanceY = cursor.y - y;
-		cursor.proximityY = cursor.distanceY / window.innerHeight;
-		cursor.proximityX = cursor.distanceX / window.innerWidth;
+        cursor.distanceX = cursor.x - x
+        cursor.distanceY = cursor.y - y
+        cursor.proximityY = cursor.distanceY / window.innerHeight
+        cursor.proximityX = cursor.distanceX / window.innerWidth
 
-		// SCALE
-		scale = lerp(0.5, 1.0, cursor.proximityX);
+        // SCALE
+        scale = lerp(0.5, 1.0, cursor.proximityX)
 
-		// POSITION
-		x = lerp(-80, -60, cursor.proximityX);
+        // POSITION
+        x = lerp(-70, -50, cursor.proximityX)
 
-		if (looper > 300) {
-			// move in sorta sporadic fashion
-			y = lerp(y, cursor.y, 0.009);
-		}
-		if (looper > 400) {
-			looper = 0;
-		}
+        if (looper > 300) {
+            // move in sorta sporadic fashion
 
-		// ROTATION
-		const angle = [cursor.y - y, cursor.x - x];
-		var targetRotation = (Math.atan2(angle[0], angle[1]) * 180) / Math.PI;
-		targetRotation = targetRotation * 0.5;
-		rotation = lerp(rotation, targetRotation, 0.09);
+            // y += 10 // offset
+            y = lerp(y, (cursor.y ), 0.009)
+        }
+        if (looper > 400) {
+            looper = 0
+        }
 
-		// scoot in a bit when looking really far up or far down
-		const containerWidth = range(50, 0, width, width * 1.8, Math.abs(rotation));
-		$bird.width(containerWidth);
+        // ROTATION
+        const angle = [cursor.y - y, cursor.x - x]
+        var targetRotation = (Math.atan2(angle[0], angle[1]) * 180) / Math.PI
+        targetRotation = targetRotation * 0.5
+        rotation = lerp(rotation, targetRotation, 0.09)
 
-		let str = "";
-		str += "rotateZ(" + rotation.toFixed(2) + "deg) ";
-		str += "skew( " + skew + "deg) ";
-		str += "scale( " + scale + ")";
+        // scoot in a bit when looking really far up or far down
+        const containerWidth = range(
+            50,
+            0,
+            width,
+            width * 1.8,
+            Math.abs(rotation)
+        )
+        $bird.width(containerWidth)
 
-		$bird.css("transform", str).css("top", y).css("left", x);
+        let str = ''
+        str += 'rotateZ(' + rotation.toFixed(2) + 'deg) '
+        str += 'skew( ' + skew + 'deg) '
+        str += 'scale( ' + scale + ')'
 
-		window.requestAnimationFrame(renderLoop); // Repeat
-	}
+        $bird.css('transform', str).css('top', y).css('left', x)
 
-	// ------------------------------
-	// Event Listeners
-	// ------------------------------
+        window.requestAnimationFrame(renderLoop) // Repeat
+    }
 
-	img.onload = ready;
-	document.addEventListener("mousemove", onMouseMove, false);
+    // ------------------------------
+    // Event Listeners
+    // ------------------------------
 
-	// ------------------------------
-	// ------------------------------
-	// ------------------------------
-	// ------------------------------
-	// ------------------------------
-	// ------------------------------
-	// Roll out the red carpet
-	// ------------------------------
-	img.src = IMG_SRC;
-	// The star has arrived. When he is ready, the show will start
-	// This will trigger the img.onload function
-})();
+    img.onload = ready
+    document.addEventListener('mousemove', onMouseMove, false)
+
+    // ------------------------------
+    // ------------------------------
+    // ------------------------------
+    // ------------------------------
+    // ------------------------------
+    // ------------------------------
+    // Roll out the red carpet
+    // ------------------------------
+    img.src = IMG_SRC
+    // The star has arrived. When he is ready, the show will start
+    // This will trigger the img.onload function
+})()
 
 // ---------------------
-// 			 Helpers
+// 		 Helpers
 // ---------------------
 
-const lerp = (x, y, a) => x * (1 - a) + y * a;
-const clamp = (a, min = 0, max = 1) => Math.min(max, Math.max(min, a));
-const invlerp = (x, y, a) => clamp((a - x) / (y - x));
-const range = (x1, y1, x2, y2, a) => lerp(x2, y2, invlerp(x1, y1, a));
+const lerp = (x, y, a) => x * (1 - a) + y * a
+const clamp = (a, min = 0, max = 1) => Math.min(max, Math.max(min, a))
+const invlerp = (x, y, a) => clamp((a - x) / (y - x))
+const range = (x1, y1, x2, y2, a) => lerp(x2, y2, invlerp(x1, y1, a))

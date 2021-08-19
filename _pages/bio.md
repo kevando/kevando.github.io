@@ -20,6 +20,15 @@ Kevin is known as the dancing man.
 
 <!-- https://paper.dropbox.com/doc/Kevin-Habich--BQs8wVy7UyEwv8UT9RwAM36oAg-Ceh5hz0g5xJ4TM2frDdFl -->
 
+<!--
+This is my website. Hi, I'm Kevin Habich. You may remember me from such things as Season 6 of Shark Tank, or this website.
+
+I'm a freelance XR developer. Previously, I was the CTO & Co-founder of Frameri Eyewear. We made the first interchangeable perscription eyewear and while ultimately we failed, I'm very proud of what our team acheived. We earned the trust of many loyal customers.
+
+After a string of successes, we took a big risk that didn't pay off in time and were forced to close down.
+
+Kevin graduated from University of Illinois at Chicago with a B.S. degree in Computer Engineering.  -->
+
 <script type="text/javascript">
 
 const GIF = "https://assets.codepen.io/5740/kevin_1.gif"
