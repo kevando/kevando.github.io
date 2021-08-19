@@ -2,7 +2,7 @@
 layout: post
 title: Missile Launch
 date: 2013-04-03
-category: project
+category: projectt
 tags:
     - experiment
     - app

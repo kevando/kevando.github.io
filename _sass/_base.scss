@@ -33,13 +33,9 @@ h5 {
 .zero-margin {
 	margin: 0;
 }
-
-
-main.project {
-	h4 {
-		margin: 0;
-		a {
-			line-height: 1.6em;
-		}
-	}
+.hidden {
+    visibility: hidden;
+}
+.flex-row {
+    display: flex;
 }

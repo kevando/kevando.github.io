@@ -1,5 +1,5 @@
 {%- if page.show_navigation -%}
-<div class="navigation">
+<nav class="{%- if page.hide_navigation -%}hidden{%- endif -%}">
     <a href="/">🌐</a>
     <a href="/bio">🙂</a>
     <a href="/projects">🔨</a>
@@ -7,12 +7,8 @@
     <a href="/about">😛</a>
     <a href="/writing">✍️</a>
     <a href="/frameri">👓</a>
-</div>
+</nav>
 
 <hr />
 
 {%- endif -%}
-
-<!-- <a href="/projects" {% if page.permalink == "/projects" %}class="active"{% endif %}>projects</a>,  -->
-
-<!-- <a href="/blog" {% if page.permalink == "/blog" %}class="active"{% endif %}>blog</a> -->

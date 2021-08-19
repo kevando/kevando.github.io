@@ -4,6 +4,7 @@ category: project
 layout: default
 ---
 
+
 <h1 class="projects title pressstart">Projects</h1>
 
 <hr />
@@ -15,6 +16,30 @@ layout: default
 
 {% endfor %}
 
+---
+
+[screenshit](http://github.com/kevando/screenshit) --- Desktop tool
+
+
+---
+
+
+### 📱 [chaz](https://apps.apple.com/us/app/chaz-recommendations/id1234092253)
+
+### 📱 [Fest Queen](https://apps.apple.com/us/app/fest-queen/id1223610734)
+
+---
+
+
+## [Wookie Translator](https://wookietranslator.com)
+
+The longest running joke on Google Appengine. 
+
+---
+
+[chaz.co](https://chaz.co)
+
+I made this website to showcase example of people displaying empathy. I found that it can be hard to explain empathy, but it's very easy to point at something and say "That. More of that, please."
 
 ---
 
@@ -30,12 +55,10 @@ This project came about while working on Nifnut. The plan was to have an epic pa
 
 <!-- - [Podcast Lovers](http://podcastlovers.com)
 - [Twitter Memories](http://twittermemories.com)
-- [Wookie Translator](https://wookietranslator.com)
+- 
 - [Zharki News](https://www.zharki.net)
-- [chaz](https://apps.apple.com/us/app/chaz-recommendations/id1234092253) (iOS App)
-- [chaz](https://www.chaz.co) (website)
 - [screenshit](http://github.com/kevando/screenshit)
-- [Fest Queen](https://apps.apple.com/us/app/fest-queen/id1223610734) -->
+-  -->
 
 <!-- - [roybiv](www.roybiv.net) -- my first company
 - [Frameri Eyewear](www.instagram.com/frameri) -- my second company

@@ -2,9 +2,8 @@
 layout: default
 title: Kevin's Website
 permalink: /
-show_navigation: false
+hide_navigation: true
 ---
-
 
 
 ## 🌐 **Welcome**
@@ -12,16 +11,25 @@ show_navigation: false
 
 I designed this website to feel like the early internet days when the only thing we cared about was clarity of content. We rejected anything that confused us and embraced whatever helped us find more new content.
 
+I like scrollbars.
+
 ---
 
 
-### 🔨 --- [Projects](/projects)
+<h3>{% include fancy-link.html emoji="🔨" text="Projects" url="/projects" %}</h3>
 
-### 📸 --- [Photo Blog](/photos)
+<h3>{% include fancy-link.html emoji="📸" text="Photos" url="/photos" %}</h3>
 
-### ✍️ --- [Writing](/writing)
+<h3>{% include fancy-link.html emoji="✍️" text="Writing" url="/writing" %}</h3>
 
-### 😛 --- [Bio](/bio)
+<h3>{% include fancy-link.html emoji="😛" text="Projects" url="/projects" %}</h3>
 
-### 👓 --- [My First Startup](/frameri)
+<h3>{% include fancy-link.html emoji="👓" text="Projects" url="/projects" %}</h3>
 
+<h3>{% include fancy-link.html emoji="🔨" text="Projects" url="/projects" %}</h3>
+
+
+
+
+<!-- Fixes a CSS Bug -->
+<script> </script>

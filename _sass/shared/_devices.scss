@@ -1,0 +1,40 @@
+/* Media Queries */
+
+$PHONE_SIZE_MIN: 375px;
+$PHONE_SIZE_MAX: 768px;
+
+@mixin for-phone {
+	@media only screen and (min-device-width: $PHONE_SIZE_MIN) and (max-device-width: $PHONE_SIZE_MAX) {
+		@content;
+	}
+}
+
+@mixin for-tablet {
+	@media only screen and (min-device-width: $PHONE_SIZE_MAX) and (max-device-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin for-computer {
+	@media only screen and (min-width: $PHONE_SIZE_MAX) {
+		@content;
+	}
+}
+
+
+/* Helpers */
+
+.phone-only {
+	@include for-computer() {
+		display: none;
+	}
+	@include for-tablet() {
+		display: none;
+	}
+}
+
+.no-phone {
+	@include for-phone() {
+		display: none;
+	}
+}

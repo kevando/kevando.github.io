@@ -23,7 +23,10 @@ defaults:
           # Default Values (very important!)
           layout: 'default'
           favicon: icon-32-goat.png
+          title: Kevin's Website
+          description: Leader of the Internet Retro Revival Wave
           show_navigation: true
+          hide_navigation: false
           twitter:
             card: summary
             title: Kevin's Website
