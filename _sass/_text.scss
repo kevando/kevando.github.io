@@ -1,6 +1,12 @@
 @import 'fonts';
 
-* {
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+p {
     font-family: Verdana;
 }
 
@@ -9,6 +15,9 @@ h1 {
 }
 h2 {
     @include fluid-type(30px, 40px);
+}
+h3 {
+    @include fluid-type(20px, 24px);
 }
 p {
     @include fluid-type(13px, 23px);
@@ -25,9 +34,17 @@ a {
         text-decoration: underline;
     }
 }
-code {
-    font-family: monospace;
-    font-size: 0.7em;
+
+pre.highlight {
+    background: #dedede;
+    padding: 1em;
+    border: solid 1px #c1c1c1;
+
+    code {
+        font-family: monospace;
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
 }
 .caption {
     @include fluid-type(10px, 12px);
@@ -36,13 +53,22 @@ code {
     font-family: monospace;
     @include fluid-type(10px, 12px);
 }
-h1.page.title {
-    @include fluid-type(40px, 60px);
+h1.post.title {
+    @include fluid-type(40px, 50px);
 }
-h2.page.title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    line-height: 1em;
-    letter-spacing: 0.03em;
-    @include fluid-type(24px, 34px);
+h1.article.title {
+    @include fluid-type(20px, 40px);
 }
+h1.projects.title {
+    @include fluid-type(30px, 35px);
+    color: white;
+    text-shadow: 2px 0px 0px black, -2px 0px 0px black, 0px 2px 0px black, 0px -2px 0px black;
+}
+
+// h2.page.title {
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: 700;
+//     line-height: 1em;
+//     letter-spacing: 0.03em;
+//     @include fluid-type(24px, 34px);
+// }

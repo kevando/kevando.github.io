@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Testing, Testing. One Two Three. Do you read me?
 permalink: /testing.html
 ---
@@ -15,33 +15,33 @@ permalink: /testing.html
 ##### Header 5
 
 
-## Kevin
+## Projects
 {: .phosphate }
 
-## Kevin
+## Projects
 {: .typewriter }
 
-## Kevin
+## Projects
 {: .bungee }
 
-## Kevin
+## Projects
 {: .monoton }
 
-## Kevin
+## Projects
 {: .phosphate }
 
-## Kevin
+## Projectss
 {: .pressstart }
 
-## Kevin
+## Projects
 {: .rockwell }
 
-## Kevin
+## Projects
 {: .silom }
 
-## Kevin
+## Projects
 {: .terminal }
 
-## Kevin
+## Projects
 {: .vt323 }
 

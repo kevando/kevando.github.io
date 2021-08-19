@@ -1,0 +1,24 @@
+@mixin pretty-box-shadow($shadow-name: 'default') {
+    @if $shadow-name == 'material' {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    @if $shadow-name == 'photo-blog' {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: solid 3px #eeeeee;
+    }
+
+    // Add more!
+    // https://getcssscan.com/css-box-shadow-examples
+}
+
+.photo-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: solid 3px #eeeeee;
+}
+
+.material-shadow {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border: solid 1px #a9a9a9;
+}
