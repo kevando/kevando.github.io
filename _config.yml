@@ -1,17 +1,17 @@
-# ---------------------------------
-#   Basic Shit
-# ---------------------------------
 
+
+
+# Website Information
 title: Kevando
 description: Web Surfer
-url: 'https://kevando.github.io'
 
+
+# Website Configuration
+url: 'https://kevando.github.io'
 google_analytics: UA-16078011-4
 
-# ---------------------------------
-#   Build Settings
-# ---------------------------------
 
+# Build Settings
 theme: minima
 plugins:
     - jekyll-feed
@@ -25,9 +25,7 @@ defaults:
           favicon: icon-32-goat.png
           meta_description: 'A website about me, Kevin Habich.'
 
-# ---------------------------------
-#   Content
-# ---------------------------------
+# Content
 
 collections:
     category:

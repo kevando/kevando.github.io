@@ -1,0 +1,47 @@
+
+<div class="embed-wrapper">
+
+
+{% if include.youtube_idd %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.youtube_id }}"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endif %}
+
+{% if include.vimeo_idd %}
+<iframe src="https://player.vimeo.com/video/{{ include.vimeo_id }}?h=501686b599" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+{% endif %}
+
+
+
+{% if include.instagram_id %}
+
+<!-- Instagram  -->
+
+<div class="image-wrapper instagram embed">
+    <blockquote
+        class="instagram-media"
+        data-instgrm-captioned
+        data-instgrm-permalink="https://www.instagram.com/p/{{ include.instagram_id }}/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-version="13"
+    >
+        <div style="padding: 16px">
+            <a
+                href="https://www.instagram.com/p/{{ include.instagram_id }}/?utm_source=ig_embed&amp;utm_campaign=loading"
+                target="_blank"
+            >
+            </a>
+        </div>
+    </blockquote>
+</div>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+
+{% endif %}
+
+
+</div>
+
+
+
+

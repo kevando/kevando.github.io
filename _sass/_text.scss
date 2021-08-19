@@ -1,56 +1,48 @@
-/* External Fonts */
+@import 'fonts';
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-/* Local Fonts */ 
-
-@include load-font(AbrilFatface-Regular);
-@include load-font(Phosphate,'.ttc');
-@include load-font(BungeeShade-Regular);
-@include load-font(AmericanTypewriter,'.ttc');
-@include load-font(Monoton-Regular);
-@include load-font(Silom);
-// @include load-font();
-
-.bungee {
-	font-family: 'BungeeShade-Regular';
-}
 * {
-	font-family: Verdana;
+    font-family: Verdana;
+}
+
+h1 {
+    font-weight: bold;
+}
+h2 {
+    @include fluid-type(30px, 40px);
 }
 p {
-	@include fluid-type(13px, 23px);
-	font-weight: 100;
-	line-height: 1.3em;
+    @include fluid-type(13px, 23px);
+    font-weight: 100;
+    line-height: 1.3em;
 }
 li {
-	@include fluid-type(13px, 23px);
+    @include fluid-type(13px, 23px);
 }
 a {
-	text-decoration: none;
-	&:hover, &.active {
-		text-decoration: underline;
-	}
+    text-decoration: none;
+    &:hover,
+    &.active {
+        text-decoration: underline;
+    }
 }
 code {
-	font-family: monospace;
-	font-size: 0.7em;
+    font-family: monospace;
+    font-size: 0.7em;
 }
 .caption {
-	@include fluid-type(10px, 12px);
+    @include fluid-type(10px, 12px);
 }
 .date {
-	font-family: monospace;
-	@include fluid-type(10px, 12px);
+    font-family: monospace;
+    @include fluid-type(10px, 12px);
 }
 h1.page.title {
-	@include fluid-type(40px, 60px);
+    @include fluid-type(40px, 60px);
 }
 h2.page.title {
-	font-family: "Roboto", sans-serif;
-	font-weight: 700;
-	line-height: 1em;
-	letter-spacing: 0.03em;
-	@include fluid-type(24px, 34px);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    @include fluid-type(24px, 34px);
 }
-

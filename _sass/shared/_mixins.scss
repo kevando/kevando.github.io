@@ -52,14 +52,6 @@ $PHONE_SIZE_MAX: 768px;
 	font-weight: 200;
 }
 
-@mixin load-font($name, $extension: ".ttf", $directory: "/assets/fonts/") {
-	$path: $directory + $name + $extension;
-
-	@font-face {
-		font-family: $name;
-		src: url($path) format("truetype");
-	}
-}
 
 /* Shadow Stuff */
 

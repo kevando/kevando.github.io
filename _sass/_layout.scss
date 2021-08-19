@@ -8,6 +8,7 @@ $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 body {
+	background-color: $background-color;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
@@ -18,18 +19,14 @@ body {
 
 main.content {
 	flex: 1;
-	padding: 0 $contentPadding;
+	padding: 0 $contentPadding;	 
 
-	&.article {
-		img {
-			@include pretty-box-shadow("material");
-		}
+	.page-layout {
+		max-width: 800px;
 	}
 }
 
-body {
-	background-color: $background-color;
-}
+
 
 ul {
 	li {
@@ -102,3 +99,32 @@ img + .caption {
 	margin-top: 4px;
 	color: rgb(53, 53, 53);
 }
+
+
+/* Article Layout */
+
+.article {
+	.image-wrapper {
+		// border: solid 2px red;
+		
+	}
+}
+
+.flex-row {
+	display: flex;
+}
+
+
+.instagram.embed {
+	display: flex;
+	iframe {
+		margin-right:20px!important;
+	}
+}
+
+.navigation {
+	background-color: red;
+}
+
+
+
