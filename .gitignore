@@ -3,9 +3,7 @@ _site
 .jekyll
 .jekyll-cache/
 .bundle
-.sass-cache
-Gemfile
-Gemfile.lock
+.sass-cach
 node_modules
 package.json
 
@@ -17,5 +15,4 @@ _posts/_drafts/*
 *.css.map
 
 *.code-workspace
-_drafts
 _old
