@@ -2,7 +2,7 @@
 layout: article
 title: The Infinite Scroll
 date: 2013-01-08
-category: words
+categories: blog, article
 permalink: words/infinite-scroll
 tags:
   - ui

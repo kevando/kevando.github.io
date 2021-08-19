@@ -21,7 +21,7 @@ What I'm listening to
 
 ---
 
-I like to make jokes
+#### I like to make jokes
 
 - [Space Man Lens](https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=94f665041a674d42a7b6df54c448677d&metadata=01)
 - [inkedin.com/in/kevando](https://www.linkedin.com/in/kevando)
@@ -32,3 +32,10 @@ I like to make jokes
 This is my dog :)
 
 - [byte.co/@darby](https://byte.co/@darby)
+
+
+
+
+<!-- Bird Brain -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/bird.js"></script>

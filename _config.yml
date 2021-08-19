@@ -20,10 +20,10 @@ defaults:
     - scope:
           path: ''
       values:
-          # Default Values
+          # Default Values (very important!)
           layout: 'default'
           favicon: icon-32-goat.png
-          meta_description: 'A website about me, Kevin Habich.'
+          show_navigation: true
           twitter:
             card: summary
             title: Kevin's Website

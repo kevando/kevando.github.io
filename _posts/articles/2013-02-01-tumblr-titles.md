@@ -2,7 +2,7 @@
 layout: article
 title:  Adding a Title for All Tumblr Post Types
 date: 2013-02-01
-categories: blog
+categories: blog, article
 tags:
   - tumblr
   - help

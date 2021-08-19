@@ -1,16 +1,18 @@
-
-<span class="navigation" >
-
+{%- if page.show_navigation -%}
+<div class="navigation">
     <a href="/">🌐</a>
-    <!-- <a href="/me">🙂</a> -->
-    <!-- <a href="/frameri">👓</a> -->
+    <a href="/bio">🙂</a>
+    <a href="/projects">🔨</a>
+    <a href="/photos">📸</a>
+    <a href="/about">😛</a>
+    <a href="/writing">✍️</a>
+    <a href="/frameri">👓</a>
+</div>
 
-    <!-- <span class="tooltip wrapper"><a href="/me">🙂</a><span class="tooltip content">About Me</span></span> -->
-</span>
+<hr />
 
+{%- endif -%}
 
 <!-- <a href="/projects" {% if page.permalink == "/projects" %}class="active"{% endif %}>projects</a>,  -->
 
 <!-- <a href="/blog" {% if page.permalink == "/blog" %}class="active"{% endif %}>blog</a> -->
-
-

@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
+    {%- include head.html -%}
 
-{%- include head.html -%}
+    <body class="Site">
+        <header>{%- include navigation.html -%}</header>
 
-<body class="Site">
+        <main class="{{ layout.name }} {{ page.category }} content">
+            {{ content }}
+        </main>
 
-	<header>{%- include navigation.html -%}</header>
+        <footer>{%- include footer.html -%}</footer>
+    </body>
 
-	<main class="{{ layout.name }} content">
-		{{ content }}
-	</main>
-
-	<footer>{%- include footer.html -%}</footer>
-</body>
-
-{%- include after_body.html -%}
-
+    {%- include after_body.html -%}
 </html>

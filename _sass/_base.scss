@@ -1,24 +1,24 @@
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 html {
-	box-sizing: border-box;
-	height: 100%;
+    box-sizing: border-box;
+    height: 100%;
 }
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 :focus {
-	outline: none;
+    outline: none;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 h1,
@@ -26,9 +26,20 @@ h2,
 h3,
 h4,
 h5 {
-	font-weight: normal;
+    font-weight: normal;
 }
 
-hr {
-	margin: 0;	
+
+.zero-margin {
+	margin: 0;
+}
+
+
+main.project {
+	h4 {
+		margin: 0;
+		a {
+			line-height: 1.6em;
+		}
+	}
 }

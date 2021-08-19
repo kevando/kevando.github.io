@@ -2,7 +2,7 @@
 layout: article
 title:  Installing Redmine on Heroku
 date: 2012-12-20
-categories: blog
+categories: blog, article
 tags:
   - heroku
   - redmine

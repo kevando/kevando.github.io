@@ -2,7 +2,7 @@
 layout: article
 title:  Facebook Messaging
 date: 2013-03-27
-categories: blog
+categories: blog, article
 tags:
   - facebook
 

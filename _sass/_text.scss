@@ -6,7 +6,8 @@ h3,
 h4,
 h5,
 li,
-p {
+p,
+td {
     font-family: Verdana;
 }
 
@@ -14,13 +15,16 @@ h1 {
     font-weight: bold;
 }
 h2 {
-    @include fluid-type(30px, 40px);
+    @include fluid-type(22px, 40px);
 }
 h3 {
     @include fluid-type(20px, 24px);
 }
+h4 {
+    @include fluid-type(16px, 20px);
+}
 p {
-    @include fluid-type(13px, 23px);
+    @include fluid-type(14px, 23px);
     font-weight: 100;
     line-height: 1.3em;
 }
@@ -57,18 +61,17 @@ h1.post.title {
     @include fluid-type(40px, 50px);
 }
 h1.article.title {
-    @include fluid-type(20px, 40px);
+    @include fluid-type(30px, 40px);
+}
+h1.photos.title {
+    @include fluid-type(50px, 80px);
 }
 h1.projects.title {
     @include fluid-type(30px, 35px);
     color: white;
-    text-shadow: 2px 0px 0px black, -2px 0px 0px black, 0px 2px 0px black, 0px -2px 0px black;
+    text-shadow: 2px 0px 0px black, -2px 0px 0px black, 0px 2px 0px black,
+        0px -2px 0px black;
 }
-
-// h2.page.title {
-//     font-family: 'Roboto', sans-serif;
-//     font-weight: 700;
-//     line-height: 1em;
-//     letter-spacing: 0.03em;
-//     @include fluid-type(24px, 34px);
-// }
+.center {
+    text-align: center;
+}

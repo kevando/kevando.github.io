@@ -4,22 +4,17 @@ category: project
 layout: default
 ---
 
-
-
-
 <h1 class="projects title pressstart">Projects</h1>
 
 <hr />
 
-<table>
-	{% for post in site.categories[page.category] %}
-	<tr>
-		<td><a href="{{ post.url }}">{{ post.title }}</a></td>
-		<td>&nbsp;</td>
-		<td>{{ post.summary }}</td>
-	</tr>
-	{% endfor %}
-</table>
+
+
+{% for post in site.categories[page.category] %}
+#### [{{ post.title }}]({{ post.url }})
+
+{% endfor %}
+
 
 ---
 
@@ -27,11 +22,9 @@ layout: default
 
 ![paulie](https://os.nifnut.com/assets/images/preview-image.jpg)
 
-
 This project came about while working on Nifnut. The plan was to have an epic pass off when someone bought Paulie the NFT. Play with PaulieOS yourself!
 
 [nifnut.com/callil.eth](https://nifnut.com/callil.eth)
-
 
 ---
 
@@ -44,23 +37,19 @@ This project came about while working on Nifnut. The plan was to have an epic pa
 - [screenshit](http://github.com/kevando/screenshit)
 - [Fest Queen](https://apps.apple.com/us/app/fest-queen/id1223610734) -->
 
-
 <!-- - [roybiv](www.roybiv.net) -- my first company
 - [Frameri Eyewear](www.instagram.com/frameri) -- my second company
 - [big-time-fresh.appspot.com](http://big-time-fresh.appspot.com)
 - [funny-app1.appspot.com](http://funny-app1.appspot.com/)
 - [un-supported.appspot.com](http://un-supported.appspot.com/)
-- [windows-vs-mac.appspot.com](http://windows-vs-mac.appspot.com) 
+- [windows-vs-mac.appspot.com](http://windows-vs-mac.appspot.com)
 - [whitev-club.appspot.com](http://whitev-club.appspot.com)
 - [glass-maker-joseph-12783.netlify.app](https://glass-maker-joseph-12783.netlify.app/)
 - [zero-likes.appspot.com](http://zero-likes.appspot.com/)
 - Emoji Map
 - <3 -->
 
-
 <!-- **Kevaid** -->
-
-
 
 <!-- - at my third company we make augmented reality apps. these are fun, but not really designed for the phone. we designed them with AR eyewear in mind. Blue Sky paint is one of the very few true multi-player AR experiences. -->
 
@@ -68,5 +57,3 @@ This project came about while working on Nifnut. The plan was to have an epic pa
 - [Word Vomit 3d](https://apps.apple.com/us/app/word-vomit-3d/id1314707004)
 - [Doodle Lens](http://doodlelens.app)
 - [BS Paint](http://bspaint.net) -->
-
-

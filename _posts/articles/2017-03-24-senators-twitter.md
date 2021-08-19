@@ -3,7 +3,10 @@ layout: post
 permalink: /senate.html
 title: The U.S. Senate on Twitter
 date: 2017-03-24
-category: project
+categories: 
+  - project
+  - blog
+  - article
 image: https://i.imgur.com/V8P6Pmq.png
 summary: Which Senators follow each other?
 tags:
