@@ -2,7 +2,7 @@
 layout: default
 title: Kevin's Website
 permalink: /
-hide_navigation: true
+
 ---
 
 
@@ -14,20 +14,6 @@ I designed this website to feel like the early internet days when the only thing
 I like scrollbars.
 
 ---
-
-
-<h3>{% include fancy-link.html emoji="🔨" text="Projects" url="/projects" %}</h3>
-
-<h3>{% include fancy-link.html emoji="📸" text="Photos" url="/photos" %}</h3>
-
-<h3>{% include fancy-link.html emoji="✍️" text="Writing" url="/writing" %}</h3>
-
-<h3>{% include fancy-link.html emoji="😛" text="Projects" url="/projects" %}</h3>
-
-<h3>{% include fancy-link.html emoji="👓" text="Projects" url="/projects" %}</h3>
-
-<h3>{% include fancy-link.html emoji="🔨" text="Projects" url="/projects" %}</h3>
-
 
 
 

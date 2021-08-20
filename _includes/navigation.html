@@ -1,14 +1,17 @@
+
+
 {%- if page.show_navigation -%}
 <nav class="{%- if page.hide_navigation -%}hidden{%- endif -%}">
-    <a href="/">🌐</a>
-    <a href="/bio">🙂</a>
-    <a href="/projects">🔨</a>
-    <a href="/photos">📸</a>
-    <a href="/about">😛</a>
-    <a href="/writing">✍️</a>
-    <a href="/frameri">👓</a>
+    <a class="{%- if page.url=="/" -%}active{%- endif -%}"" href="/"><span>🌐</span></a>
+    <a class="{%- if page.url=="/bio" -%}active{%- endif -%}"" href="/bio"><span>🙂</span></a>
+    <a class="{%- if page.url=="/frameri" -%}active{%- endif -%}"" href="/frameri"><span>👓</span></a>
+    <a class="{%- if page.url=="/lit" -%}active{%- endif -%}"" href="/lit"><span>🔥</span></a>
+    <a class="{%- if page.url=="/writing" -%}active{%- endif -%}" href="/writing"><span>✍️</span></a>
 </nav>
 
 <hr />
 
 {%- endif -%}
+
+
+<!-- 😛🔨📸 -->

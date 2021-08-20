@@ -25,14 +25,13 @@ header nav {
     display: flex;
     margin-top: 1px;
     margin-bottom: 4px;
+    padding: 10px 0;
     a {
-        @include fluid-type(20px, 30px);
-        line-height: 1.6em;
-        margin-right: 0vw;
-        padding: 1vw 1vw;
-
-        &:hover {
-            text-decoration: none;
+        margin: 0 8px;
+        text-decoration: none;
+        @extend .emoji--button;
+        &.active {
+            @extend .pressed;
         }
     }
 }
