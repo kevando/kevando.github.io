@@ -1,40 +1,55 @@
 /* Media Queries */
 
-$PHONE_SIZE_MIN: 375px;
-$PHONE_SIZE_MAX: 768px;
+@mixin for-phone($size: all) {
+	@if $size==all {
+		@media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+			@content;
+		}
+	}
+	@if $size==small {
+		@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+			@content;
+		}
+	}
+	@if $size==large {
+		@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+			@content;
+		}
+	}
+}
 
-@mixin for-phone {
-	@media only screen and (min-device-width: $PHONE_SIZE_MIN) and (max-device-width: $PHONE_SIZE_MAX) {
+@mixin for-tablet($orientation: both) {
+	@media only screen and (min-width: 768px) {
 		@content;
 	}
 }
 
-@mixin for-tablet {
-	@media only screen and (min-device-width: $PHONE_SIZE_MAX) and (max-device-width: 1024px) {
+@mixin for-desktop() {
+	@media only screen and (min-width: 992px) {
 		@content;
 	}
 }
-
-@mixin for-computer {
-	@media only screen and (min-width: $PHONE_SIZE_MAX) {
-		@content;
-	}
-}
-
 
 /* Helpers */
 
-.phone-only {
-	@include for-computer() {
-		display: none;
-	}
-	@include for-tablet() {
-		display: none;
-	}
-}
+// .phone-only {
+// 	@include for-computer() {
+// 		display: none;
+// 	}
+// 	@include for-tablet() {
+// 		display: none;
+// 	}
+// }
 
-.no-phone {
-	@include for-phone() {
-		display: none;
-	}
-}
+// .no-phone {
+// 	@include for-phone() {
+// 		display: none;
+// 	}
+// }
+
+//   @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+// @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+// @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+// @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+// @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+// @media (min-width:1281px) { /* hi-res laptops and desktops */ }

@@ -1,0 +1,20 @@
+footer {
+    
+	@include for-phone() {
+		color: red;
+	}
+
+	@include for-phone(small) {
+		color: rgb(225, 158, 228);
+	}
+	@include for-phone(large) {
+		color: orange;
+	}
+@include for-tablet() {
+		color: yellow;
+	}
+	
+	@include for-desktop() {
+		color: green;
+	}
+}
