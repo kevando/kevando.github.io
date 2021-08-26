@@ -16,3 +16,6 @@ _posts/_drafts/*
 
 *.code-workspace
 _old
+
+
+Gemfile.lock
