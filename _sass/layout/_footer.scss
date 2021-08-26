@@ -1,0 +1,23 @@
+footer {
+	// background-color: red !important;
+	padding: 1rem;
+}
+
+$contentPadding: 1rem;
+
+.footer-always-at-page-bottom {
+	display: flex;
+	min-height: 100vh;
+	max-width: 100%;
+	flex-direction: column;
+	main {
+		flex: 1;
+	}
+	// footer {
+	// 	// padding: 0 $contentPadding;
+	// }
+}
+
+body {
+	@extend .footer-always-at-page-bottom;
+}

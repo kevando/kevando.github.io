@@ -1,38 +1,23 @@
 
-### 
-
-
-`bundle exec jekyll serve --livereload`
-
-
-### `bundle exec jekyll serve --livereload`
-
-## `bundle exec jekyll serve --livereload`
-
-### `bundle exec jekyll serve --livereload`
-
-# `bundle exec jekyll serve --livereload`
-
-
-`bundle exec jekyll serve --livereload`
-
----
-
-# Local Development
-
-
-### Local Development
-
-
+**[kevando.github.io](https://kevando.github.io)**
 ```
 bundle exec jekyll serve --livereload
 ```
 
-This website is built with Github Pages. 
 
-
+# 🌐  
 
 
 ---
 
-For complete instructions on how to set everything up from scratch, [read this](TBD)
+# <center> 🏗</center>
+
+---
+
+This website is built with Github Pages. 
+
+# 🏗
+
+For complete instructions on how to set a local version for development, [read this](TBD)
+
+🌐

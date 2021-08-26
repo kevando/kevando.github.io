@@ -1,20 +1,21 @@
-
-
-
-
 @import "abstracts/all";
+//
+// In the Abstract partial, there is a file with all the
+// variables, mixins, and similar components.
 
-// @import "mixins/fluid-text";
-// @import "mixins/devices";
-// 
+// ---------------------------------
 
 @import "core/all";
+//
+// contains files like typography, resets, and boilerplate code.
+// used across the whole website.
+// Once you write this code, there is no further overwriting
 
 // // Components
 // @import "components/all";
 
-// // Layout
-// @import "layout/all";
+@import "layout/all";
+// all styles necessary for the layout of the site. IE header, footer.
 
 // // Sections
 @import "sections/all";
@@ -22,17 +23,12 @@
 // // Pages
 // @import "pages/all";
 
-
-
 /*
 
-In the Abstract partial, there is a file with all the variables, mixins, and similar components.
 
-The Core partial contains files like typography, resets, and boilerplate code, used across the whole website. Once you write this code, there is no further overwriting.
 
 The Components partial contains styles for all components that are to be created for one website, including buttons, carousels, tabs, modals, and the like.
 
-The Layout partial has all styles necessary for the layout of the site, i.e., header, footer.
 
 The Pages partial contains the styles for every individual page. Almost every page needs to have specific styles that are to be used only for that particular page.
 
@@ -44,6 +40,4 @@ The Vendors partial is intended for bootstrap frameworks so, if you use one in y
 
 */
 
-
 // MORE INFO -----> https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/
-
