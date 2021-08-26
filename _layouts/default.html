@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html>
-    {%- include head.html -%}
+---
+layout: base
+---
 
-    <body class="Site">
-        <header>{%- include navigation.html -%}</header>
 
-        <main class="{{ layout.name }} {{ page.category }} content">
-            {{ content }}
-        </main>
+<header>{%- include navigation.html -%}</header>
 
-        <footer>{%- include footer.html -%}</footer>
-		
-    </body>
+<main>{{ content }}</main>
 
-    {%- include after_body.html -%}
-</html>
+<footer>{%- include footer.html -%}</footer>

@@ -1,0 +1,49 @@
+
+
+
+
+@import "abstracts/all";
+
+// @import "mixins/fluid-text";
+// @import "mixins/devices";
+// 
+
+@import "core/all";
+
+// // Components
+// @import "components/all";
+
+// // Layout
+// @import "layout/all";
+
+// // Sections
+@import "sections/all";
+
+// // Pages
+// @import "pages/all";
+
+
+
+/*
+
+In the Abstract partial, there is a file with all the variables, mixins, and similar components.
+
+The Core partial contains files like typography, resets, and boilerplate code, used across the whole website. Once you write this code, there is no further overwriting.
+
+The Components partial contains styles for all components that are to be created for one website, including buttons, carousels, tabs, modals, and the like.
+
+The Layout partial has all styles necessary for the layout of the site, i.e., header, footer.
+
+The Pages partial contains the styles for every individual page. Almost every page needs to have specific styles that are to be used only for that particular page.
+
+For every section to be reusable and the sass code to be easily accessible, there is the Section/Blocks partial. Also, it is important to have this partial so that you don’t need to search whether particular code is in the home.sass or about.sass files in the Pages partial.
+
+It is a good idea to put each section in a separate .sass file. Thus, if you have two different hero sections, put the code in the same file to know that there you can find the code for the two sections. And if you follow this pattern, you will have the majority of files in this folder.
+
+The Vendors partial is intended for bootstrap frameworks so, if you use one in your project, create this partial.
+
+*/
+
+
+// MORE INFO -----> https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/
+

@@ -1,48 +1,4 @@
 
-/* CSS3 */
-
-@mixin transition($args...) {
-	-webkit-transition: $args;
-	-moz-transition: $args;
-	-ms-transition: $args;
-	-o-transition: $args;
-	transition: $args;
-}
-
-@mixin meta {
-	font-family: $work-font;
-	font-size: 12px;
-	color: $meta-gray;
-	font-weight: 200;
-}
-
-@mixin cursive {
-	font-family: $cursive-font;
-}
-
-@mixin serif {
-	font-family: $arvo-font;
-}
-
-@mixin sans-serif {
-	font-family: $work-font;
-	color: $charcoal;
-	font-weight: 200;
-}
-
-
-/* Shadow Stuff */
-
-@mixin superHero {
-	text-shadow: -10px 10px 0px #00e6e6, -20px 20px 0px #01cccc, -30px 30px 0px #00bdbd;
-}
-
-@mixin heavyTextShadow {
-	text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1),
-		0px 34px 30px rgba(0, 0, 0, 0.1);
-}
-
-
 
 /* Dynamic Sizing Fonts (this is awesome) */
 

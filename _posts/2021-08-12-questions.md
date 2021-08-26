@@ -1,10 +1,5 @@
 ---
-layout: article
-title:  Questions
-tags:
-  - questions
-permalink: /questions
-meta_description: For your arsenal.
+title: Good Questions
 ---
 
 * When is the last time you gave up on something?

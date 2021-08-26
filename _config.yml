@@ -1,15 +1,10 @@
-
-
-
 # Website Information
 title: Kevando
 description: Web Surfer
 
-
 # Website Configuration
 url: 'https://kevando.github.io'
 google_analytics: UA-16078011-4
-
 
 # Build Settings
 theme: minima
@@ -28,15 +23,15 @@ defaults:
           show_navigation: true
           hide_navigation: false
           twitter:
-            card: summary
-            title: Kevin's Website
-            image: https://kevando.github.io/assets/images/aolfav.png
-            description: Thanks for stopping by
+              card: summary
+              title: Kevin's Website
+              image: https://kevando.github.io/assets/images/aolfav.png
+              description: Thanks for stopping by
           og:
-            type: website
-            title: Kevin's Fresh Website
-            image: 
-            description: Thanks for chillin w me
+              type: website
+              title: Kevin's Fresh Website
+              image:
+              description: Thanks for chillin w me
 
 # Content
 

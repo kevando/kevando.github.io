@@ -14,21 +14,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link
         rel="stylesheet"
-        href="/assets/stylesheets/main.css?cachedz={{ cachedz }}"
+        href="/assets/stylesheets/app.css?cachedz={{ cachedz }}"
     />
 
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="{{ page.twitter.card }}" />
-    <meta name="twitter:title" content="{{ page.twitter.title }}" />
-    <meta name="twitter:description" content="{{ page.twitter.description }}" />
-    <meta name="twitter:image" content="{{ page.twitter.image }}" />
-
-    <!-- Facebook Preview -->
-    <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
-    <meta property="og:type" content="{{ page.og.type }}" />
-    <meta property="og:title" content="{{ page.og.title }}" />
-    <meta property="og:description" content="{{ page.og.description }}" />
-    <meta property="og:image" content="{{ page.og.image }}" />
-
-    {%- include google-analytics.html -%}
+    {%- include head/twitter.html -%}
+    {%- include head/facebook.html -%}
+    {%- include head/analytics.html -%}
 </head>
