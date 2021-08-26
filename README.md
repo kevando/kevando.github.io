@@ -1,29 +1,23 @@
-**Local Development**
+
 ```
-bundle install
 bundle exec jekyll serve --livereload
 ```
 
-**How to Deploy**
-```
-git add . && git commit -m 'the best code ever'
-git push origin master
-# if that fails, you probably forgot to pull
-git pull origin master
-```
+# Local Development
 
-If it's your first time...
+
+### Local Development
+
 
 ```
-git config --global user.email "khabich@gmail.com"
-git config --global user.name "Kevando on Windows"
+bundle exec jekyll serve --livereload
 ```
 
-**Initial Setup** 
+This website is built with Github Pages. 
 
-1.) Install Ruby and pray it goes well
 
-2.) Open a terminal and run these commands
+
+
 
 ```
 gem install bundler
@@ -32,22 +26,31 @@ bundle install
 bundle exec jekyll serve
 ```
 
-And then maybe also these
-
 ```
 bundle add webrick
-
 gem uninstall eventmachine
 bundle install
 bundle exec jekyll clean
 ```
 
+
 ---
 
 
+### Updates
 
+```
+git config --global user.email "khabich@gmail.com"
+git config --global user.name "Kevando on Windows"
 
-## Project Code
+git pull origin master
+git add . && git commit -m 'the best code ever'
+git push origin master
+```
+
+---
+
+#### Project Code
 
 This website is built with Jekyll using the Minima theme and hosted on Github Pages. All 3 have great documentation.
 
