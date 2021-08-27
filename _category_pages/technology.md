@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Kevin's Website
-permalink: /technology.html
-
 ---
 
 

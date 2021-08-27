@@ -1,6 +1,4 @@
 ---
-permalink: /photos.html
-layout: category
 category: photos
 ---
 

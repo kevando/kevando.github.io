@@ -4,6 +4,10 @@ header {
     .logo {
         text-decoration: none;
     }
+    .emoji {
+        font-size: 0.7em;
+        padding: 0 8px 0 8px;
+    }
 
     nav.links {
         p {
@@ -16,7 +20,7 @@ header {
     nav.buttons {
         button {
             width: 70px;
-            padding: 0;
+            padding: 2px 0px;
             white-space: nowrap;
         }
         a {

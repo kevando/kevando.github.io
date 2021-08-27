@@ -1,34 +1,33 @@
 # Website Information
-title: Kevando
-description: Web Surfer
+title: Kevin!
+description: this my website
 
-#
 # Website Configuration
 url: 'https://kevando.github.io'
 google_analytics: UA-16078011-4
 
-#
 # Jekyll Build Settings
 theme: minima
 plugins:
     - jekyll-feed
 sass:
-    sass_dir: _sass
+    sass_dir: _sass\
     style: compressed
 include: ['_pages']
 
-# Content Settings
+# Collections Config START
 
 collections:
-    category:
+    category_pages:
         output: true
+        permalink: /:name:output_ext
     lenses:
         output: true
         permalink: /:collection/:name:output_ext
-#
-#
-# Liquid Variable Fallbacks (very useful!)
-#
+
+
+# Liquid Variable Fallbacks 
+# (very useful!)
 #
 defaults:
     # ----------------------------------------------------
@@ -37,6 +36,13 @@ defaults:
           type: 'lenses'
       values:
           layout: 'lens'
+          emoji: 👻
+    # ----------------------------------------------------
+    - scope:
+          path: ''
+          type: 'category_pages'
+      values:
+          layout: 'category'
     # ----------------------------------------------------
     - scope:
           path: ''

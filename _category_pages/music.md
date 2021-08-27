@@ -1,7 +1,5 @@
 ---
-permalink: /music.html
 category: music
-layout: category
 ---
 
 
