@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<h2>👻👻&nbsp;&nbsp;👻&nbsp;&nbsp;&nbsp;👻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👻</h2>
+
+<video 
+src="https://community-lens.storage.googleapis.com/preview-media/final/2c4842a4-565f-476a-9e8f-d348a116d969.mp4" 
+autoplay
+muted
+width="300"
+
+></video>
+
+
+<p>👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻</p>
+
+{{ content }}
+
+
+
+<!-- Two ways to concat lens_id -->
+
+{% capture unlock_url %}https://lens.snapchat.com/{{ page.lens_id }}{% endcapture %}
+
+{% assign snapcode_url = 'https://app.snapchat.com/web/deeplink/snapcode?data=' | append: page.lens_id | append: '&version=1&type=svg' %}
+
+
+<h1>📱 ~ ~ ~ <a href="{{ unlock_url }}">Unlock</a> ~ ~ ~ 📱</h1>
+
+<img src="{{ snapcode_url }}" />
+
+<h1>📱 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 📱</h1>
+
+
