@@ -1,22 +1,20 @@
 ---
-layout: default
-title: Kevin's Website
+title: Kevin!
+header_title: this my website
 permalink: /
-
 ---
 
 
-## 🌐 **Welcome**
-{: .silom }
 
-I designed this website to feel like the early internet days when the only thing we cared about was clarity of content. We rejected anything that confused us and embraced whatever helped us find more new content.
+<ul>
+{% for category in site.categories %}
 
-I like scrollbars.
+{% assign category_name = category | first | remove_first: ","  %}
+{% assign category_posts = category | last  %}
 
----
+<li>
+  <b><a href="/{{ category_name }}.html">{{ category_name }} </a> ({{ category_posts.size }})</b>
+</li>
+{% endfor %}
 
-[javascript]: (/javascript)
-
-
-<!-- Fixes a CSS Bug -->
-<script> </script>
+</ul>

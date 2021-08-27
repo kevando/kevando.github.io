@@ -1,19 +1,39 @@
 header {
-	padding: 0rem 1rem;
+    padding: 0rem 1rem;
 
-	nav.links {
-		p {
-			word-spacing: 2px;
-			a {
-				word-spacing: 0px;
-			}
-		}
-	}
-	nav.buttons {
-		button {
-			width: 70px;
-			padding: 0;
-			white-space: nowrap;
-		}
-	}
+    nav.links {
+        p {
+            word-spacing: 2px;
+            a {
+                word-spacing: 0px;
+            }
+        }
+    }
+    nav.buttons {
+        button {
+            width: 70px;
+            padding: 0;
+            white-space: nowrap;
+        }
+        a {
+            @extend .link--button;
+
+            &.bio {
+                &::before {
+                    content: '🙂 ';
+                }
+                &:hover {
+                    &::before {
+                        // content: '😃 ';
+                    }
+                }
+                &:active {
+                    border-style: inset;
+                    &::before {
+                        content: '😁 ';
+                    }
+                }
+            }
+        }
+    }
 }

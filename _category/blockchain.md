@@ -1,5 +1,5 @@
 ---
-permalink: /blockchain
+permalink: /blockchain.html
 category: blockchain
 layout: category
 ---

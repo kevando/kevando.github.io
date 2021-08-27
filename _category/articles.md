@@ -1,5 +1,5 @@
 ---
-permalink: /articles
+permalink: /articles.html
 category: articles
 layout: category
 ---

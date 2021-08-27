@@ -1,6 +1,6 @@
 ---
 permalink: /data
-category: data
+category: data.html
 layout: category
 ---
 

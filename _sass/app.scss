@@ -1,8 +1,8 @@
-@import "abstracts/all"; // ---------> variables, and similar components.
-@import "mixins/all"; // ------------> SASS that is complex
-@import "core/all"; // --------------> typography, resets, boilerplate code.
-@import "components/all"; // --------> buttons, carousels, tabs, modals, and the like.
-@import "layout/all"; // ------------> header, footer.
-@import "pages/all"; // -------------> specific styles that are to be used only for that particular page
+@import 'abstracts/all'; //     > variables, and similar components.
+@import 'mixins/all'; //        > SASS that is complex
+@import 'core/all'; //          > typography, resets, boilerplate code.
+@import 'components/all'; //    > buttons, carousels, tabs, modals, and the like.
+@import 'layout/all'; //        > header, footer.
+@import 'pages/all'; //         > specific styles that are to be used only for that particular page
 
 // MORE INFO -----> https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/
