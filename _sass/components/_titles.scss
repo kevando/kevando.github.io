@@ -10,9 +10,12 @@
 
 @mixin simple-text-border($c: #fff, $unit: 1px) {
     // $unit:
-    text-shadow: 0 $unit 0px $c, 0 -#{$unit} 0px $c, $unit 0 0px $c,
-        -#{$unit} 0 0px $c, -#{$unit} -#{$unit} 0px $c, #{$unit} -#{$unit} 0px $c,-#{$unit} #{$unit} 0px $c,#{$unit} #{$unit} 0px $c;
-}
+    // this errors. use fn
+//     text-shadow: 0 $unit 0px $c, 0 -#{$unit} 0px $c, $unit 0 0px $c,
+//         -#{$unit} 0 0px $c, -#{$unit} -#{$unit} 0px $c,
+//         #{$unit} -#{$unit} 0px $c, -#{$unit} #{$unit} 0px $c,
+//         #{$unit} #{$unit} 0px $c;
+// }
 
 .boobie {
     font-family: $bungee;
