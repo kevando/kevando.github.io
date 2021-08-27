@@ -1,10 +1,6 @@
 .embeded.media {
-
-	padding: 10px;
+	padding: 12px;
 	background-color: lighten($silver, 6%);
-
-	// width: 30%;
-
 	border: 12px outset;
 
 	&.photo {
@@ -16,13 +12,23 @@
 		}
 		.caption {
 			font-family: monospace;
-			// margin-top: -50px;
 			position: absolute;
 			right: 20px;
 			bottom: 20px;
 			color: white;
 			font-size: 0.7em;
 			text-shadow: 0 -2px 3px rgba(255, 255, 255, 0.637);
+		}
+
+		&.lobster {
+			img {
+				box-shadow: 0 0 11px 8px #ffffffd3;
+				border: solid 5px white;
+			}
+			.caption {
+				color: black;
+			}
+	
 		}
 	}
 	
