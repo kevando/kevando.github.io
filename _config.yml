@@ -15,8 +15,7 @@ sass:
     style: compressed
 include: ['_pages']
 
-# Collections Config START
-
+# Collections are the core of Jekyll
 collections:
     category_pages:
         output: true
@@ -27,27 +26,14 @@ collections:
 
 
 # Liquid Variable Fallbacks 
-# (very useful!)
-#
 defaults:
-    # ----------------------------------------------------
-    - scope:
-          path: ''
-          type: 'lenses'
-      values:
-          layout: 'lens'
-          emoji: 👻
-    # ----------------------------------------------------
-    - scope:
-          path: ''
-          type: 'category_pages'
-      values:
-          layout: 'category'
-    # ----------------------------------------------------
     - scope:
           path: ''
       values:
-          # Default Values (very important!)
+          # Very important!
+          #
+          # These are the default variables that get used on every page
+          # unless specified otherwise
           layout: 'default'
           favicon: icon-32-goat.png
           title: Kevin's Website
@@ -64,4 +50,3 @@ defaults:
               title: Kevin's Fresh Website
               image:
               description: Thanks for chillin w me
-    # ----------------------------------------------------

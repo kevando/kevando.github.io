@@ -1,28 +1,26 @@
-<header>
+<h1>Welcome to Kevin<i>!</i></h1>
 
-	<h1><a class="logo" href="/">{{ page.header_logo | default: "kevin!" }}</a><span class="emoji">{{ page.emoji }}</span>{{ page.header_title | default: page.title }}</h1>
+<nav class="links">
+	<p class="navigation links">
+		[
+		<a href="/new.html">What's New?</a> |
+		<a href="/cool.html">What's Cool?</a> |
+		<a href="/popular.html">What's Popular?</a> 
+		]
+	</p>
+</nav>
 
-	<nav class="links">
-		<p class="navigation links">
-			[
-			<a href="/new.html">What's New?</a> |
-			<a href="/cool">What's Cool?</a> |
-			<a href="/popular">What's Popular?</a> 
-			<!-- <a href="#">Stats</a> | -->
-			<!-- <a href="/random">A Random Link</a> -->
-			]
-		</p>
-	</nav>
+<nav class="buttons">
+	<a target="_blank" href="https://www.instagram.com/kevando?utm_source=R2D2">📸 Instagram</a>
+	<a target="_blank" href="https://lensstudio.snapchat.com/creator/Mpx2Ow0xd7dWLQp62cK0Jg">👻 Snapchat</a>
+	<a target="_blank" href="https://twitter.com/kevando_?utm_source=R2D2">🕊 Twitter</a>
+	<a id="EmailLink" href="javascript:void(0)">✉️ Electronic Mail</a>
+</nav>
 
-	<nav class="buttons">
-
-		<!-- <a href="/hot.html">🔥 Hot</a> -->
-		<a href="/photos.html">📸 Life</a>
-		<a href="/lenses.html">👻 Lenses</a>
-		<a href="mailto:khabich@gmail.com">✉️ e-mail</a>
-		<!-- <a href="/photos.html">🌐 World</a> -->
-		<a href="/help.html">🤕 Help</a>
-		<a class="bio" href="/bio.html">Bio</a>
-	</nav>
-
-</header>
+<script> 
+	document.getElementById("EmailLink").addEventListener("click", function() {
+		if (confirm("Open your email client?") == true) {
+			window.open('mailto:khabich@gmail.com?&subject=Hi&body=I am on your website and there is something I need to tell you', '_self');
+		}
+	})
+</script>
