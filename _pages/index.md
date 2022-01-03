@@ -4,6 +4,12 @@ header_title: this my website
 permalink: /
 ---
 
-![ot](http://rarepepedirectory.com/wp-content/uploads/2016/11/pepebond.gif)
 
-&nbsp;[pepe.wtf/asset/BONDPEPE](https://pepe.wtf/asset/BONDPEPE)
+
+
+<!-- Get all posts for the homepage -->
+{% assign posts = site.posts | where: "categories", "homepage" %}
+{% for post in posts %}
+  ---
+  {{ post.content | markdownify }}
+{% endfor %}

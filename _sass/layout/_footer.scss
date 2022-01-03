@@ -1,11 +1,28 @@
-footer {
-	// background-color: red !important;
-	padding: 1rem;
-}
-
 $contentPadding: 1rem;
 
-.footer-always-at-page-bottom {
+footer {
+	padding: 1rem;
+
+	.device-emoji {
+		font-size: 1.5rem;
+		&:before {
+			@include for-phone() {
+				content: "📱";
+			}
+			@include for-tablet() {
+				content: "tablet. no tablet emoji. whats the deal with that?"
+			}
+			@include for-desktop() {
+				content: "🖥";
+			}
+		}
+	}
+}
+
+
+
+body {
+	// Keep footer always at thÎe bottom
 	display: flex;
 	min-height: 100vh;
 	max-width: 100%;
@@ -13,11 +30,4 @@ $contentPadding: 1rem;
 	main {
 		flex: 1;
 	}
-	// footer {
-	// 	// padding: 0 $contentPadding;
-	// }
-}
-
-body {
-	@extend .footer-always-at-page-bottom;
 }
