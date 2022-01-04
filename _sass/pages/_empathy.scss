@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$min_width: 500px;
+$max_width: 1400px;
+$min_font: 17px;
+$max_font: 30px;
+
+body.empathy {
+	@include fluid-type($min_width, $max_width, $min_font, $max_font);
+	* {
+		font-family: 'Poppins', sans-serif;
+	}
+	p {
+		font-weight: 300;
+		line-height: 1.4em;
+		margin-top: 0;
+	}
+	h1 strong {
+		letter-spacing: -0.15em;
+		code {
+			font-size: 1.1em;
+			letter-spacing: 0.1em;
+		}
+	}
+	h2 {
+		// font-weight: 400;
+	}
+
+	a{ 
+		text-decoration: none;
+		font-weight: 600;
+	}
+	a:-webkit-any-link:focus-visible {
+		outline-offset: 0px;
+	}
+	a:-webkit-any-link:active {
+		color: yellow;
+	}
+	:focus-visible {
+		outline: -webkit-focus-ring-color auto 0px;
+	}
+	a:hover {
+		opacity: 1;
+	}
+	
+	
+	main {
+		@media only screen and (min-width: 700px) {
+			padding: 6rem;
+		}
+		@media only screen and (min-width: 900px) {
+			padding: 10rem 12rem;
+		}
+		padding: 2rem;
+	}
+}

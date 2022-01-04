@@ -1,6 +1,14 @@
 @import 'abstracts/all'; //     > variables, and similar components.
-@import 'mixins/all'; //        > SASS that is complex
+
+@import "mixins/devices";
+@import "mixins/fluid-type";
+
 @import 'core/all'; //          > typography, resets, boilerplate code.
 @import 'components/all'; //    > buttons, carousels, tabs, modals, and the like.
 @import 'layout/all'; //        > header, footer.
-@import 'pages/all'; //         > specific styles that are to be used only for that particular page
+
+
+@import 'pages/yahoo';
+@import 'pages/lenses';
+@import 'pages/snowden';
+@import 'pages/empathy';
