@@ -4,10 +4,9 @@ layout: yahoo
 permalink: /yahoo
 ---
 
-### `portfolio website`
+### `portfolio website` 
 
----
-
+#### 📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;
 
 In 2015 I designed an app for saving recommendations.
 

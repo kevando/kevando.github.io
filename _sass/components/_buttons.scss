@@ -115,34 +115,34 @@ button.retro {
     @extend .bubble--button;
 }
 
-a.link--button {
-    background-color: lighten($silver, 3%);
-    text-decoration: none;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    align-items: flex-start;
-    cursor: pointer;
-    box-sizing: border-box;
-    margin: 0em;
-    font: 400 14px Inconsolata;
-    line-height: 1.5em;
-    padding: 1px 8px 0px 8px;
-    letter-spacing: 0.04em;
-    border-width: 2px;
-    border-style: outset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+// a.link--button {
+//     background-color: lighten($silver, 3%);
+//     text-decoration: none;
+//     word-spacing: normal;
+//     text-transform: none;
+//     text-indent: 0px;
+//     text-shadow: none;
+//     display: inline-block;
+//     align-items: flex-start;
+//     cursor: pointer;
+//     box-sizing: border-box;
+//     margin: 0em;
+//     font: 400 14px Inconsolata;
+//     line-height: 1.5em;
+//     padding: 1px 8px 0px 8px;
+//     letter-spacing: 0.04em;
+//     border-width: 2px;
+//     border-style: outset;
+//     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
 
-    &:visited {
-        color: $black;
-        border-top-color: lighten($silver, 15%);
-        border-bottom-color: lighten($silver, 16%);
+//     &:visited {
+//         color: $black;
+//         border-top-color: lighten($silver, 15%);
+//         border-bottom-color: lighten($silver, 16%);
 
-        border-left-color: lighten($silver, 15%);
-        border-right-color: lighten($silver, 16%);
+//         border-left-color: lighten($silver, 15%);
+//         border-right-color: lighten($silver, 16%);
 
-        border-style: outset;
-    }
-}
+//         border-style: outset;
+//     }
+// }
