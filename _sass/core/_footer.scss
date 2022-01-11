@@ -10,7 +10,8 @@ footer {
 				content: "📱";
 			}
 			@include for-tablet() {
-				content: "tablet. no tablet emoji. whats the deal with that?"
+				content: "no emoji for tablet";
+				font-size: 0.6em;
 			}
 			@include for-desktop() {
 				content: "🖥";

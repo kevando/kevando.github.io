@@ -1,0 +1,63 @@
+@import "components/shadows";
+
+.shadow-firey-yellow {
+	text-shadow: 1px -6px 6px yellow;
+}
+.retro-title {
+	color: yellow;
+	font-weight: 900;
+	text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px 2px rgba(0, 0, 0, 0.921);
+	@extend .pressstart;
+}
+$min_width: 700px;
+$max_width: 1400px;
+$min_font: 18px;
+$max_font: 30px;
+
+body.yahoo {
+	@include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+	p {
+		line-height: 1.5em;
+	}
+
+	h3 code {
+		@extend .retro-title;
+	}
+
+	h2 {
+		font-weight: 300;
+	}
+	h3 {
+		font-weight: normal;
+		font-size: 1.2em;
+	}
+
+	main {
+		img.two {
+			height: 500px;
+			display: inline;
+			margin-right: 20px;
+			border: outset 10px;
+			box-shadow: 0 0 18px 7px #ddd;
+			padding: 2px;
+			background-color: #888;
+		}
+		img.three {
+			width: 250px;
+			display: inline;
+			margin-right: 20px;
+			border: outset 10px #ffffff;
+			box-shadow: 0 0 18px 7px #ddd;
+			padding: 3px;
+			background-color: #fff;
+		}
+	}
+
+	$shadow-1: 2.2px 4.5px 6.5px rgba(85, 85, 85, 0.85);
+
+	img.wookie {
+		width: 500px;
+		@extend .box-shadow-2;
+	}
+}

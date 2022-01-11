@@ -1,0 +1,17 @@
+
+main {
+	padding: 2rem 1rem;
+}
+
+table.posts {
+	border: solid 1px black;
+	td {
+		border: solid 1px black;
+		padding: 5px 15px;
+	}
+}
+
+hr {
+    border-top-color: lighten($silver, 15%);
+    border-bottom-color: lighten($silver, 16%);
+}
