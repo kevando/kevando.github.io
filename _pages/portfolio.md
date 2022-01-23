@@ -32,7 +32,7 @@ But not the one I shipped. I became obsessed with architecting an experience tha
 ![chaz-ss2]{:.three}
 ![chaz-ss3]{:.three}
 
-I believe recommendations DO create empathy when you follow up. It's just really hard to get someone to follow up. I keep my [Recommendaiton List in Notion](https://kevando.notion.site/987e11ee84574a5791d62193ebf31652?v=ece4852a75954f859dcdece03ce112e0) but I rarely follow up. chaz the recommendation app turned into chaz the empathy website. The layout is based on your device so it renders pretty nicely.
+I believe recommendations create empathy when you follow up. It's just really hard to get someone to follow up, so chaz the recommendation app turned into chaz the empathy showcase website. 
 
 ### [chaz.co](https://chaz.co)
 
