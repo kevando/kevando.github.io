@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /child
 title: The Internet
 ---
 
