@@ -1,0 +1,8 @@
+id,title,description,link,image_link,availability,price,condition,brand
+jp,Jurassic Park,Jurassic Park,https://kevando.github.io/assets/vhs/jp.png,https://kevando.github.io/assets/vhs/jp.png,in stock,9.99 USD,used,gtin
+somewhere,Somewhere,Somewhere,https://kevando.github.io/assets/vhs/somewhere.jpg,https://kevando.github.io/assets/vhs/somewhere.jpg,in stock,9.99 USD,used,gtin
+putney,Putney Swope,Putney Swope,https://kevando.github.io/assets/vhs/putney.jpg,https://kevando.github.io/assets/vhs/putney.jpg,in stock,9.99 USD,used,gtin
+nocountry,No Country for Old Men,No Country for Old Men,https://kevando.github.io/assets/vhs/nocountry.jpg,https://kevando.github.io/assets/vhs/nocountry.jpg,in stock,9.99 USD,used,gtin
+jetsons,Jetsons Meet the Flintstones,Jetsons Meet the Flintstones,https://kevando.github.io/assets/vhs/jetsons.png,https://kevando.github.io/assets/vhs/jetsons.png,in stock,9.99 USD,used,gtin
+charliebrown2,"It's Christmastime Again, Charlie Brown","It's Christmastime Again, Charlie Brown",https://kevando.github.io/assets/vhs/charliebrown2.png,https://kevando.github.io/assets/vhs/charliebrown2.png,in stock,9.99 USD,used,gtin
+makingofjp,The Making of Jurassic Park,The Making of Jurassic Park,https://kevando.github.io/assets/vhs/makingofjp.jpg,https://kevando.github.io/assets/vhs/makingofjp.jpg,in stock,9.99 USD,used,gtin
