@@ -12,4 +12,5 @@ og:
 ---
 
 <div class="full-background-image">
-<span class="text">Pillars of Improv</span></div>
+  <span class="text">Pillars of Improv</span>
+</div>
