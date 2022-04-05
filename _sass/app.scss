@@ -1,14 +1,14 @@
-@import 'abstracts/all'; //     > variables, and similar components.
+@import "abstracts/all"; //     > variables, and similar components.
 
 @import "mixins/devices";
 @import "mixins/fluid-type";
 
-@import 'core/all'; //          > typography, resets, boilerplate code.
-@import 'components/all'; //    > buttons, carousels, tabs, modals, and the like.
+@import "core/all"; //          > typography, resets, boilerplate code.
+@import "components/all"; //    > buttons, carousels, tabs, modals, and the like.
 
-@import 'layouts/yahoo';
-
-@import 'pages/lenses';
-@import 'pages/snowden';
-@import 'pages/empathy';
-@import 'pages/vhs';
+@import "pages/lenses";
+@import "pages/snowden";
+@import "pages/empathy";
+@import "pages/vhs";
+@import "pages/yahoo";
+@import "pages/pillars-of-improv";

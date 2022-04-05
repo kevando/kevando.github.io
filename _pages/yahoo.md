@@ -1,8 +1,11 @@
 ---
 title: Kevin!
-layout: yahoo
+layout: default
 permalink: /yahoo
 ---
+
+
+{%- include yahoo_header.html -%}
 
 ### `portfolio website` 
 
@@ -83,3 +86,8 @@ We hosted paulie on our now defuct service nifnut
 [wookie]: https://www.wookietranslator.com/img/fake-google-results.jpg
 
 
+
+<script src="/assets/scripts/smooch.js">
+	
+
+</script>

@@ -1,12 +1,9 @@
-# Website Information
 title: Kevin!
 description: this my website
-
-# Website Configuration
 url: 'https://kevando.github.io'
 google_analytics: UA-16078011-4
 
-# Jekyll Build Settings
+# Build Settings
 theme: minima
 plugins:
     - jekyll-feed
@@ -15,7 +12,7 @@ sass:
     style: compressed
 include: ['_pages']
 
-# Collections are the core of Jekyll
+# Collections Settings
 collections:
     category_pages:
         output: true
@@ -24,8 +21,7 @@ collections:
         output: true
         permalink: /:collection/:name:output_ext
 
-
-# Liquid Variable Fallbacks 
+# Fallback Settings 
 defaults:
     - scope:
           path: ''
@@ -43,7 +39,7 @@ defaults:
           twitter:
               card: summary
               title: Kevin's Website
-              image: https://kevando.github.io/assets/images/aolfav.png
+              image: assets/images/aolfav.png
               description: Thanks for stopping by
           og:
               type: website
