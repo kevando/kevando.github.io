@@ -31,11 +31,9 @@ defaults:
           # These are the default variables that get used on every page
           # unless specified otherwise
           layout: 'default'
-          favicon: icon-32-goat.png
           title: Kevin's Website
-          description: Leader of the Internet Retro Revival Wave
-          show_navigation: true
-          hide_navigation: false
+          description: The Internet
+          favicon: icon-32-goat.png
           twitter:
               card: summary
               title: Kevin's Website

@@ -15,7 +15,7 @@ $min_font: 18px;
 $max_font: 30px;
 
 body.pillars-of-improv {
-	.banner {
+	.full-background-image {
 		background: url(/assets/images/pillars/main.jpg);
 		height: 100vh;
 		width: 100vw;
@@ -25,11 +25,21 @@ body.pillars-of-improv {
 		@include for-phone() {
 			height: 100vh;
 			width: 100vw;
-			background: url(/assets/images/pillars/getting-to-yes.jpg);
+			background: url(/assets/images/pillars/buildprov-12-yellow-monster.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position-x: -280px;
-			
+		}
+	}
+	.text {
+		display: none;
+		@include for-phone() {
+			display: block;
+			color: yellow;
+			font-size: 2em;
+			font-family: "Times New Roman", Times, serif;
+			opacity: 0.8;
+			padding: 3vh 0 0 2vh;
 		}
 	}
 	footer {
