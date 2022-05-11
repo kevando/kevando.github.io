@@ -1,0 +1,29 @@
+body.bird {
+	* {
+		box-sizing: border-box;
+	}
+	padding: 2vh;
+	margin: 0;
+	background: #4693f0;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+
+	p {
+		font-family: "Press Start 2P", cursive;
+		font-size: 2.1vh;
+		line-height: 1.21em;
+		margin-bottom: 4vw;
+		letter-spacing: -0.02em;
+	}
+	p:first-child {
+		font-size: 2.5vh;
+	}
+	em {
+		font-style: normal;
+		color: white;
+	}
+	strong {
+		color: #ffdd40;
+	}
+}

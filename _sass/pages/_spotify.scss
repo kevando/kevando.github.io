@@ -1,0 +1,78 @@
+// @import "components/shadows";
+
+// .shadow-firey-yellow {
+// 	text-shadow: 1px -6px 6px yellow;
+// }
+// .retro-title {
+// 	color: yellow;
+// 	font-weight: 900;
+// 	text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px 2px rgba(0, 0, 0, 0.921);
+// 	@extend .pressstart;
+// }
+// $min_width: 700px;
+// $max_width: 1400px;
+// $min_font: 18px;
+// $max_font: 30px;
+
+body.spotify {
+	// @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+	// p {
+	// 	line-height: 1.5em;
+	// }
+	// h2 {
+	// 	font-weight: 300;
+	// }
+	// h3 {
+	// 	font-weight: normal;
+	// 	font-size: 1.2em;
+	// 	code {
+	// 		@extend .retro-title;
+	// 	}
+	// }
+	// h4 {
+	// 	font-size: 1.3em;
+	// 	letter-spacing: 0.1em;
+	// 	// text-shadow: 0px 3px 1px white,2px 2px 1px white, 4px 2px 1px white;
+	// 	text-shadow: 30px 80px 40px rgba(228, 214, 20, 0.2), -30px 75px 40px rgba(228, 214, 20, 0.2),
+	// 		0px 70px 40px rgba(226, 214, 47, 0.5), 0px 30px 30px rgba(231, 216, 1, 0.5),
+	// 		0px 60px 50px rgba(231, 216, 1, 0.1), 0px 15px 17px rgba(255, 245, 108, 0.5);
+	// 	margin-left: -6px;
+	// 	margin-bottom: 10px;
+	// }
+
+	// hr {
+	// 	border-top-color: lighten($silver, 15%);
+	// 	border-bottom-color: lighten($silver, 16%);
+	// }
+
+	// main {
+	// 	padding: 1rem 1rem;
+
+	// 	img.two {
+	// 		height: 500px;
+	// 		display: inline;
+	// 		margin-right: 20px;
+	// 		border: outset 10px;
+	// 		box-shadow: 0 0 18px 7px #ddd;
+	// 		padding: 2px;
+	// 		background-color: #888;
+	// 	}
+	// 	img.three {
+	// 		width: 250px;
+	// 		display: inline;
+	// 		margin-right: 20px;
+	// 		border: outset 10px #ffffff;
+	// 		box-shadow: 0 0 18px 7px #ddd;
+	// 		padding: 3px;
+	// 		background-color: #fff;
+	// 	}
+	// }
+
+	// $shadow-1: 2.2px 4.5px 6.5px rgba(85, 85, 85, 0.85);
+
+	// img.wookie {
+	// 	width: 500px;
+	// 	@extend .box-shadow-2;
+	// }
+}

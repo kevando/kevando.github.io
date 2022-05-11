@@ -1,6 +1,6 @@
 ---
 title: Pillars of Improv
-permalink: /pillars-of-improv
+permalink: /poi
 twitter:
   title: Pillars of Improv
   image: assets/images/pillars/getting-to-yes.jpg

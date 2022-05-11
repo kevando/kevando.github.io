@@ -1,3 +1,4 @@
+// smooch.js adds kisses to the page
 
 const BASE_SIZE = 1.5;
 
