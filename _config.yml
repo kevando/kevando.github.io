@@ -30,7 +30,7 @@ defaults:
           #
           # These are the default variables that get used on every page
           # unless specified otherwise
-          layout: 'default'
+          layout: default
           title: Kevin's Website
           description: The Internet
           favicon: icon-32-goat.png
