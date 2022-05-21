@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Spotify
+title: My Spotify JSON
+description: o rly?  👀
 permalink: /spotify
 ---
-
-
 
 <header>
 	<h1><span class="loading" id="Loading">🎤</span>My Spotify JSON </h1>

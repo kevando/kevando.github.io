@@ -37,8 +37,7 @@ defaults:
           twitter:
               card: summary
               image: assets/images/aolfav.png
-              description: Thanks for stopping by
+
           og:
               type: website
               image:
-              description: Thanks for chillin w me

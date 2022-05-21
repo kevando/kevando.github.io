@@ -1,12 +1,16 @@
 ---
 layout: default
 title: Download Your Spotify Data
+description: 🎹🎹🎹🎹🎹🎹🎹🎹🎹🎹
 permalink: /download-your-spotify-data
 ---
 
-# `Download Your Spotify Data`
+# Download Your Spotify Data
 
----
+
+
+
+<br><br>
 
 ## Step 1
 
@@ -39,3 +43,4 @@ Send me `YourLibrary.json` If you know how to read a json file I'm actually only
 <br>
 
 If you don't know my email, message me on Twitter [@kevando_](https://twitter.com/kevando_)
+
