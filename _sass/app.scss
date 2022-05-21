@@ -1,11 +1,14 @@
+
+// Shared Styles
 @import "abstracts/all";
-
-@import "mixins/devices";
-@import "mixins/fluid-type";
-
+@import "mixins/all";
 @import "core/all";
 @import "components/all";
 
+// Much of this code is redundent
+// I wrote it in a hurry because it's
+// hard to know what styles will be reused
+// REFACTOR ONLY IF SUPER OBVIOUS 
 @import "pages/bird";
 @import "pages/empathy";
 @import "pages/lenses";
@@ -14,4 +17,6 @@
 @import "pages/spotify";
 @import "pages/vhs";
 @import "pages/yahoo";
+
+
 

@@ -4,8 +4,18 @@ layout: default
 permalink: /yahoo
 ---
 
+<header>
+	<h1>Kevin!</h1>
+	<nav class="buttons">
+		<a target="_blank" href="https://www.instagram.com/kevando?utm_source=R2D2">Instagram</a>
+		<a target="_blank" href="https://lensstudio.snapchat.com/creator/Mpx2Ow0xd7dWLQp62cK0Jg">Snapchat</a>
+		<a target="_blank" href="https://twitter.com/kevando_?utm_source=R2D2">Twitter</a>
+		<a target="_blank" href="https://github.com/kevando?utm_source=R2D2">Github</a>
+		<a target="_blank" href="https://www.quora.com/profile/Kevando?utm_source=R2D2">Quora</a>
+		<a target="_blank" href="https://www.youtube.com/user/kevinhabich/playlists?utm_source=R2D2">Youtube</a>
+	</nav>
+</header>
 
-{%- include yahoo_header.html -%}
 
 ### `portfolio website` 
 
