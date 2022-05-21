@@ -10,7 +10,7 @@ permalink: /download-your-spotify-data
 
 ## Step 1
 
-Go here: [spotify.com/us/account/privacy/](https://www.spotify.com/us/account/privacy)
+Go here: [spotify.com/us/account/privacy/](https://www.spotify.com/us/account/privacy?utm_source=kevando+up+in+this+motherfucker)
 
 <br>
 
@@ -34,4 +34,8 @@ You'll get an email with a zip file containing a bunch of json files. DO NOT SHA
 
 ## Step 5 
 
-Send me `YourLibrary.json` If you know how to read a json file I'm actually only interested in the `Arists` array. You could also probably convert this to a Google Sheet pretty easily. I could probably add a file submit option here.
+Send me `YourLibrary.json` If you know how to read a json file I'm actually only interested in the `Arists` array. 
+
+<br>
+
+If you don't know my email, message me on Twitter [@kevando_](https://twitter.com/kevando_)

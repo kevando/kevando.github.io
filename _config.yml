@@ -36,11 +36,9 @@ defaults:
           favicon: icon-32-goat.png
           twitter:
               card: summary
-              title: Kevin's Website
               image: assets/images/aolfav.png
               description: Thanks for stopping by
           og:
               type: website
-              title: Kevin's Fresh Website
               image:
               description: Thanks for chillin w me
