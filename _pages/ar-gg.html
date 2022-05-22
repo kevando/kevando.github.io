@@ -11,25 +11,31 @@ permalink: /ar.gg.html
     }
 </style>
 
-<model-viewer
-    id="reveal"
-    bounds="tight"
-    enable-pan
-    disable-zoom
-    src="/assets/vhs.gltf"
-    ar-modes="none"
-    camera-controls
-    environment-image="/assets/pillars_1k.hdr"
-    poster="/assets/poster2.png"
-    shadow-intensity="1.47"
-    shadow-softness="1"
-    touch-action="none"
->
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
-    </div>
-</model-viewer>
+<div class="model-container">
+    <model-viewer
+        id="reveal"
+        bounds="tight"
+		orientation="0deg -10deg 50deg"
+        enable-pan
+        disable-zoom
+        src="/assets/ARGG_Zapper.glb"
+        ar-modes="none"
+        camera-controls
+        environment-image="/assets/pillars_1k.hdr"
+        shadow-intensity="1.47"
+        shadow-softness="1"
+        touch-action="none"
+    >
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+    </model-viewer>
+</div>
+
+<div class="loading-container">
+    <p id="Loading">Loading...</p>
+</div>
 
 <div class="btn-container">
-	<button class="btn" id="DiscordBtn">claim (48 Left)</button>
+    <button class="btn" id="DiscordBtn">claim (48 Left)</button>
 </div>

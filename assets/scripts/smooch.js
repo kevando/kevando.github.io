@@ -49,3 +49,17 @@ function _smooch(event) {
 	kiss.style.fontSize = randomSize + "em";
 }
 
+// const container = document.getElementById("container");
+// const template = document.getElementById("template");
+
+// function clickHandler(event) {
+//   event.target.append(" — Clicked this div");
+// }
+
+// const firstClone = template.content.cloneNode(true);
+// firstClone.addEventListener("click", clickHandler);
+// container.appendChild(firstClone);
+
+// const secondClone = template.content.firstElementChild.cloneNode(true);
+// secondClone.addEventListener("click", clickHandler);
+// container.appendChild(secondClone);
