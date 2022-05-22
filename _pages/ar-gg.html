@@ -1,0 +1,75 @@
+---
+layout: three-dimensions
+title: AR.GG
+permalink: /ar.gg.html
+---
+
+<!-- Use it like any other HTML element -->
+<model-viewer
+    bounds="tight"
+    enable-pan
+    src="/assets/vhs.gltf"
+    ar
+    ar-modes="none"
+    camera-controls
+    environment-image="/assets/pillars_1k.hdr"
+    poster="/assets/poster2.png"
+    shadow-intensity="1.47"
+    shadow-softness="1"
+	touch-action="none"
+>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+</model-viewer>
+
+
+
+<style>
+	:not(:defined) > * {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+model-viewer {
+  width: 100%;
+  height: 90%;
+  background-color: #ffffff;
+}
+
+
+.progress-bar {
+  display: block;
+  width: 33%;
+  height: 10%;
+  max-height: 2%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 25px;
+  box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5), 0px 0px 5px 1px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar.hide {
+  visibility: hidden;
+  transition: visibility 0.3s;
+}
+
+.update-bar {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 0%;
+  height: 100%;
+  border-radius: 25px;
+  float: left;
+  transition: width 0.3s;
+}
+</style>

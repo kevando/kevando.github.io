@@ -1,4 +1,9 @@
 {% assign cachedz = site.time | date: '%M%S' %}
+{% assign a = page.name | split: '.' %} {% assign page_name = a[0] %}
+
+<!DOCTYPE html>
+<html>
+    {% assign cachedz = site.time | date: '%M%S' %}
 
 <head>
 	<meta charset="utf-8" />
@@ -28,8 +33,17 @@
 	<meta property="og:type" content="{{ page.og.type }}" />
 
 	<!-- Styles and Scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="/assets/stylesheets/app.css?cachedz={{ cachedz }}" />	
 
-	{%- include analytics.html -%}
+	<link rel="stylesheet" href="/assets/stylesheets/app.css?cachedz={{ cachedz }}" />
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	
 </head>
+
+
+
+    <body class="{{ page.layout }} {{ page_name }}">
+        {{ content }}
+    </body>
+
+    {%- include after_body.html -%}
+</html>
