@@ -1,49 +1,61 @@
-{% assign cachedz = site.time | date: '%M%S' %}
-{% assign a = page.name | split: '.' %} {% assign page_name = a[0] %}
+{% assign cachedz = site.time | date: '%M%S' %} {% assign a = page.name | split:
+'.' %} {% assign page_name = a[0] %}
 
 <!DOCTYPE html>
 <html>
     {% assign cachedz = site.time | date: '%M%S' %}
 
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="/assets/icons/{{ page.favicon }}" />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="/assets/icons/{{ page.favicon }}"
+        />
 
-	<!-- Title -->
-	<title>{{ page.title }}</title>
-	<meta property="og:title" content="{{ page.og.title | default: page.title }}" />
-	<meta name="twitter:title" content="{{ page.twitter.title | default: page.title }}" />
+        <!-- Title -->
+        <title>{{ page.title }}</title>
+        <meta
+            property="og:title"
+            content="{{ page.og.title | default: page.title }}"
+        />
+        <meta
+            name="twitter:title"
+            content="{{ page.twitter.title | default: page.title }}"
+        />
 
-	<!-- Description -->
-	<meta name="description" content="{{ page.description }}" />
-	<meta property="og:description" content="{{ page.og.description | default: page.description }}" />
-	<meta name="twitter:description" content="{{ page.twitter.description | default: page.description }}" />
+        <!-- Description -->
+        <meta name="description" content="{{ page.description }}" />
+        <meta
+            property="og:description"
+            content="{{ page.og.description | default: page.description }}"
+        />
+       
 
-	<!-- Preview Image -->
-	<meta property="og:image" content="{{site.url }}/{{ page.og.image }}" />
-	<meta name="twitter:card" content="{{ page.twitter.card }}" />
-	<meta name="twitter:image" content="{{site.url }}/{{ page.twitter.image }}" />
+        <!-- Styles and Scripts -->
 
-	<!-- Other Crap -->
-	<meta property="og:url" content="{{ siteurl }}{{ page.url }}" />
-	<meta property="og:type" content="{{ page.og.type }}" />
+        <link
+            rel="stylesheet"
+            href="/assets/stylesheets/ar-gg.css?cachedz={{ cachedz }}"
+        />
+        <script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+        ></script>
 
-	<!-- Styles and Scripts -->
-
-	<link rel="stylesheet" href="/assets/stylesheets/app.css?cachedz={{ cachedz }}" />
-	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-	
-</head>
-
+		<script
+            type="module"
+            src="/assets/scripts/ar-gg.js"
+        ></script>
+    </head>
+    </head>
 
 
     <body class="{{ page.layout }} {{ page_name }}">
         {{ content }}
     </body>
-
-    {%- include after_body.html -%}
 </html>

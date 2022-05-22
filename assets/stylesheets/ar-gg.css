@@ -1,0 +1,77 @@
+:not(:defined) > * {
+    display: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* background-color: #2F3135; dark gray */
+/* light grey #B9BBBD */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+	background-color: #36393E;
+	overflow: hidden;
+}
+
+model-viewer {
+    width: 100%;
+    height: 120%;
+	bottom: -20%;
+	position: absolute;
+    /* background-color: #ffffff; */
+	/* border: solid 5px red; */
+}
+
+.btn-container {
+	width: 100%;
+    height: 20%;
+	bottom: 0%;
+	position: absolute;
+	/* border: solid 5px red; */
+	padding: 0 2rem;
+}
+.btn {
+	background-color: #576AEA;
+	width: 100%;
+	height: 60px;
+	font-size: 22px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	opacity: 0.9;
+	border: none;
+}
+
+.progress-bar {
+    display: block;
+    width: 33%;
+    height: 10%;
+    max-height: 2%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 25px;
+    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5),
+        0px 0px 5px 1px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar.hide {
+    visibility: hidden;
+    transition: visibility 0.3s;
+}
+
+.update-bar {
+    background-color:yellow;
+    width: 0%;
+    height: 100%;
+    border-radius: 25px;
+    float: left;
+    transition: width 0.3s;
+}
