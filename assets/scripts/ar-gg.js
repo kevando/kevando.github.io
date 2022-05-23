@@ -1,20 +1,26 @@
 
 
-// function showClaimedState() {
-// 	document.getElementById("reveal").style.visibility = "hidden";
-// 	document.getElementById("DiscordBtn").innerHTML = "CLAIMED";
-// 	document.getElementById("DiscordBtn").style.backgroundColor = "red";
-// 	document.getElementById("DiscordBtn").style.transform = "rotate(15deg)";
-// }
+function showClaimedState() {
+	document.querySelector(".zapper").style.visibility = "hidden";
+	document.querySelector(".loading-container").style.visibility = "hidden";
+	// document.querySelector(".zapper").style.visibility = "hidden";
 
-// document.getElementById("DiscordBtn").addEventListener("click", function() {
-// 	// alert("yo")
-// 	document.getElementById("DiscordBtn").innerHTML = "CLAIMING";
-// 	setTimeout(() => {
-// 		window.open("https://discord.gg/hUYwd6sJ");
-// 		showClaimedState();
-// 	}, 500);
-// });
+	document.getElementById("DiscordBtn").innerHTML = "CLAIMED";
+	document.getElementById("DiscordBtn").style.backgroundColor = "red";
+	document.getElementById("DiscordBtn").style.transform = "rotate(15deg)";
+	document.querySelector(".btn-container").style.bottom = "30%";
+	document.querySelector(".btn-container").style.width = "70%";
+	document.querySelector(".btn-container").style.left = "16%";
+}
+
+document.getElementById("DiscordBtn").addEventListener("click", function() {
+	// alert("yo")
+	document.getElementById("DiscordBtn").innerHTML = "CLAIMING";
+	setTimeout(() => {
+		window.open("https://discord.gg/hUYwd6sJ");
+		showClaimedState();
+	}, 500);
+});
 
 
 window.addEventListener('DOMContentLoaded', (event) => {

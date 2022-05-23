@@ -83,6 +83,7 @@ body {
 }
 
 .btn-container {
+	z-index: 901;
     width: 100%;
     height: 20%;
     bottom: -3%;
