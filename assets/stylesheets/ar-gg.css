@@ -2,6 +2,9 @@
     display: none;
 }
 
+*:focus {outline:0;}
+
+
 * {
     box-sizing: border-box;
 }
@@ -18,10 +21,13 @@ body {
     overflow: hidden;
 }
 
-.model-container {
+.zapper {
+	z-index: 900;
+	/* border: solid 10px red; */
 	width: 100%;
     height: 120%;
-    bottom: -20%;
+    bottom: -13%;
+	left: 0%;
     position: absolute;
 	 transform: scale(0, 0);
 	 -webkit-animation-fill-mode: forwards;
@@ -29,19 +35,17 @@ body {
 								   close after the animation completes */
 }
 
-.model-container.loaded {
+.zapper.loaded {
 	animation: bummer 500ms 200ms ease-in-out;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards; /* Add this so that your modal doesn't 
 								  close after the animation completes */
 }
 
-model-viewer {
+/* model-viewer {
     width: 100%;
     height: 100%;
-    /* bottom: -20%; */
-    /* position: absolute; */
-}
+} */
 
 @keyframes bummer {
     0% {
@@ -57,14 +61,17 @@ model-viewer {
 
 
 .loading-container {
-    width: 100%;
+	width: 100%;
     height: 50px;
-    top:50%;
+    bottom: 10%;
 	text-align: center;
     position: absolute;
     color: rgba(255, 255, 255, 0.62);
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
+}
+.loading-container.hide {
+	visibility: hidden;
 }
 
 #Loading {
@@ -78,10 +85,13 @@ model-viewer {
 .btn-container {
     width: 100%;
     height: 20%;
-    bottom: 0%;
+    bottom: -3%;
     position: absolute;
     /* border: solid 5px red; */
     padding: 0 2rem;
+}
+.btn-container.hide {
+	visibility: hidden;
 }
 .btn {
     background-color: #576aea;
@@ -94,11 +104,23 @@ model-viewer {
     border: none;
 }
 
+.forging-container {
+	width: 100%;
+    height: 20%;
+    top:45%;
+    position: absolute;
+    /* border: solid 5px red; */
+    padding: 0 2rem;
+}
+.forging-container.hide {
+	visibility: hidden;
+}
+
 .progress-bar {
     display: block;
-    width: 33%;
-    height: 10%;
-    max-height: 2%;
+    width: 50%;
+    height: 20%;
+    max-height: 20%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -110,16 +132,32 @@ model-viewer {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.progress-bar.hide {
+.spotlight.hide {
     visibility: hidden;
-    transition: visibility 0.3s;
 }
 
 .update-bar {
-    background-color: yellow;
-    width: 0%;
+    background-color: #576aea;
+    width: 20%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 15px;
     float: left;
-    transition: width 0.3s;
+    transition: width 5s;
+}
+.update-bar.loaded {
+	width: 100%;;
+}
+
+
+.spotlight-container {
+	width: 100%;
+    height: 80%;
+    top: 0%;
+    position: absolute;
+    padding: 0;
+}
+
+.spotlight {
+	width: 100%;
+	height: 100%;
 }
