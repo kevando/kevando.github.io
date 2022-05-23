@@ -45,10 +45,11 @@ setTimeout(function() {
 	document.querySelector('#Loading').classList.add("loaded");
 }, 5000);
 
-document.querySelector('#reveal').addEventListener('model-visibility', (event) => {
+document.querySelector('.zapper').addEventListener('model-visibility', (event) => {
 	console.log("Event", event);
 	if (event.detail.visible === true) {
 		// Model is loaded
+		document.querySelector('.zapper').scale = "0.8 0.8 0.8"
 	}
 	// ModelViewerStatic.minimumRenderScale = event.target.value;
 	// minScale.textContent = event.target.value;
