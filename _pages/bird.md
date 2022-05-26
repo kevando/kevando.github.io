@@ -5,4 +5,4 @@ permalink: /
 ---
 
 <!-- Don't tell me that bird is back! -->
-<script src="/assets/scripts/bird.js"></script>
+<script src="/js/bird/bird-dev.js"></script>
