@@ -1,0 +1,29 @@
+{% assign a = page.name | split: '.' %} {% assign page_name = a[0] %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% assign cachedz = site.time | date: '%M%S' %}
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/icons/{{ page.favicon }}" />
+  
+    <!-- Title -->
+    <title>{{ page.title }}</title>
+
+  
+    {%- include analytics.html -%}
+  </head>
+</head>
+
+    <body class="{{ page.layout }} {{ page_name }}">
+        {{ content }}
+    </body>
+
+</html>
