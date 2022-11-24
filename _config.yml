@@ -1,9 +1,18 @@
+
+# ------------------------
+#      Website Info
+# ------------------------
+
 title: Kevin!
 description: this my website
 url: 'https://kevando.github.io'
 google_analytics: UA-16078011-4
 
-# Build Settings
+
+# ------------------------
+#     Build Settings
+# ------------------------
+
 theme: minima
 plugins:
     - jekyll-feed
@@ -12,32 +21,39 @@ sass:
     style: compressed
 include: ['_pages']
 
-# Collections Settings
-collections:
-    category_pages:
-        output: true
-        permalink: /:name:output_ext
-    lenses:
-        output: true
-        permalink: /:collection/:name:output_ext
 
-# Fallback Settings 
+
+# ------------------------
+#       Collections
+# ------------------------
+
+collections:
+    blog:
+        output: true
+        permalink: /:name:output_ext # Example: /photos
+    posts:
+        output: true
+        permalink: /blog/:slug:output_ext # Example: /vr/2
+
+# ------------------------
+#     Default Values
+# ------------------------
+
 defaults:
     - scope:
           path: ''
       values:
-          # Very important!
-          #
-          # These are the default variables that get used on every page
-          # unless specified otherwise
           layout: default
-          title: Kevin's Website
-          description: The Internet
+          title: Kev
+          description: Online
           favicon: icon-32-goat.png
           twitter:
               card: summary
               image: assets/images/aolfav.png
-
           og:
               type: website
               image:
+          twitter_card: summary
+          twitter_image: assets/images/aolfav.png
+          og_type: summary
+          og_image: 

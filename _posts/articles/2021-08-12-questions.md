@@ -1,5 +1,6 @@
 ---
 title: Good Questions
+category: article
 ---
 
 * When is the last time you gave up on something?

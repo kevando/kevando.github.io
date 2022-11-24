@@ -2,7 +2,7 @@
 title:  Level Up your Inbox
 layout: article
 date:   2016-02-06
-categories: blog, article
+category: article
 tags:
   - tutorial
   - guide

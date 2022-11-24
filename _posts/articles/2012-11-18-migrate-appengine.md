@@ -2,7 +2,7 @@
 layout: article
 title: Migrate Appengine to Datastore
 date: 2012-11-18
-categories: blog, article
+category: article
 tags:
   - appengine
   - guide

@@ -2,7 +2,7 @@
 title: Pepe Unchained
 date: 2017-05-25
 summary:
-categories: [blockchain, articles]
+category: article
 tags:
   - internet
   - pepe

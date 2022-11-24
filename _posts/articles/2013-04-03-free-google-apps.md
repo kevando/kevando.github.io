@@ -3,9 +3,7 @@ layout: article
 title:  How to Get Google Apps For Free
 emoji: 📝
 date: 2013-04-03
-categories: 
-  - blog
-  - article
+category: article
 tags:
   - google
   - help
@@ -21,7 +19,7 @@ You can still get Google Apps for fee, however it's a little tricky. They do not
 
 1)&nbsp;[Sign up like normal](http://www.google.com/enterprise/apps/business/). Only this time, you're going to sign up for a "free trial." Enter all your information and pay the $12 (as of April 2013) to register the domain for a year. While I don't like GoDaddy, I prefer them to enom. Either choice works.
 
-2) You just registered for&nbsp;30 days with Google Apps Business Free Trial. I like to set a calendar reminder, but in 30 days Google will send you an email like this telling you that your account is suspended.
+1) You just registered for&nbsp;30 days with Google Apps Business Free Trial. I like to set a calendar reminder, but in 30 days Google will send you an email like this telling you that your account is suspended.
 
 ![image](https://66.media.tumblr.com/99a3d36758d42003eed1c6020031f570/tumblr_inline_mkowh9r6sr1qz4rgp.png)
 
