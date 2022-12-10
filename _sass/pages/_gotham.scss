@@ -1,0 +1,135 @@
+footer.gotham {
+    display: none;
+}
+
+
+body {
+    overflow: hidden;
+}
+
+main {
+    padding: 0;
+}
+
+.overlay-text {
+    background: #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+$r1: radial-gradient(ellipse at top,  #0b0e1e,#3749b0);
+$r2: radial-gradient(ellipse at bottom, #6e7124, transparent);
+$l1: linear-gradient(#141a3b 80%, #9198e5 100%);
+.sky {
+
+    background: $l1;
+
+    background-color: blue;
+
+    height: 100vh;
+}
+
+
+.city-base {
+    height: 10vh;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+}
+
+
+.skyline-wrapper {
+    // border: solid 2px red;
+
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+
+    @extend .sky;
+
+
+
+ 
+
+    p {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        // text-align: center;
+        width: 100%;
+
+        font-size: 4vh;
+        line-height: 0.7em!important;
+        white-space: nowrap;
+        overflow: hidden;
+
+        // @extend .overlay-text;
+
+
+        &.row-1 {
+            z-index: 7;
+            font-size: 1.6em;
+            letter-spacing: 1em;
+            line-height: 1em;
+            bottom: -10px;
+
+            background: #888;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        &.row-2 {
+            z-index: 6;
+            font-size: 2.3em;
+            letter-spacing: 0.1em;
+
+            background: #000;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &.row-3 {
+            z-index: 5;
+            font-size: 3.3em;
+            letter-spacing: 0.1em;
+
+
+            background: #333;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+
+        }
+
+        &.row-4 {
+            background: #333;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 5.1em;
+            letter-spacing: 0.2em;
+        }
+
+        &.row-5 {
+            background: #222;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 4.5em;
+            letter-spacing: 0.2em;
+        }
+        &.row-6 {
+            background: #222;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 13em;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+            line-height: 0;
+            bottom: -126px
+        }
+
+    }
+}

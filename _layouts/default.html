@@ -3,4 +3,9 @@ layout: base
 ---
 <!-- <header>CALLED IN PAGE FOR NOW</header> -->
 <main>{{ content }}</main>
-<footer>{%- include footer.html -%}</footer>
+
+
+<!-- This layout can now handle customizing the footer :D -->
+<footer class="{{ page.footer_class }}">
+    {%- include footer.html -%}
+</footer>

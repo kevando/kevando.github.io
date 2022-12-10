@@ -43,17 +43,19 @@ defaults:
     - scope:
           path: ''
       values:
+
+        
           layout: default
-          title: Kev
-          description: Online
+          footer_class: 
+
+          title: Kevando Online!
+          description: 
           favicon: icon-32-goat.png
-          twitter:
-              card: summary
-              image: assets/images/aolfav.png
-          og:
-              type: website
-              image:
+
+          # TWITTER
           twitter_card: summary
           twitter_image: assets/images/aolfav.png
+
+          # FACEBOOK
           og_type: summary
           og_image: 

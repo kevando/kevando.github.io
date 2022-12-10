@@ -27,8 +27,10 @@
 	<meta property="og:url" content="{{ siteurl }}{{ page.url }}" />
 	<meta property="og:type" content="{{ page.og.type }}" />
 
-	<!-- Styles and Scripts -->
+	<!-- Scripts that need to lead first -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Styles -->
 	<link rel="stylesheet" href="/assets/stylesheets/app.css?cachedz={{ cachedz }}" />	
 
 	{%- include analytics.html -%}
