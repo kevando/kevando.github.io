@@ -1,9 +1,0 @@
-# not every category gets its own web page and therefore
-# to avoid broken links and make things easy, their display 
-# is managed here :)
-
-technology:
-  name: Technology
-  permalink: /technology.html
-  # icon
-  # emoji
