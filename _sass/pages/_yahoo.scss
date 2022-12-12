@@ -3,40 +3,57 @@
 .shadow-firey-yellow {
 	text-shadow: 1px -6px 6px yellow;
 }
-.retro-title {
-	color: yellow;
-	font-weight: 900;
-	text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px 2px rgba(0, 0, 0, 0.921);
-	@extend .pressstart;
-}
+
 $min_width: 700px;
 $max_width: 1400px;
 $min_font: 18px;
 $max_font: 30px;
+
+.small {
+	font-size: 0.5em
+}
 
 body.yahoo {
 	@include fluid-type($min_width, $max_width, $min_font, $max_font);
 
 	p {
 		line-height: 1.5em;
+		em {
+			color: grey;
+			margin-left: 1vw;
+			font-size: 0.4em;
+		}
+	}
+	main > h1 {
+		font-size: 1.3em;
+		background-color: yellow;
+		text-align: center;
+		display: inline-block;
 	}
 	h2 {
 		font-weight: 300;
 	}
 	h3 {
 		font-weight: normal;
-		font-size: 1.2em;
+		font-size: 1.6em;
+		margin-top: 0em;
+
 		code {
-			@extend .retro-title;
+			color: white;
+			text-transform: lowercase;
+			letter-spacing: 0.02em;
+			font-weight: 900;
+			text-shadow: 3px 0px #000, 0px 1px #000, 0px -1px rgba(0, 0, 0, 0.422), 0px -4px 8px rgba(255, 234, 0, 0.818), -1px 0px #000;
+			@extend .VT323;
 		}
 	}
+
 	h4 {
 		font-size: 1.3em;
 		letter-spacing: 0.1em;
 		// text-shadow: 0px 3px 1px white,2px 2px 1px white, 4px 2px 1px white;
 		text-shadow: 30px 80px 40px rgba(228, 214, 20, 0.2), -30px 75px 40px rgba(228, 214, 20, 0.2),
-			0px 70px 40px rgba(226, 214, 47, 0.5), 0px 30px 30px rgba(231, 216, 1, 0.5),
-			0px 60px 50px rgba(231, 216, 1, 0.1), 0px 15px 17px rgba(255, 245, 108, 0.5);
+			0px 30px 15px rgba(226, 214, 47, 0.5), 0px 0px 25px rgba(231, 216, 1, 0.7);
 		margin-left: -6px;
 		margin-bottom: 10px;
 	}
@@ -47,7 +64,15 @@ body.yahoo {
 	}
 
 	main {
-		// padding: 1rem 1rem;
+
+		p,
+		h1,
+		h2,
+		h3,
+		h4 {
+			margin-left: 1rem;
+		}
+
 
 		img.two {
 			height: 500px;
@@ -58,6 +83,7 @@ body.yahoo {
 			padding: 2px;
 			background-color: #888;
 		}
+
 		img.three {
 			width: 250px;
 			display: inline;

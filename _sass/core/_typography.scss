@@ -1,31 +1,98 @@
+/*
+    ==========================================
+                  CUSTOM FONTS
+    ==========================================  
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Helper Mixin to import local fonts */
+@mixin load-font($name, $extension: '.ttf', $directory: '/assets/fonts/') {
+    $path: $directory +$name +$extension;
+
+    @font-face {
+        font-family: $name;
+        src: url($path) format('truetype');
+    }
+}
+
+/* Import Local Fonts */
+@include load-font(AbrilFatface-Regular);
+@include load-font(AmericanTypewriter, '.ttc');
+@include load-font(BungeeShade-Regular);
+@include load-font(Monoton-Regular);
+@include load-font(Phosphate, '.ttc');
+@include load-font(PressStart2P-Regular);
+@include load-font(Rockwell, '.ttc');
+@include load-font(Silom);
+@include load-font(terminal-grotesque);
+@include load-font(VT323);
+
+/* Font Names */
+
+
+$grey: #ccc;
+$gray: $grey;
+
+$black: #000;
+$white: #fff;
+
+
+// Spacing 
+
+$spacing-unit: 1rem;
+
+
+
+$font-abril: 'AbrilFatface-Regular';
+$typewriter: 'AmericanTypewriter';
+$bungee: 'BungeeShade-Regular';
+$monoton: 'Monoton-Regular';
+$phosphate: 'Phosphate';
+$pressstart: 'PressStart2P-Regular';
+$rockwell: 'Rockwell';
+$silom: 'Silom';
+$terminal: 'terminal-grotesque';
+$vt323: 'VT323';
+
+
 .abril {
     font-family: 'AbrilFatface-Regular';
 }
+
 .typewriter {
     font-family: 'AmericanTypewriter';
 }
+
 .bungee {
     font-family: 'BungeeShade-Regular';
 }
+
 .monoton {
     font-family: 'Monoton-Regular';
 }
+
 .phosphate {
     font-family: 'Phosphate';
 }
+
 .pressstart {
     font-family: 'PressStart2P-Regular';
 }
+
 .rockwell {
     font-family: 'Rockwell';
 }
+
 .silom {
     font-family: 'Silom';
 }
+
 .terminal {
     font-family: 'terminal-grotesque';
 }
-.vt323 {
+
+.vt323, .VT323 {
     font-family: 'VT323';
 }
 
@@ -106,3 +173,10 @@
 // .center {
 //     text-align: center;
 // }
+
+
+// Titles
+
+header h1 {
+	font-size: 2em;
+}

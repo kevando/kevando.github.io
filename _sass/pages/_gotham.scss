@@ -4,7 +4,7 @@ footer.gotham {
 
 
 body {
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 main {
@@ -24,9 +24,7 @@ $l1: linear-gradient(#141a3b 80%, #9198e5 100%);
 .sky {
 
     background: $l1;
-
     background-color: blue;
-
     height: 100vh;
 }
 

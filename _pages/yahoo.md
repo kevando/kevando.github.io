@@ -1,5 +1,5 @@
 ---
-title: Kevin!
+title: Portfolio of Glory 
 layout: default
 permalink: /yahoo
 ---
@@ -16,10 +16,12 @@ permalink: /yahoo
 	</nav>
 </header>
 
+---
 
-### `portfolio website` 
+#### 📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;
+### `portfolio MY GLORIOUS WORK` 
 
-#### 📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;
+*I used to build websites. I still do, but I used to, too.*
 
 In 2015 I designed an app for saving recommendations.
 
