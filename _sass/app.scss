@@ -1,23 +1,25 @@
-
-
 // Shared SASS
-@import "mixins/all";
+@import "mixins/devices";
 
-@import "core/all";
-@import "components/all";
 
-// Much of this code is redundent
-// I wrote it in a hurry because it's
-// hard to know what styles will be reused
-// REFACTOR ONLY IF SUPER OBVIOUS 
-@import "pages/bird";
-@import "pages/empathy";
-@import "pages/lenses";
-@import "pages/pillars-of-improv";
-@import "pages/snowden";
-@import "pages/spotify";
-@import "pages/vhs";
-@import "pages/yahoo";
+// Core SASS
+@import 'core/reset';
+@import 'core/base';
+@import 'core/typography';
+@import 'core/layout';
+@import 'core/main';
+@import 'core/header';
+@import 'core/footer';
 
-@import "pages/gotham"; // Dec 2022
+@import 'components/all';
 
+// Unique SASS
+@import 'pages/bird';
+@import 'pages/empathy';
+@import 'pages/lenses';
+@import 'pages/pillars-of-improv';
+@import 'pages/snowden';
+@import 'pages/spotify';
+@import 'pages/vhs';
+@import 'pages/yahoo';
+@import 'pages/gotham';
