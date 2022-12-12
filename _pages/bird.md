@@ -1,6 +1,6 @@
 ---
 layout: base
-title: bird
+title: that damn bird is back
 permalink: /
 ---
 
