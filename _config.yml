@@ -50,7 +50,7 @@ defaults:
 
           title: Kevando Online!
           description: 
-          favicon: icon-32-goat.png
+          favicon: snapple.png
 
           # TWITTER
           twitter_card: summary
