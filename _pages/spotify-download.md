@@ -7,15 +7,17 @@ permalink: /download-your-spotify-data
 
 # The Attention War
 
-<hr class="red">
+<hr class="red" style="width:">
 
-### Spotify is in the data business, not the music business. The most valuable data is your data, and Spotify tracks you to get it. They feed your data into powerful A.I. that recommends ways to manipulate you. All without your knowledge. 
+### Spotify is in the data business, not music. They track you and use *your data* to power a very sophisticated A.I. system. All for the purpose of manipuluating you into giving them more of your attention.
 
-# Follow these instructions to fight back.
+### It's a battle and you must fight to retain control of your attention. Losing the battle is a lobotomy. 
+
+## Fight back.
 
 <br>
 
-## Step 1: [Request your data](https://www.spotify.com/us/account/privacy?utm_source=kevando+up+in+this+motherfucker)
+### [Submit a request to get your data from Spotify](https://www.spotify.com/us/account/privacy?utm_source=kevando+up+in+this+motherfucker)
 
 <br>
 
@@ -23,22 +25,22 @@ permalink: /download-your-spotify-data
 
 <br>
 
-They were ready and immediately return fire with an email asking you to confirm your request. Click to confirm to defeat them. 
+### They were ready and immediately return fire. You get an email within seconds asking you to confirm your request you just confirmed. They always double check when something is not in their interests. 
 
-The battle is not over. 
+### Click to confirm and defeat them in the first of many battles. The war is long.
 
-Next they test your resolve by laying siege and making you wait several days before surrending your data.  The data that is rightfullly yours. Their white flag is another email. 
+### Next they will test your resolve by laying siege. Spotify makes you wait several days to get your data. Data that is rightfullly yours. You'll know they surrendered when you get white flag email. 
 
-The battle continues. 
+## The battle continues. 
 
-This email contains a link to download a zip file that contains your Spotify data. The fighting continues.
-
-They deliver your data as JSON, a file format only computers can read. You are not a computer. Call for reinforcements. 
+### This email contains a link to download a zip file that contains your Spotify data. They deliver your data as JSON, a file format only computers can read. You are not a computer. Time to call for reinforcements. 
 
 <br>
 
-Send me the zip file and I make your data readable. All I really want is the `YourLibarary.json` file to see where our music interests overlap.
+# 📞
+
+Send me the zip file via email. I will turn your JSON data into a spreadsheet (like this) and a ven diagram that shows where our music taste overlaps.
 
 <br> 
 
-Together we will defeat a system that wants to control your attention. 
+Together we will defeat the insect overlords and control our attention once again! 
