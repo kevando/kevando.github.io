@@ -5,7 +5,7 @@ description: 🎹🎹🎹🎹🎹🎹🎹🎹🎹🎹
 permalink: /download-your-spotify-data
 ---
 
-# How to Get Your Spotify Data Into a Google Sheet
+# Download Your Spotify Data
 
 `Spotify's business is data, not music. The most valuable data is your data. Spotify tracks you and then uses that data to manipulate you. Follow these instructions to fight back.` 
 
@@ -34,7 +34,7 @@ permalink: /download-your-spotify-data
 
 They will send an email double checking you want your data. Click confirm and defeat them in battle.
 
-# 🗓️&nbp;&nbp;🗓️&nbp;&nbp;&nbp;🗓️&nbp;&nbp;&nbp;&nbp;&nbp;&nbp;🗓️&nbp;&nbp;&nbp;&nbp;&nbp;&nbp;🗓️&nbp;&nbp;&nbp;&nbp;&nbp;&nbp;🗓️
+# 🗓️&nbsp;&nbsp;🗓️&nbsp;&nbsp;🗓️&nbsp;&nbsp;🗓️&nbsp;&nbsp;🗓️
 
 They test your resolve by making you wait several days. Eventually they surrender and raise a white flag. Another email arrives.
 
