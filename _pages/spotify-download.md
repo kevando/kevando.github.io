@@ -1,7 +1,6 @@
 ---
-layout: default
-title: Download Your Spotify Data
-description: 🎹🎹🎹🎹🎹🎹🎹🎹🎹🎹
+title: Attention Defence 
+description: It is time to battle
 permalink: /download-your-spotify-data
 ---
 
