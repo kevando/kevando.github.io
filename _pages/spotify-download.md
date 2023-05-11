@@ -5,10 +5,11 @@ description: 🎹🎹🎹🎹🎹🎹🎹🎹🎹🎹
 permalink: /download-your-spotify-data
 ---
 
-# Download Your Spotify Data
+# Your 🎵 Data
 
+Follow these simple instructions 
 
-
+<hr>
 
 <br><br>
 
