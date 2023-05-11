@@ -7,7 +7,9 @@ permalink: /download-your-spotify-data
 
 # Download Your Spotify Data
 
-`Spotify's business is data, not music. The most valuable data is your data. Spotify tracks you and then uses that data to manipulate you. Follow these instructions to fight back.` 
+<hr>
+
+Spotify is in the data business, not the music business. The most valuable data is your data. Spotify tracks you and then manipulates you without your knowledge. Follow these instructions to fight back.
 
 <hr> 
 
