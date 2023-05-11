@@ -5,7 +5,7 @@ description: 🎹🎹🎹🎹🎹🎹🎹🎹🎹🎹
 permalink: /download-your-spotify-data
 ---
 
-# The Attention War
+# Our Attention War
 
 <hr class="red" style="width:">
 
