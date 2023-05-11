@@ -12,35 +12,37 @@ permalink: /download-your-spotify-data
 
 <br><br>
 
-## Step 1
+## Start Here 👇
 
-Go here: [spotify.com/us/account/privacy/](https://www.spotify.com/us/account/privacy?utm_source=kevando+up+in+this+motherfucker)
+### [spotify.com/us/account/privacy/](https://www.spotify.com/us/account/privacy?utm_source=kevando+up+in+this+motherfucker)
 
 <br>
-
-## Step 2
 
 ![ss1](/assets/images/spotify-step2.png)
 
-<br>
+<br><br>
+
+![ss1](/assets/images/spotify-step2b.png)
 
 ## Step 3
 
-*Wait*
+`Wait...`
 
 <br>
 
-## Step 4
+## Eventually
 
-You'll get an email with a zip file containing a bunch of json files. DO NOT SHARE THEM. They contain pretty sensitive information about you. 
+an email like this will arrive.
+
+![ss1](/assets/images/spotify-step3.png)
+
+
+It contains a link to download a zip file that contains your Spotify data. You "Spotify data" is a bunch of json files.  These files contain pretty sensitive information about you. <b><font color="red">DO NOT SHARE!</font></b> Except with me of course. 
+
+<br>
+
+Send me the file named `YourLibrary.json` or the the whole zip file via email. If you don't know my email, message me on Twitter [@kevando_](https://twitter.com/kevando_) I will put your data into a spreadsheet and send that to you :) 
 
 <br> 
 
-## Step 5 
-
-Send me `YourLibrary.json` If you know how to read a json file I'm actually only interested in the `Arists` array. 
-
-<br>
-
-If you don't know my email, message me on Twitter [@kevando_](https://twitter.com/kevando_)
-
+Together we will dismantle the system of oppression.
