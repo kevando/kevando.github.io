@@ -17,20 +17,11 @@ permalink: /download-your-spotify-data
 
 <br><br>
 
-
-# 1️⃣
-
 ## Request Your Data 
 
 ### [spotify.com/us/account/privacy/](https://www.spotify.com/us/account/privacy?utm_source=kevando+up+in+this+motherfucker)
 
-<br>
-
-
-
 <br><br>
-
-# 📩
 
 They will send an email double checking you want your data. Click confirm and defeat them in battle.
 
