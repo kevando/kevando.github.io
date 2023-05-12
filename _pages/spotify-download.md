@@ -4,15 +4,21 @@ description: It is time to battle
 permalink: /download-your-spotify-data
 ---
 
+# Control Your Attention
+
+The battle for your attention is now a
+
+There is no longer a battle for your attention. It is war.
+
 # Our Attention War
 
-<hr class="red" style="width:">
+
 
 ### Spotify is in the data business, not music. They track you and use *your data* to power a very sophisticated A.I. system. All for the purpose of manipuluating you into giving them more of your attention.
 
 ### It's a battle and you must fight to retain control of your attention. Losing the battle is a lobotomy. 
 
-## Fight back.
+### It is time to fight back
 
 <br>
 
@@ -32,14 +38,14 @@ permalink: /download-your-spotify-data
 
 ## The battle continues. 
 
-### This email contains a link to download a zip file that contains your Spotify data. They deliver your data as JSON, a file format only computers can read. You are not a computer. Time to call for reinforcements. 
+This email contains a link to download a zip file that contains your Spotify data. They deliver your data as JSON, a file format only computers can read. You are not a computer. Time to call for reinforcements. 
 
-<br>
-
-# 📞
 
 Send me the zip file via email. I will turn your JSON data into a spreadsheet (like this) and a ven diagram that shows where our music taste overlaps.
 
 <br> 
 
-Together we will defeat the insect overlords and control our attention once again! 
+We will win.
+
+
+Your attention battle is our attention war.
