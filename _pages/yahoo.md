@@ -16,13 +16,8 @@ permalink: /yahoo
 	</nav>
 </header>
 
----
-
 #### 📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;📱&nbsp;&nbsp;
 ### `portfolio MY GLORIOUS WORK` 
-
-<br />
-<br />
 
 # Blue Sky Paint
 
@@ -30,12 +25,9 @@ One of the first if not the fist social AR experience on your phone. Check it ou
 
 I made a map too [bspaint.net/map](https://wwww.bspaint.net/map) 
 
-<br/>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_GFxse8uWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<br/>
-<br/>
+---
 
 In 2015 I designed an app for saving recommendations.
 
