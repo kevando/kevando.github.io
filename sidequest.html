@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Copy List</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                min-height: 100vh;
+                background-color: #f9fafb;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                    Roboto, sans-serif;
+                padding-top: 64px;
+            }
+
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 64px;
+                background-color: white;
+                border-bottom: 1px solid #e5e7eb;
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+                z-index: 10;
+            }
+
+            .logo {
+                height: 32px;
+                width: auto;
+                font-size: 32px;
+                line-height: 1;
+            }
+
+            .container {
+                padding: 1rem;
+                margin-bottom: 5rem;
+            }
+
+            .list {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .list-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: white;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            }
+
+            .item-content {
+                flex: 1;
+            }
+
+            .item-title {
+                font-weight: 600;
+                color: #111827;
+                margin-bottom: 0.25rem;
+            }
+
+            .item-meta {
+                font-size: 0.875rem;
+                color: #9ca3af; /* Made even more grey */
+            }
+
+            .item-meta strong {
+                font-weight: 600;
+                color: #6b7280; /* Adjusted strong color to maintain contrast */
+            }
+
+            .copy-button {
+                background: none;
+                border: none;
+                padding: 0.5rem;
+                cursor: pointer;
+                color: #4b5563;
+                margin-left: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                touch-action: manipulation;
+                flex-shrink: 0;
+                transition: color 0.2s ease;
+            }
+
+            .copy-button:hover {
+                color: #1f2937;
+            }
+
+            .copy-button svg {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+
+            .bottom-button {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 1rem;
+                background-color: white;
+                border-top: 1px solid #e5e7eb;
+                display: none;
+            }
+
+            .bottom-button.visible {
+                display: block;
+            }
+
+            .open-app-button {
+                width: 100%;
+                background-color: #fbbf24; /* Yellow background */
+                color: #000000; /* Black text */
+                padding: 1rem 1.5rem;
+                border: none;
+                border-radius: 0.5rem;
+                font-size: 1.125rem;
+                font-weight: 600;
+                cursor: pointer;
+                touch-action: manipulation;
+            }
+
+            .open-app-button:hover {
+                background-color: #f59e0b; /* Darker yellow on hover */
+            }
+
+            .text-green-500 {
+                color: #22c55e;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">😎</div>
+        </header>
+
+        <div class="container">
+            <ul class="list" id="itemList"></ul>
+        </div>
+
+        <div class="bottom-button" id="bottomButton">
+            <button class="open-app-button" onclick="openSpectaclesApp()">
+                Open Spectacles App
+            </button>
+        </div>
+
+        <script>
+            const items = [
+                {
+                    id: 1,
+                    title: 'Amazing Sunset Photo',
+                    creator: 'Jane Smith',
+                    createdAt: '2024-03-15',
+                    link: 'https://example.com/1',
+                },
+                {
+                    id: 2,
+                    title: 'City Night Timelapse',
+                    creator: 'John Doe',
+                    createdAt: '2024-03-14',
+                    link: 'https://example.com/2',
+                },
+                {
+                    id: 3,
+                    title: 'Mountain Peak Panorama',
+                    creator: 'Alice Johnson',
+                    createdAt: '2024-03-13',
+                    link: 'https://example.com/3',
+                },
+                {
+                    id: 4,
+                    title: 'Ocean Wave Series',
+                    creator: 'Bob Wilson',
+                    createdAt: '2024-03-12',
+                    link: 'https://example.com/4',
+                },
+            ]
+
+            let currentlyCopiedId = null
+
+            const copyIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>`
+            const checkIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`
+
+            function formatDate(dateString) {
+                const options = {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                }
+                return new Date(dateString).toLocaleDateString(
+                    undefined,
+                    options
+                )
+            }
+
+            function resetPreviousCopyButton() {
+                if (currentlyCopiedId !== null) {
+                    const previousButton = document.querySelector(
+                        `[data-id="${currentlyCopiedId}"]`
+                    )
+                    if (previousButton) {
+                        previousButton.innerHTML = copyIcon
+                        previousButton
+                            .querySelector('svg')
+                            .classList.remove('text-green-500')
+                    }
+                }
+            }
+
+            function createList() {
+                const list = document.getElementById('itemList')
+                items.forEach((item) => {
+                    const li = document.createElement('li')
+                    li.className = 'list-item'
+                    li.innerHTML = `
+                    <div class="item-content">
+                        <div class="item-title">${item.title}</div>
+                        <div class="item-meta">created by <strong>${
+                            item.creator
+                        }</strong> posted ${formatDate(item.createdAt)}</div>
+                    </div>
+                    <button class="copy-button" data-id="${
+                        item.id
+                    }" data-link="${item.link}">
+                        ${copyIcon}
+                    </button>
+                `
+                    list.appendChild(li)
+                })
+
+                document.querySelectorAll('.copy-button').forEach((button) => {
+                    button.addEventListener('click', handleCopy)
+                })
+            }
+
+            async function handleCopy(e) {
+                const button = e.currentTarget
+                const link = button.dataset.link
+                const id = parseInt(button.dataset.id)
+
+                try {
+                    await navigator.clipboard.writeText(link)
+                    resetPreviousCopyButton()
+                    button.innerHTML = checkIcon
+                    button.querySelector('svg').classList.add('text-green-500')
+                    currentlyCopiedId = id
+                    showBottomButton()
+                } catch (err) {
+                    console.error('Failed to copy:', err)
+                }
+            }
+
+            function showBottomButton() {
+                const bottomButton = document.getElementById('bottomButton')
+                bottomButton.classList.add('visible')
+            }
+
+            function openSpectaclesApp() {
+                window.open('spectacles://', '_blank')
+            }
+
+            createList()
+        </script>
+    </body>
+</html>
